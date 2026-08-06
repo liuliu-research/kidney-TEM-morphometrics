@@ -1,0 +1,6 @@
+﻿feature_set,model,macro_f1,macro_ovr_auc
+full,random_forest,0.3186412567976059,0.8340946027084719
+full_minus_age,random_forest,0.26678414723110877,0.8069446489305702
+age_sex_only,random_forest,0.16158808959890064,0.6613310690240121
+morphometry_only,random_forest,0.26095978212250565,0.7473921337871214
+missingness_only_diagnostic,random_forest,0.06687357019866748,0.6007412755367704

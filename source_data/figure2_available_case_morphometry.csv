@@ -1,0 +1,67 @@
+﻿disease,feature,feature_label,n,statistic,value,q1,q3,unit,sufficient_n,minimum_n_rule,description_only,manual_parser_audit,manual_linkage_audit
+IgAN,glomerulus_count,Glomerulus count,1649,median,2.0,1.0,2.0,count,True,30,True,False,False
+IgAN,sclerosis_pct,Sclerosis rate,1649,median,0.0,0.0,0.0,%,True,30,True,False,False
+IgAN,mesangial_cells,Mesangial cell count,1804,median,1.5,1.5,4.5,cells/region,True,30,True,False,False
+IgAN,mesangial_matrix,Mesangial matrix grade,1536,median,1.5,1.0,1.5,grade 0-3,True,30,True,False,False
+IgAN,gbm_nm,GBM thickness,320,median,450.0,350.0,585.0,nm,True,30,True,False,False
+IgAN,foot_process_mean,Foot-process grade,1840,mean,1.3548913043478261,,,grade 0-3,True,30,True,False,False
+IgAVN,glomerulus_count,Glomerulus count,1006,median,2.0,2.0,2.0,count,True,30,True,False,False
+IgAVN,sclerosis_pct,Sclerosis rate,1006,median,0.0,0.0,0.0,%,True,30,True,False,False
+IgAVN,mesangial_cells,Mesangial cell count,1797,median,1.5,1.5,1.5,cells/region,True,30,True,False,False
+IgAVN,mesangial_matrix,Mesangial matrix grade,995,median,1.0,1.0,1.5,grade 0-3,True,30,True,False,False
+IgAVN,gbm_nm,GBM thickness,108,median,400.0,350.0,500.0,nm,True,30,True,False,False
+IgAVN,foot_process_mean,Foot-process grade,1818,mean,1.2172717271727174,,,grade 0-3,True,30,True,False,False
+MCD,glomerulus_count,Glomerulus count,802,median,2.0,2.0,2.0,count,True,30,True,False,False
+MCD,sclerosis_pct,Sclerosis rate,802,median,0.0,0.0,0.0,%,True,30,True,False,False
+MCD,mesangial_cells,Mesangial cell count,1168,median,1.5,1.5,1.5,cells/region,True,30,True,False,False
+MCD,mesangial_matrix,Mesangial matrix grade,762,median,1.0,1.0,1.0,grade 0-3,True,30,True,False,False
+MCD,gbm_nm,GBM thickness,102,median,425.0,350.0,522.5,nm,True,30,True,False,False
+MCD,foot_process_mean,Foot-process grade,1194,mean,2.6457286432160805,,,grade 0-3,True,30,True,False,False
+MN,glomerulus_count,Glomerulus count,603,median,2.0,1.0,2.0,count,True,30,True,False,False
+MN,sclerosis_pct,Sclerosis rate,603,median,0.0,0.0,0.0,%,True,30,True,False,False
+MN,mesangial_cells,Mesangial cell count,882,median,1.5,1.5,1.5,cells/region,True,30,True,False,False
+MN,mesangial_matrix,Mesangial matrix grade,575,median,1.0,1.0,1.0,grade 0-3,True,30,True,False,False
+MN,gbm_nm,GBM thickness,115,median,1050.0,812.5,1362.5,nm,True,30,True,False,False
+MN,foot_process_mean,Foot-process grade,895,mean,2.8536312849162013,,,grade 0-3,True,30,True,False,False
+MsPGN,glomerulus_count,Glomerulus count,259,median,2.0,1.0,2.0,count,True,30,True,False,False
+MsPGN,sclerosis_pct,Sclerosis rate,259,median,0.0,0.0,0.0,%,True,30,True,False,False
+MsPGN,mesangial_cells,Mesangial cell count,680,median,1.5,1.5,3.5,cells/region,True,30,True,False,False
+MsPGN,mesangial_matrix,Mesangial matrix grade,254,median,1.0,1.0,1.0,grade 0-3,True,30,True,False,False
+MsPGN,gbm_nm,GBM thickness,120,median,450.0,357.5,556.25,nm,True,30,True,False,False
+MsPGN,foot_process_mean,Foot-process grade,691,mean,1.4384949348769898,,,grade 0-3,True,30,True,False,False
+LN,glomerulus_count,Glomerulus count,491,median,2.0,2.0,2.0,count,True,30,True,False,False
+LN,sclerosis_pct,Sclerosis rate,490,median,0.0,0.0,0.0,%,True,30,True,False,False
+LN,mesangial_cells,Mesangial cell count,677,median,4.0,1.5,4.5,cells/region,True,30,True,False,False
+LN,mesangial_matrix,Mesangial matrix grade,471,median,1.5,1.5,1.5,grade 0-3,True,30,True,False,False
+LN,gbm_nm,GBM thickness,131,median,1125.0,737.5,1737.5,nm,True,30,True,False,False
+LN,foot_process_mean,Foot-process grade,714,mean,2.224089635854342,,,grade 0-3,True,30,True,False,False
+EPGN,glomerulus_count,Glomerulus count,100,median,2.0,2.0,2.0,count,True,30,True,False,False
+EPGN,sclerosis_pct,Sclerosis rate,100,median,0.0,0.0,0.0,%,True,30,True,False,False
+EPGN,mesangial_cells,Mesangial cell count,292,median,4.0,3.5,4.5,cells/region,True,30,True,False,False
+EPGN,mesangial_matrix,Mesangial matrix grade,88,median,1.5,1.5,1.5,grade 0-3,True,30,True,False,False
+EPGN,gbm_nm,GBM thickness,10,median,362.5,312.5,481.25,nm,False,30,True,False,False
+EPGN,foot_process_mean,Foot-process grade,295,mean,1.7491525423728813,,,grade 0-3,True,30,True,False,False
+DKD,glomerulus_count,Glomerulus count,126,median,2.0,1.0,2.0,count,True,30,True,False,False
+DKD,sclerosis_pct,Sclerosis rate,123,median,50.0,0.0,100.0,%,True,30,True,False,False
+DKD,mesangial_cells,Mesangial cell count,149,median,3.5,1.5,4.5,cells/region,True,30,True,False,False
+DKD,mesangial_matrix,Mesangial matrix grade,116,median,1.5,1.5,2.5,grade 0-3,True,30,True,False,False
+DKD,gbm_nm,GBM thickness,31,median,1125.0,787.5,1625.0,nm,True,30,True,False,False
+DKD,foot_process_mean,Foot-process grade,157,mean,2.2929936305732483,,,grade 0-3,True,30,True,False,False
+TBMN,glomerulus_count,Glomerulus count,95,median,2.0,2.0,2.0,count,True,30,True,False,False
+TBMN,sclerosis_pct,Sclerosis rate,95,median,0.0,0.0,0.0,%,True,30,True,False,False
+TBMN,mesangial_cells,Mesangial cell count,137,median,1.5,1.5,1.5,cells/region,True,30,True,False,False
+TBMN,mesangial_matrix,Mesangial matrix grade,77,median,1.0,1.0,1.0,grade 0-3,True,30,True,False,False
+TBMN,gbm_nm,GBM thickness,28,median,240.0,200.0,258.75,nm,False,30,True,False,False
+TBMN,foot_process_mean,Foot-process grade,140,mean,1.1928571428571428,,,grade 0-3,True,30,True,False,False
+FSGS,glomerulus_count,Glomerulus count,129,median,2.0,1.0,2.0,count,True,30,True,False,False
+FSGS,sclerosis_pct,Sclerosis rate,129,median,50.0,0.0,100.0,%,True,30,True,False,False
+FSGS,mesangial_cells,Mesangial cell count,138,median,4.5,1.5,4.5,cells/region,True,30,True,False,False
+FSGS,mesangial_matrix,Mesangial matrix grade,74,median,1.5,1.5,1.5,grade 0-3,True,30,True,False,False
+FSGS,gbm_nm,GBM thickness,4,median,800.0,631.25,1100.0,nm,False,30,True,False,False
+FSGS,foot_process_mean,Foot-process grade,139,mean,2.2158273381294964,,,grade 0-3,True,30,True,False,False
+MPGN,glomerulus_count,Glomerulus count,90,median,2.0,1.0,2.0,count,True,30,True,False,False
+MPGN,sclerosis_pct,Sclerosis rate,89,median,0.0,0.0,0.0,%,True,30,True,False,False
+MPGN,mesangial_cells,Mesangial cell count,126,median,4.0,3.0,4.5,cells/region,True,30,True,False,False
+MPGN,mesangial_matrix,Mesangial matrix grade,79,median,1.5,1.5,2.0,grade 0-3,True,30,True,False,False
+MPGN,gbm_nm,GBM thickness,34,median,1187.5,806.25,1693.75,nm,True,30,True,False,False
+MPGN,foot_process_mean,Foot-process grade,134,mean,2.373134328358209,,,grade 0-3,True,30,True,False,False

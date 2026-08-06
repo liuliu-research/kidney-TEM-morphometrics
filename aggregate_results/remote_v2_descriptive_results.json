@@ -1,0 +1,3600 @@
+{
+  "status": "authoritative_for_current_revision",
+  "analysis": "locked-registry descriptive results for the paper window",
+  "supersession": {
+    "supersedes": [
+      "logs/remote_v2_descriptive.json",
+      "logs/remote_v2_descriptive.md",
+      "logs/remote_v2_descriptive.png"
+    ],
+    "reason": "This file freezes the final paper window at 2014-05-01 through 2026-04-30 (observed through 2026-04-09)."
+  },
+  "privacy": {
+    "row_level_output": false,
+    "identifiers_output": false,
+    "remote_writes": false,
+    "remote_processing": "read-only and in-memory"
+  },
+  "runtime": {
+    "remote_python": "3.13.9",
+    "numpy": "2.4.2",
+    "pandas": "3.0.1",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  },
+  "analysis_window": {
+    "start": "2014-05-01",
+    "end": "2026-04-30",
+    "actual_observed_start": "2014-05-08",
+    "actual_observed_end": "2026-04-09",
+    "inclusive": true,
+    "development": [
+      "2014-05-01",
+      "2021-12-31"
+    ],
+    "temporal_test": [
+      "2022-01-01",
+      "2026-04-30"
+    ]
+  },
+  "scope_A_workload_for_Table3_Figure4": {
+    "definition": "All dated canonical examinations in the paper window; repeat examinations retained.",
+    "n_canonical_examinations": 10933,
+    "n_unique_patients": 10787,
+    "examinations_per_unique_patient": 1.01353481041995,
+    "temporal_source_data": {
+      "unit": "canonical examinations/checks",
+      "annual": {
+        "2014": {
+          "n": 203,
+          "unique_patients_n": 202,
+          "calendar_months_observed_in_window": 8,
+          "months_with_at_least_one_case": 7,
+          "lambda_per_observed_calendar_month_for_Table3": 25.375,
+          "rho_c2_mu22_for_Table3": 0.5767045454545454,
+          "lambda_if_divided_by_12_auxiliary": 16.916666666666668,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 0.38446969696969696,
+          "top_disease_code": "Other",
+          "top_disease_n": 67,
+          "top_disease_pct": 33.004926108374384
+        },
+        "2015": {
+          "n": 520,
+          "unique_patients_n": 520,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 12,
+          "lambda_per_observed_calendar_month_for_Table3": 43.333333333333336,
+          "rho_c2_mu22_for_Table3": 0.9848484848484849,
+          "lambda_if_divided_by_12_auxiliary": 43.333333333333336,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 0.9848484848484849,
+          "top_disease_code": "Other",
+          "top_disease_n": 195,
+          "top_disease_pct": 37.5
+        },
+        "2016": {
+          "n": 947,
+          "unique_patients_n": 946,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 12,
+          "lambda_per_observed_calendar_month_for_Table3": 78.91666666666667,
+          "rho_c2_mu22_for_Table3": 1.7935606060606062,
+          "lambda_if_divided_by_12_auxiliary": 78.91666666666667,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 1.793560606060606,
+          "top_disease_code": "Other",
+          "top_disease_n": 253,
+          "top_disease_pct": 26.715945089757128
+        },
+        "2017": {
+          "n": 1018,
+          "unique_patients_n": 1016,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 12,
+          "lambda_per_observed_calendar_month_for_Table3": 84.83333333333333,
+          "rho_c2_mu22_for_Table3": 1.928030303030303,
+          "lambda_if_divided_by_12_auxiliary": 84.83333333333333,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 1.928030303030303,
+          "top_disease_code": "Other",
+          "top_disease_n": 283,
+          "top_disease_pct": 27.79960707269155
+        },
+        "2018": {
+          "n": 1194,
+          "unique_patients_n": 1193,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 12,
+          "lambda_per_observed_calendar_month_for_Table3": 99.5,
+          "rho_c2_mu22_for_Table3": 2.2613636363636362,
+          "lambda_if_divided_by_12_auxiliary": 99.5,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 2.2613636363636362,
+          "top_disease_code": "Other",
+          "top_disease_n": 346,
+          "top_disease_pct": 28.97822445561139
+        },
+        "2019": {
+          "n": 1103,
+          "unique_patients_n": 1100,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 12,
+          "lambda_per_observed_calendar_month_for_Table3": 91.91666666666667,
+          "rho_c2_mu22_for_Table3": 2.089015151515152,
+          "lambda_if_divided_by_12_auxiliary": 91.91666666666667,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 2.0890151515151514,
+          "top_disease_code": "Other",
+          "top_disease_n": 288,
+          "top_disease_pct": 26.11060743427017
+        },
+        "2020": {
+          "n": 822,
+          "unique_patients_n": 822,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 12,
+          "lambda_per_observed_calendar_month_for_Table3": 68.5,
+          "rho_c2_mu22_for_Table3": 1.5568181818181819,
+          "lambda_if_divided_by_12_auxiliary": 68.5,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 1.5568181818181819,
+          "top_disease_code": "IgAVN",
+          "top_disease_n": 193,
+          "top_disease_pct": 23.479318734793186
+        },
+        "2021": {
+          "n": 1412,
+          "unique_patients_n": 1409,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 12,
+          "lambda_per_observed_calendar_month_for_Table3": 117.66666666666667,
+          "rho_c2_mu22_for_Table3": 2.6742424242424243,
+          "lambda_if_divided_by_12_auxiliary": 117.66666666666667,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 2.6742424242424243,
+          "top_disease_code": "IgAN",
+          "top_disease_n": 394,
+          "top_disease_pct": 27.90368271954674
+        },
+        "2022": {
+          "n": 1499,
+          "unique_patients_n": 1491,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 12,
+          "lambda_per_observed_calendar_month_for_Table3": 124.91666666666667,
+          "rho_c2_mu22_for_Table3": 2.839015151515152,
+          "lambda_if_divided_by_12_auxiliary": 124.91666666666667,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 2.8390151515151514,
+          "top_disease_code": "IgAN",
+          "top_disease_n": 462,
+          "top_disease_pct": 30.820547031354234
+        },
+        "2023": {
+          "n": 1123,
+          "unique_patients_n": 1116,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 12,
+          "lambda_per_observed_calendar_month_for_Table3": 93.58333333333333,
+          "rho_c2_mu22_for_Table3": 2.1268939393939394,
+          "lambda_if_divided_by_12_auxiliary": 93.58333333333333,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 2.1268939393939394,
+          "top_disease_code": "IgAN",
+          "top_disease_n": 305,
+          "top_disease_pct": 27.15939447907391
+        },
+        "2024": {
+          "n": 559,
+          "unique_patients_n": 558,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 11,
+          "lambda_per_observed_calendar_month_for_Table3": 46.583333333333336,
+          "rho_c2_mu22_for_Table3": 1.0587121212121213,
+          "lambda_if_divided_by_12_auxiliary": 46.583333333333336,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 1.058712121212121,
+          "top_disease_code": "IgAN",
+          "top_disease_n": 135,
+          "top_disease_pct": 24.15026833631485
+        },
+        "2025": {
+          "n": 398,
+          "unique_patients_n": 395,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 12,
+          "lambda_per_observed_calendar_month_for_Table3": 33.166666666666664,
+          "rho_c2_mu22_for_Table3": 0.7537878787878788,
+          "lambda_if_divided_by_12_auxiliary": 33.166666666666664,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 0.7537878787878788,
+          "top_disease_code": "IgAN",
+          "top_disease_n": 130,
+          "top_disease_pct": 32.663316582914575
+        },
+        "2026": {
+          "n": 135,
+          "unique_patients_n": 135,
+          "calendar_months_observed_in_window": 4,
+          "months_with_at_least_one_case": 4,
+          "lambda_per_observed_calendar_month_for_Table3": 33.75,
+          "rho_c2_mu22_for_Table3": 0.7670454545454546,
+          "lambda_if_divided_by_12_auxiliary": 11.25,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 0.2556818181818182,
+          "top_disease_code": "IgAN",
+          "top_disease_n": 55,
+          "top_disease_pct": 40.74074074074074
+        }
+      },
+      "year_month_matrix": {
+        "2014": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 8,
+          "6": 0,
+          "7": 29,
+          "8": 34,
+          "9": 20,
+          "10": 31,
+          "11": 37,
+          "12": 44
+        },
+        "2015": {
+          "1": 22,
+          "2": 26,
+          "3": 28,
+          "4": 24,
+          "5": 28,
+          "6": 30,
+          "7": 47,
+          "8": 37,
+          "9": 61,
+          "10": 74,
+          "11": 67,
+          "12": 76
+        },
+        "2016": {
+          "1": 62,
+          "2": 61,
+          "3": 106,
+          "4": 73,
+          "5": 58,
+          "6": 87,
+          "7": 76,
+          "8": 77,
+          "9": 79,
+          "10": 75,
+          "11": 99,
+          "12": 94
+        },
+        "2017": {
+          "1": 67,
+          "2": 75,
+          "3": 106,
+          "4": 85,
+          "5": 95,
+          "6": 71,
+          "7": 86,
+          "8": 111,
+          "9": 75,
+          "10": 64,
+          "11": 94,
+          "12": 89
+        },
+        "2018": {
+          "1": 103,
+          "2": 51,
+          "3": 110,
+          "4": 100,
+          "5": 119,
+          "6": 69,
+          "7": 96,
+          "8": 120,
+          "9": 101,
+          "10": 108,
+          "11": 110,
+          "12": 107
+        },
+        "2019": {
+          "1": 109,
+          "2": 111,
+          "3": 105,
+          "4": 88,
+          "5": 81,
+          "6": 71,
+          "7": 95,
+          "8": 105,
+          "9": 70,
+          "10": 89,
+          "11": 86,
+          "12": 93
+        },
+        "2020": {
+          "1": 95,
+          "2": 18,
+          "3": 35,
+          "4": 63,
+          "5": 66,
+          "6": 72,
+          "7": 83,
+          "8": 120,
+          "9": 51,
+          "10": 62,
+          "11": 74,
+          "12": 83
+        },
+        "2021": {
+          "1": 82,
+          "2": 61,
+          "3": 83,
+          "4": 74,
+          "5": 80,
+          "6": 129,
+          "7": 162,
+          "8": 128,
+          "9": 148,
+          "10": 110,
+          "11": 183,
+          "12": 172
+        },
+        "2022": {
+          "1": 164,
+          "2": 138,
+          "3": 167,
+          "4": 113,
+          "5": 146,
+          "6": 133,
+          "7": 129,
+          "8": 135,
+          "9": 145,
+          "10": 110,
+          "11": 64,
+          "12": 55
+        },
+        "2023": {
+          "1": 43,
+          "2": 103,
+          "3": 118,
+          "4": 135,
+          "5": 113,
+          "6": 126,
+          "7": 73,
+          "8": 152,
+          "9": 60,
+          "10": 77,
+          "11": 60,
+          "12": 63
+        },
+        "2024": {
+          "1": 73,
+          "2": 22,
+          "3": 55,
+          "4": 58,
+          "5": 42,
+          "6": 47,
+          "7": 87,
+          "8": 85,
+          "9": 0,
+          "10": 41,
+          "11": 22,
+          "12": 27
+        },
+        "2025": {
+          "1": 19,
+          "2": 31,
+          "3": 36,
+          "4": 39,
+          "5": 44,
+          "6": 33,
+          "7": 41,
+          "8": 24,
+          "9": 31,
+          "10": 33,
+          "11": 21,
+          "12": 46
+        },
+        "2026": {
+          "1": 27,
+          "2": 35,
+          "3": 33,
+          "4": 40,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        }
+      },
+      "top_disease_by_year": {
+        "2014": {
+          "disease_code": "Other",
+          "n": 67,
+          "pct": 33.004926108374384
+        },
+        "2015": {
+          "disease_code": "Other",
+          "n": 195,
+          "pct": 37.5
+        },
+        "2016": {
+          "disease_code": "Other",
+          "n": 253,
+          "pct": 26.715945089757128
+        },
+        "2017": {
+          "disease_code": "Other",
+          "n": 283,
+          "pct": 27.79960707269155
+        },
+        "2018": {
+          "disease_code": "Other",
+          "n": 346,
+          "pct": 28.97822445561139
+        },
+        "2019": {
+          "disease_code": "Other",
+          "n": 288,
+          "pct": 26.11060743427017
+        },
+        "2020": {
+          "disease_code": "IgAVN",
+          "n": 193,
+          "pct": 23.479318734793186
+        },
+        "2021": {
+          "disease_code": "IgAN",
+          "n": 394,
+          "pct": 27.90368271954674
+        },
+        "2022": {
+          "disease_code": "IgAN",
+          "n": 462,
+          "pct": 30.820547031354234
+        },
+        "2023": {
+          "disease_code": "IgAN",
+          "n": 305,
+          "pct": 27.15939447907391
+        },
+        "2024": {
+          "disease_code": "IgAN",
+          "n": 135,
+          "pct": 24.15026833631485
+        },
+        "2025": {
+          "disease_code": "IgAN",
+          "n": 130,
+          "pct": 32.663316582914575
+        },
+        "2026": {
+          "disease_code": "IgAN",
+          "n": 55,
+          "pct": 40.74074074074074
+        }
+      },
+      "seasonality_complete_years": {
+        "complete_calendar_years": "2015-2025",
+        "n": 10595,
+        "month_counts": {
+          "1": 839,
+          "2": 697,
+          "3": 949,
+          "4": 852,
+          "5": 872,
+          "6": 868,
+          "7": 975,
+          "8": 1094,
+          "9": 821,
+          "10": 843,
+          "11": 880,
+          "12": 905
+        },
+        "overall_month_mean": 882.9166666666666,
+        "May_Aug_mean": 952.25,
+        "May_Aug_pct_vs_overall": 7.852760736196318,
+        "Q2_Q3_mean": 913.6666666666666,
+        "Q2_Q3_pct_vs_overall": 3.4827748938178305
+      }
+    },
+    "capacity_assumption": {
+      "interpretation": "scenario-based workload-to-capacity ratio, not observed turnaround time",
+      "reviewers_c": 2,
+      "service_rate_per_reviewer_per_month_mu": 22,
+      "fixed_annual_capacity": 528,
+      "partial_year_policy": "For 2014 May-Dec and 2026 Jan-Apr (April observed through day 9), lambda=n/calendar months exposed and rho=lambda/(2*22); complete years 2015-2025 are algebraically rho=n/528."
+    }
+  },
+  "scope_B_patient_first_main11_for_Table1_Figures1_2_models": {
+    "definition": "Earliest canonical examination per patient within the paper window, then restricted to the prespecified main 11 classes.",
+    "main11": [
+      "IgAN",
+      "IgAVN",
+      "MCD",
+      "MN",
+      "MsPGN",
+      "LN",
+      "EPGN",
+      "DKD",
+      "TBMN",
+      "FSGS",
+      "MPGN"
+    ],
+    "eligible_registry_cohort": {
+      "n": 8208,
+      "development_n": 5208,
+      "temporal_test_n": 3000,
+      "class_counts": {
+        "overall": {
+          "IgAN": 1896,
+          "IgAVN": 1875,
+          "MCD": 1202,
+          "MN": 897,
+          "MsPGN": 737,
+          "LN": 722,
+          "EPGN": 297,
+          "DKD": 165,
+          "TBMN": 143,
+          "FSGS": 139,
+          "MPGN": 135
+        },
+        "development": {
+          "IgAN": 825,
+          "IgAVN": 1478,
+          "MCD": 796,
+          "MN": 547,
+          "MsPGN": 537,
+          "LN": 455,
+          "EPGN": 253,
+          "DKD": 70,
+          "TBMN": 99,
+          "FSGS": 60,
+          "MPGN": 88
+        },
+        "temporal_test": {
+          "IgAN": 1071,
+          "IgAVN": 397,
+          "MCD": 406,
+          "MN": 350,
+          "MsPGN": 200,
+          "LN": 267,
+          "EPGN": 44,
+          "DKD": 95,
+          "TBMN": 44,
+          "FSGS": 79,
+          "MPGN": 47
+        }
+      },
+      "note": "This is the registry-defined task cohort. Only age and sex originate directly from the registry."
+    },
+    "linked_model_cohort": {
+      "n": 8113,
+      "development_n": 5139,
+      "temporal_test_n": 2974,
+      "linkage_pct_of_eligible": 98.8425925925926,
+      "class_counts": {
+        "overall": {
+          "IgAN": 1857,
+          "IgAVN": 1851,
+          "MCD": 1197,
+          "MN": 897,
+          "MsPGN": 712,
+          "LN": 720,
+          "EPGN": 297,
+          "DKD": 165,
+          "TBMN": 143,
+          "FSGS": 139,
+          "MPGN": 135
+        },
+        "development": {
+          "IgAN": 805,
+          "IgAVN": 1459,
+          "MCD": 791,
+          "MN": 547,
+          "MsPGN": 514,
+          "LN": 453,
+          "EPGN": 253,
+          "DKD": 70,
+          "TBMN": 99,
+          "FSGS": 60,
+          "MPGN": 88
+        },
+        "temporal_test": {
+          "IgAN": 1052,
+          "IgAVN": 392,
+          "MCD": 406,
+          "MN": 350,
+          "MsPGN": 198,
+          "LN": 267,
+          "EPGN": 44,
+          "DKD": 95,
+          "TBMN": 44,
+          "FSGS": 79,
+          "MPGN": 47
+        }
+      },
+      "linkage_audit": {
+        "canonical_registry_rows": 10981,
+        "legacy_rows": 13009,
+        "linked_registry_rows": 10794,
+        "linked_pct": 98.297,
+        "method_counts": {
+          "exact_stem": 8892,
+          "old_p_sex_birth_pm1": 1059,
+          "unique_old_p": 835,
+          "old_p_date": 8
+        },
+        "duplicate_old_rows_resolved": 612,
+        "publication_caveat": "Fallback links (all methods other than exact_stem) require a manually audited linkage sample before inferential publication use."
+      }
+    },
+    "table1_overall_and_by_class": {
+      "Overall": {
+        "cohort_n": 8208,
+        "age": {
+          "total_n": 8208,
+          "available_n": 8131,
+          "missing_n": 77,
+          "missing_pct": 0.9381091617933723,
+          "mean": 25.919936047226663,
+          "sd": 19.156347973864605,
+          "median": 20.0,
+          "q1": 9.0,
+          "q3": 41.0,
+          "min": 1.0,
+          "max": 85.0
+        },
+        "sex": {
+          "total_n": 8208,
+          "nonmissing_n": 8193,
+          "missing_n": 15,
+          "male_n": 4435,
+          "female_n": 3758,
+          "male_pct_nonmissing": 54.13157573538386,
+          "female_pct_nonmissing": 45.86842426461614
+        },
+        "features": {
+          "glomerulus_count": {
+            "total_n": 8208,
+            "available_n": 5350,
+            "missing_n": 2858,
+            "missing_pct": 34.819688109161795,
+            "mean": 1.7637383177570094,
+            "sd": 0.5081804597096842,
+            "median": 2.0,
+            "q1": 1.0,
+            "q3": 2.0,
+            "min": 1.0,
+            "max": 5.0
+          },
+          "sclerosis_rate": {
+            "total_n": 8208,
+            "available_n": 5345,
+            "missing_n": 2863,
+            "missing_pct": 34.88060428849902,
+            "mean": 0.05463049579045836,
+            "sd": 0.2112350838934451,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "mesangial_cell_count": {
+            "total_n": 8208,
+            "available_n": 7850,
+            "missing_n": 358,
+            "missing_pct": 4.361598440545809,
+            "mean": 2.2992993630573246,
+            "sd": 1.3713829942503104,
+            "median": 1.5,
+            "q1": 1.5,
+            "q3": 3.5,
+            "min": 0.5,
+            "max": 15.0
+          },
+          "mesangial_matrix_grade": {
+            "total_n": 8208,
+            "available_n": 5027,
+            "missing_n": 3181,
+            "missing_pct": 38.75487329434698,
+            "mean": 1.2666600358066442,
+            "sd": 0.4221748925183728,
+            "median": 1.0,
+            "q1": 1.0,
+            "q3": 1.5,
+            "min": 1.0,
+            "max": 3.0
+          },
+          "gbm_thickness_nm": {
+            "total_n": 8208,
+            "available_n": 1003,
+            "missing_n": 7205,
+            "missing_pct": 87.78021442495127,
+            "mean": 749.7357926221335,
+            "sd": 586.7623665806917,
+            "median": 525.0,
+            "q1": 377.5,
+            "q3": 950.0,
+            "min": 125.0,
+            "max": 4725.0
+          },
+          "spike_presence": {
+            "total_n": 8208,
+            "available_n": 1368,
+            "missing_n": 6840,
+            "missing_pct": 83.33333333333333,
+            "mean": 0.8201754385964912,
+            "sd": 0.38418170183574724,
+            "median": 1.0,
+            "q1": 1.0,
+            "q3": 1.0,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "foot_process_grade": {
+            "total_n": 8208,
+            "available_n": 8017,
+            "missing_n": 191,
+            "missing_pct": 2.326998050682261,
+            "mean": 1.8298615442185355,
+            "sd": 0.880732657088821,
+            "median": 2.0,
+            "q1": 1.0,
+            "q3": 3.0,
+            "min": 1.0,
+            "max": 3.0
+          }
+        }
+      },
+      "IgAN": {
+        "cohort_n": 1896,
+        "age": {
+          "total_n": 1896,
+          "available_n": 1884,
+          "missing_n": 12,
+          "missing_pct": 0.6329113924050633,
+          "mean": 30.91135881104034,
+          "sd": 15.363262816066117,
+          "median": 31.0,
+          "q1": 20.0,
+          "q3": 41.0,
+          "min": 1.0,
+          "max": 85.0
+        },
+        "sex": {
+          "total_n": 1896,
+          "nonmissing_n": 1896,
+          "missing_n": 0,
+          "male_n": 866,
+          "female_n": 1030,
+          "male_pct_nonmissing": 45.675105485232066,
+          "female_pct_nonmissing": 54.32489451476793
+        },
+        "features": {
+          "glomerulus_count": {
+            "total_n": 1896,
+            "available_n": 1649,
+            "missing_n": 247,
+            "missing_pct": 13.027426160337553,
+            "mean": 1.6998180715585203,
+            "sd": 0.513418219245122,
+            "median": 2.0,
+            "q1": 1.0,
+            "q3": 2.0,
+            "min": 1.0,
+            "max": 5.0
+          },
+          "sclerosis_rate": {
+            "total_n": 1896,
+            "available_n": 1649,
+            "missing_n": 247,
+            "missing_pct": 13.027426160337553,
+            "mean": 0.07307459066100667,
+            "sd": 0.24170441151899558,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "mesangial_cell_count": {
+            "total_n": 1896,
+            "available_n": 1804,
+            "missing_n": 92,
+            "missing_pct": 4.852320675105485,
+            "mean": 2.494456762749446,
+            "sd": 1.4484954168434465,
+            "median": 1.5,
+            "q1": 1.5,
+            "q3": 4.5,
+            "min": 0.5,
+            "max": 15.0
+          },
+          "mesangial_matrix_grade": {
+            "total_n": 1896,
+            "available_n": 1536,
+            "missing_n": 360,
+            "missing_pct": 18.9873417721519,
+            "mean": 1.3264973958333333,
+            "sd": 0.3900317835454238,
+            "median": 1.5,
+            "q1": 1.0,
+            "q3": 1.5,
+            "min": 1.0,
+            "max": 3.0
+          },
+          "gbm_thickness_nm": {
+            "total_n": 1896,
+            "available_n": 320,
+            "missing_n": 1576,
+            "missing_pct": 83.12236286919831,
+            "mean": 541.21875,
+            "sd": 340.8183250381619,
+            "median": 450.0,
+            "q1": 350.0,
+            "q3": 585.0,
+            "min": 150.0,
+            "max": 2900.0
+          },
+          "spike_presence": {
+            "total_n": 1896,
+            "available_n": 88,
+            "missing_n": 1808,
+            "missing_pct": 95.35864978902954,
+            "mean": 0.0,
+            "sd": 0.0,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "foot_process_grade": {
+            "total_n": 1896,
+            "available_n": 1840,
+            "missing_n": 56,
+            "missing_pct": 2.9535864978902953,
+            "mean": 1.3548913043478261,
+            "sd": 0.6130961451766673,
+            "median": 1.0,
+            "q1": 1.0,
+            "q3": 2.0,
+            "min": 1.0,
+            "max": 3.0
+          }
+        }
+      },
+      "IgAVN": {
+        "cohort_n": 1875,
+        "age": {
+          "total_n": 1875,
+          "available_n": 1858,
+          "missing_n": 17,
+          "missing_pct": 0.9066666666666666,
+          "mean": 11.046286329386437,
+          "sd": 9.470073584002137,
+          "median": 9.0,
+          "q1": 7.0,
+          "q3": 12.0,
+          "min": 1.0,
+          "max": 79.0
+        },
+        "sex": {
+          "total_n": 1875,
+          "nonmissing_n": 1870,
+          "missing_n": 5,
+          "male_n": 1089,
+          "female_n": 781,
+          "male_pct_nonmissing": 58.235294117647065,
+          "female_pct_nonmissing": 41.76470588235294
+        },
+        "features": {
+          "glomerulus_count": {
+            "total_n": 1875,
+            "available_n": 1006,
+            "missing_n": 869,
+            "missing_pct": 46.346666666666664,
+            "mean": 1.9165009940357853,
+            "sd": 0.4516262306795486,
+            "median": 2.0,
+            "q1": 2.0,
+            "q3": 2.0,
+            "min": 1.0,
+            "max": 4.0
+          },
+          "sclerosis_rate": {
+            "total_n": 1875,
+            "available_n": 1006,
+            "missing_n": 869,
+            "missing_pct": 46.346666666666664,
+            "mean": 0.005715705765407555,
+            "sd": 0.0689627103206873,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "mesangial_cell_count": {
+            "total_n": 1875,
+            "available_n": 1797,
+            "missing_n": 78,
+            "missing_pct": 4.16,
+            "mean": 1.978018920422927,
+            "sd": 1.0903968718644992,
+            "median": 1.5,
+            "q1": 1.5,
+            "q3": 1.5,
+            "min": 0.5,
+            "max": 6.5
+          },
+          "mesangial_matrix_grade": {
+            "total_n": 1875,
+            "available_n": 995,
+            "missing_n": 880,
+            "missing_pct": 46.93333333333333,
+            "mean": 1.1658291457286432,
+            "sd": 0.2803744818186999,
+            "median": 1.0,
+            "q1": 1.0,
+            "q3": 1.5,
+            "min": 1.0,
+            "max": 3.0
+          },
+          "gbm_thickness_nm": {
+            "total_n": 1875,
+            "available_n": 108,
+            "missing_n": 1767,
+            "missing_pct": 94.24,
+            "mean": 515.925925925926,
+            "sd": 377.72198903930325,
+            "median": 400.0,
+            "q1": 350.0,
+            "q3": 500.0,
+            "min": 150.0,
+            "max": 2525.0
+          },
+          "spike_presence": {
+            "total_n": 1875,
+            "available_n": 61,
+            "missing_n": 1814,
+            "missing_pct": 96.74666666666667,
+            "mean": 0.04918032786885246,
+            "sd": 0.21803894974650143,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "foot_process_grade": {
+            "total_n": 1875,
+            "available_n": 1818,
+            "missing_n": 57,
+            "missing_pct": 3.04,
+            "mean": 1.2172717271727174,
+            "sd": 0.5497673835233573,
+            "median": 1.0,
+            "q1": 1.0,
+            "q3": 1.0,
+            "min": 1.0,
+            "max": 3.0
+          }
+        }
+      },
+      "MCD": {
+        "cohort_n": 1202,
+        "age": {
+          "total_n": 1202,
+          "available_n": 1184,
+          "missing_n": 18,
+          "missing_pct": 1.497504159733777,
+          "mean": 19.394425675675677,
+          "sd": 17.814314227212034,
+          "median": 14.0,
+          "q1": 6.0,
+          "q3": 24.0,
+          "min": 1.0,
+          "max": 75.0
+        },
+        "sex": {
+          "total_n": 1202,
+          "nonmissing_n": 1200,
+          "missing_n": 2,
+          "male_n": 884,
+          "female_n": 316,
+          "male_pct_nonmissing": 73.66666666666667,
+          "female_pct_nonmissing": 26.333333333333332
+        },
+        "features": {
+          "glomerulus_count": {
+            "total_n": 1202,
+            "available_n": 802,
+            "missing_n": 400,
+            "missing_pct": 33.277870216306155,
+            "mean": 1.8079800498753118,
+            "sd": 0.5149802460131533,
+            "median": 2.0,
+            "q1": 2.0,
+            "q3": 2.0,
+            "min": 1.0,
+            "max": 4.0
+          },
+          "sclerosis_rate": {
+            "total_n": 1202,
+            "available_n": 802,
+            "missing_n": 400,
+            "missing_pct": 33.277870216306155,
+            "mean": 0.004364089775561097,
+            "sd": 0.052819690529171265,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "mesangial_cell_count": {
+            "total_n": 1202,
+            "available_n": 1168,
+            "missing_n": 34,
+            "missing_pct": 2.8286189683860234,
+            "mean": 1.55736301369863,
+            "sd": 0.5658495126989037,
+            "median": 1.5,
+            "q1": 1.5,
+            "q3": 1.5,
+            "min": 0.5,
+            "max": 6.5
+          },
+          "mesangial_matrix_grade": {
+            "total_n": 1202,
+            "available_n": 762,
+            "missing_n": 440,
+            "missing_pct": 36.605657237936775,
+            "mean": 1.019028871391076,
+            "sd": 0.09573068721236487,
+            "median": 1.0,
+            "q1": 1.0,
+            "q3": 1.0,
+            "min": 1.0,
+            "max": 1.5
+          },
+          "gbm_thickness_nm": {
+            "total_n": 1202,
+            "available_n": 102,
+            "missing_n": 1100,
+            "missing_pct": 91.51414309484193,
+            "mean": 480.04901960784315,
+            "sd": 238.87058418551314,
+            "median": 425.0,
+            "q1": 350.0,
+            "q3": 522.5,
+            "min": 195.0,
+            "max": 1700.0
+          },
+          "spike_presence": {
+            "total_n": 1202,
+            "available_n": 33,
+            "missing_n": 1169,
+            "missing_pct": 97.25457570715474,
+            "mean": 0.06060606060606061,
+            "sd": 0.24230584229877994,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "foot_process_grade": {
+            "total_n": 1202,
+            "available_n": 1194,
+            "missing_n": 8,
+            "missing_pct": 0.6655574043261231,
+            "mean": 2.6457286432160805,
+            "sd": 0.49060171078549175,
+            "median": 3.0,
+            "q1": 2.0,
+            "q3": 3.0,
+            "min": 1.0,
+            "max": 3.0
+          }
+        }
+      },
+      "MN": {
+        "cohort_n": 897,
+        "age": {
+          "total_n": 897,
+          "available_n": 889,
+          "missing_n": 8,
+          "missing_pct": 0.8918617614269788,
+          "mean": 48.736782902137236,
+          "sd": 15.60883063181481,
+          "median": 52.0,
+          "q1": 41.0,
+          "q3": 59.0,
+          "min": 2.0,
+          "max": 81.0
+        },
+        "sex": {
+          "total_n": 897,
+          "nonmissing_n": 894,
+          "missing_n": 3,
+          "male_n": 561,
+          "female_n": 333,
+          "male_pct_nonmissing": 62.751677852349,
+          "female_pct_nonmissing": 37.24832214765101
+        },
+        "features": {
+          "glomerulus_count": {
+            "total_n": 897,
+            "available_n": 603,
+            "missing_n": 294,
+            "missing_pct": 32.77591973244147,
+            "mean": 1.6616915422885572,
+            "sd": 0.5203261733016132,
+            "median": 2.0,
+            "q1": 1.0,
+            "q3": 2.0,
+            "min": 1.0,
+            "max": 4.0
+          },
+          "sclerosis_rate": {
+            "total_n": 897,
+            "available_n": 603,
+            "missing_n": 294,
+            "missing_pct": 32.77591973244147,
+            "mean": 0.015616362631288003,
+            "sd": 0.09677239918394398,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "mesangial_cell_count": {
+            "total_n": 897,
+            "available_n": 882,
+            "missing_n": 15,
+            "missing_pct": 1.6722408026755853,
+            "mean": 1.7414965986394557,
+            "sd": 0.8022819501005884,
+            "median": 1.5,
+            "q1": 1.5,
+            "q3": 1.5,
+            "min": 0.5,
+            "max": 6.5
+          },
+          "mesangial_matrix_grade": {
+            "total_n": 897,
+            "available_n": 575,
+            "missing_n": 322,
+            "missing_pct": 35.8974358974359,
+            "mean": 1.0982608695652174,
+            "sd": 0.22936915785291498,
+            "median": 1.0,
+            "q1": 1.0,
+            "q3": 1.0,
+            "min": 1.0,
+            "max": 3.0
+          },
+          "gbm_thickness_nm": {
+            "total_n": 897,
+            "available_n": 115,
+            "missing_n": 782,
+            "missing_pct": 87.17948717948718,
+            "mean": 1140.9130434782608,
+            "sd": 472.6973655413988,
+            "median": 1050.0,
+            "q1": 812.5,
+            "q3": 1362.5,
+            "min": 395.0,
+            "max": 3500.0
+          },
+          "spike_presence": {
+            "total_n": 897,
+            "available_n": 803,
+            "missing_n": 94,
+            "missing_pct": 10.479375696767,
+            "mean": 1.0,
+            "sd": 0.0,
+            "median": 1.0,
+            "q1": 1.0,
+            "q3": 1.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "foot_process_grade": {
+            "total_n": 897,
+            "available_n": 895,
+            "missing_n": 2,
+            "missing_pct": 0.2229654403567447,
+            "mean": 2.8536312849162013,
+            "sd": 0.4559152585267567,
+            "median": 3.0,
+            "q1": 3.0,
+            "q3": 3.0,
+            "min": 1.0,
+            "max": 3.0
+          }
+        }
+      },
+      "MsPGN": {
+        "cohort_n": 737,
+        "age": {
+          "total_n": 737,
+          "available_n": 732,
+          "missing_n": 5,
+          "missing_pct": 0.6784260515603799,
+          "mean": 28.94945355191257,
+          "sd": 18.23156752505248,
+          "median": 27.0,
+          "q1": 12.0,
+          "q3": 43.0,
+          "min": 2.0,
+          "max": 74.0
+        },
+        "sex": {
+          "total_n": 737,
+          "nonmissing_n": 736,
+          "missing_n": 1,
+          "male_n": 372,
+          "female_n": 364,
+          "male_pct_nonmissing": 50.54347826086957,
+          "female_pct_nonmissing": 49.45652173913043
+        },
+        "features": {
+          "glomerulus_count": {
+            "total_n": 737,
+            "available_n": 259,
+            "missing_n": 478,
+            "missing_pct": 64.85753052917232,
+            "mean": 1.6293436293436294,
+            "sd": 0.5224309175687615,
+            "median": 2.0,
+            "q1": 1.0,
+            "q3": 2.0,
+            "min": 1.0,
+            "max": 3.0
+          },
+          "sclerosis_rate": {
+            "total_n": 737,
+            "available_n": 259,
+            "missing_n": 478,
+            "missing_pct": 64.85753052917232,
+            "mean": 0.02702702702702703,
+            "sd": 0.14347312649551655,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "mesangial_cell_count": {
+            "total_n": 737,
+            "available_n": 680,
+            "missing_n": 57,
+            "missing_pct": 7.734056987788331,
+            "mean": 2.222058823529412,
+            "sd": 1.2535481998384432,
+            "median": 1.5,
+            "q1": 1.5,
+            "q3": 3.5,
+            "min": 0.5,
+            "max": 6.5
+          },
+          "mesangial_matrix_grade": {
+            "total_n": 737,
+            "available_n": 254,
+            "missing_n": 483,
+            "missing_pct": 65.5359565807327,
+            "mean": 1.1338582677165354,
+            "sd": 0.28429803224241335,
+            "median": 1.0,
+            "q1": 1.0,
+            "q3": 1.0,
+            "min": 1.0,
+            "max": 3.0
+          },
+          "gbm_thickness_nm": {
+            "total_n": 737,
+            "available_n": 120,
+            "missing_n": 617,
+            "missing_pct": 83.71777476255089,
+            "mean": 539.8333333333334,
+            "sd": 357.65161522233956,
+            "median": 450.0,
+            "q1": 357.5,
+            "q3": 556.25,
+            "min": 200.0,
+            "max": 2250.0
+          },
+          "spike_presence": {
+            "total_n": 737,
+            "available_n": 37,
+            "missing_n": 700,
+            "missing_pct": 94.9796472184532,
+            "mean": 0.02702702702702703,
+            "sd": 0.1643989873053573,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "foot_process_grade": {
+            "total_n": 737,
+            "available_n": 691,
+            "missing_n": 46,
+            "missing_pct": 6.241519674355495,
+            "mean": 1.4384949348769898,
+            "sd": 0.7264526024937619,
+            "median": 1.0,
+            "q1": 1.0,
+            "q3": 2.0,
+            "min": 1.0,
+            "max": 3.0
+          }
+        }
+      },
+      "LN": {
+        "cohort_n": 722,
+        "age": {
+          "total_n": 722,
+          "available_n": 716,
+          "missing_n": 6,
+          "missing_pct": 0.8310249307479224,
+          "mean": 27.844972067039105,
+          "sd": 15.29476311945816,
+          "median": 27.0,
+          "q1": 13.0,
+          "q3": 39.0,
+          "min": 1.0,
+          "max": 71.0
+        },
+        "sex": {
+          "total_n": 722,
+          "nonmissing_n": 721,
+          "missing_n": 1,
+          "male_n": 128,
+          "female_n": 593,
+          "male_pct_nonmissing": 17.753120665742024,
+          "female_pct_nonmissing": 82.24687933425797
+        },
+        "features": {
+          "glomerulus_count": {
+            "total_n": 722,
+            "available_n": 491,
+            "missing_n": 231,
+            "missing_pct": 31.994459833795013,
+            "mean": 1.835030549898167,
+            "sd": 0.43714629910351643,
+            "median": 2.0,
+            "q1": 2.0,
+            "q3": 2.0,
+            "min": 1.0,
+            "max": 3.0
+          },
+          "sclerosis_rate": {
+            "total_n": 722,
+            "available_n": 490,
+            "missing_n": 232,
+            "missing_pct": 32.13296398891967,
+            "mean": 0.017346938775510204,
+            "sd": 0.11619874924450806,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "mesangial_cell_count": {
+            "total_n": 722,
+            "available_n": 677,
+            "missing_n": 45,
+            "missing_pct": 6.232686980609419,
+            "mean": 3.3670605612998523,
+            "sd": 1.5869919867011082,
+            "median": 4.0,
+            "q1": 1.5,
+            "q3": 4.5,
+            "min": 0.5,
+            "max": 7.5
+          },
+          "mesangial_matrix_grade": {
+            "total_n": 722,
+            "available_n": 471,
+            "missing_n": 251,
+            "missing_pct": 34.76454293628809,
+            "mean": 1.6592356687898089,
+            "sd": 0.639243776695698,
+            "median": 1.5,
+            "q1": 1.5,
+            "q3": 1.5,
+            "min": 1.0,
+            "max": 3.0
+          },
+          "gbm_thickness_nm": {
+            "total_n": 722,
+            "available_n": 131,
+            "missing_n": 591,
+            "missing_pct": 81.85595567867036,
+            "mean": 1348.8931297709923,
+            "sd": 788.8395298636559,
+            "median": 1125.0,
+            "q1": 737.5,
+            "q3": 1737.5,
+            "min": 350.0,
+            "max": 4725.0
+          },
+          "spike_presence": {
+            "total_n": 722,
+            "available_n": 308,
+            "missing_n": 414,
+            "missing_pct": 57.340720221606645,
+            "mean": 0.974025974025974,
+            "sd": 0.15931661664571925,
+            "median": 1.0,
+            "q1": 1.0,
+            "q3": 1.0,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "foot_process_grade": {
+            "total_n": 722,
+            "available_n": 714,
+            "missing_n": 8,
+            "missing_pct": 1.10803324099723,
+            "mean": 2.224089635854342,
+            "sd": 0.8240304415931716,
+            "median": 2.0,
+            "q1": 1.0,
+            "q3": 3.0,
+            "min": 1.0,
+            "max": 3.0
+          }
+        }
+      },
+      "EPGN": {
+        "cohort_n": 297,
+        "age": {
+          "total_n": 297,
+          "available_n": 294,
+          "missing_n": 3,
+          "missing_pct": 1.0101010101010102,
+          "mean": 12.874149659863946,
+          "sd": 10.89170137447625,
+          "median": 10.0,
+          "q1": 8.0,
+          "q3": 13.0,
+          "min": 1.0,
+          "max": 69.0
+        },
+        "sex": {
+          "total_n": 297,
+          "nonmissing_n": 295,
+          "missing_n": 2,
+          "male_n": 190,
+          "female_n": 105,
+          "male_pct_nonmissing": 64.40677966101694,
+          "female_pct_nonmissing": 35.59322033898305
+        },
+        "features": {
+          "glomerulus_count": {
+            "total_n": 297,
+            "available_n": 100,
+            "missing_n": 197,
+            "missing_pct": 66.32996632996633,
+            "mean": 1.81,
+            "sd": 0.4425591326123391,
+            "median": 2.0,
+            "q1": 2.0,
+            "q3": 2.0,
+            "min": 1.0,
+            "max": 3.0
+          },
+          "sclerosis_rate": {
+            "total_n": 297,
+            "available_n": 100,
+            "missing_n": 197,
+            "missing_pct": 66.32996632996633,
+            "mean": 0.0,
+            "sd": 0.0,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "mesangial_cell_count": {
+            "total_n": 297,
+            "available_n": 292,
+            "missing_n": 5,
+            "missing_pct": 1.6835016835016836,
+            "mean": 4.02054794520548,
+            "sd": 1.3282248085408037,
+            "median": 4.0,
+            "q1": 3.5,
+            "q3": 4.5,
+            "min": 0.5,
+            "max": 7.5
+          },
+          "mesangial_matrix_grade": {
+            "total_n": 297,
+            "available_n": 88,
+            "missing_n": 209,
+            "missing_pct": 70.37037037037037,
+            "mean": 1.5113636363636365,
+            "sd": 0.3472161267315891,
+            "median": 1.5,
+            "q1": 1.5,
+            "q3": 1.5,
+            "min": 1.0,
+            "max": 3.0
+          },
+          "gbm_thickness_nm": {
+            "total_n": 297,
+            "available_n": 10,
+            "missing_n": 287,
+            "missing_pct": 96.63299663299664,
+            "mean": 460.0,
+            "sd": 253.64016506329068,
+            "median": 362.5,
+            "q1": 312.5,
+            "q3": 481.25,
+            "min": 200.0,
+            "max": 975.0
+          },
+          "spike_presence": {
+            "total_n": 297,
+            "available_n": 3,
+            "missing_n": 294,
+            "missing_pct": 98.98989898989899,
+            "mean": 0.0,
+            "sd": 0.0,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "foot_process_grade": {
+            "total_n": 297,
+            "available_n": 295,
+            "missing_n": 2,
+            "missing_pct": 0.6734006734006734,
+            "mean": 1.7491525423728813,
+            "sd": 0.7636229617239687,
+            "median": 2.0,
+            "q1": 1.0,
+            "q3": 2.0,
+            "min": 1.0,
+            "max": 3.0
+          }
+        }
+      },
+      "DKD": {
+        "cohort_n": 165,
+        "age": {
+          "total_n": 165,
+          "available_n": 163,
+          "missing_n": 2,
+          "missing_pct": 1.2121212121212122,
+          "mean": 48.30061349693251,
+          "sd": 12.376867595363136,
+          "median": 50.0,
+          "q1": 40.5,
+          "q3": 57.0,
+          "min": 10.0,
+          "max": 85.0
+        },
+        "sex": {
+          "total_n": 165,
+          "nonmissing_n": 165,
+          "missing_n": 0,
+          "male_n": 118,
+          "female_n": 47,
+          "male_pct_nonmissing": 71.51515151515152,
+          "female_pct_nonmissing": 28.484848484848484
+        },
+        "features": {
+          "glomerulus_count": {
+            "total_n": 165,
+            "available_n": 126,
+            "missing_n": 39,
+            "missing_pct": 23.636363636363637,
+            "mean": 1.619047619047619,
+            "sd": 0.5037005913380345,
+            "median": 2.0,
+            "q1": 1.0,
+            "q3": 2.0,
+            "min": 1.0,
+            "max": 3.0
+          },
+          "sclerosis_rate": {
+            "total_n": 165,
+            "available_n": 123,
+            "missing_n": 42,
+            "missing_pct": 25.454545454545453,
+            "mean": 0.5149051490514904,
+            "sd": 0.4747773565455585,
+            "median": 0.5,
+            "q1": 0.0,
+            "q3": 1.0,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "mesangial_cell_count": {
+            "total_n": 165,
+            "available_n": 149,
+            "missing_n": 16,
+            "missing_pct": 9.696969696969697,
+            "mean": 3.2181208053691277,
+            "sd": 1.649449281200668,
+            "median": 3.5,
+            "q1": 1.5,
+            "q3": 4.5,
+            "min": 0.5,
+            "max": 7.5
+          },
+          "mesangial_matrix_grade": {
+            "total_n": 165,
+            "available_n": 116,
+            "missing_n": 49,
+            "missing_pct": 29.696969696969695,
+            "mean": 1.8922413793103448,
+            "sd": 0.5890524243398795,
+            "median": 1.5,
+            "q1": 1.5,
+            "q3": 2.5,
+            "min": 1.0,
+            "max": 3.0
+          },
+          "gbm_thickness_nm": {
+            "total_n": 165,
+            "available_n": 31,
+            "missing_n": 134,
+            "missing_pct": 81.21212121212122,
+            "mean": 1345.1612903225807,
+            "sd": 770.3197213613835,
+            "median": 1125.0,
+            "q1": 787.5,
+            "q3": 1625.0,
+            "min": 475.0,
+            "max": 3375.0
+          },
+          "spike_presence": {
+            "total_n": 165,
+            "available_n": 9,
+            "missing_n": 156,
+            "missing_pct": 94.54545454545455,
+            "mean": 0.0,
+            "sd": 0.0,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "foot_process_grade": {
+            "total_n": 165,
+            "available_n": 157,
+            "missing_n": 8,
+            "missing_pct": 4.848484848484849,
+            "mean": 2.2929936305732483,
+            "sd": 0.7273163394641139,
+            "median": 2.0,
+            "q1": 2.0,
+            "q3": 3.0,
+            "min": 1.0,
+            "max": 3.0
+          }
+        }
+      },
+      "TBMN": {
+        "cohort_n": 143,
+        "age": {
+          "total_n": 143,
+          "available_n": 140,
+          "missing_n": 3,
+          "missing_pct": 2.097902097902098,
+          "mean": 15.007142857142858,
+          "sd": 14.287639387247303,
+          "median": 10.0,
+          "q1": 5.75,
+          "q3": 17.0,
+          "min": 1.0,
+          "max": 59.0
+        },
+        "sex": {
+          "total_n": 143,
+          "nonmissing_n": 142,
+          "missing_n": 1,
+          "male_n": 65,
+          "female_n": 77,
+          "male_pct_nonmissing": 45.774647887323944,
+          "female_pct_nonmissing": 54.22535211267606
+        },
+        "features": {
+          "glomerulus_count": {
+            "total_n": 143,
+            "available_n": 95,
+            "missing_n": 48,
+            "missing_pct": 33.56643356643357,
+            "mean": 1.831578947368421,
+            "sd": 0.5583530412749695,
+            "median": 2.0,
+            "q1": 2.0,
+            "q3": 2.0,
+            "min": 1.0,
+            "max": 4.0
+          },
+          "sclerosis_rate": {
+            "total_n": 143,
+            "available_n": 95,
+            "missing_n": 48,
+            "missing_pct": 33.56643356643357,
+            "mean": 0.014035087719298244,
+            "sd": 0.07938578446212624,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "min": 0.0,
+            "max": 0.5
+          },
+          "mesangial_cell_count": {
+            "total_n": 143,
+            "available_n": 137,
+            "missing_n": 6,
+            "missing_pct": 4.195804195804196,
+            "mean": 1.7116788321167884,
+            "sd": 0.9089478155465589,
+            "median": 1.5,
+            "q1": 1.5,
+            "q3": 1.5,
+            "min": 0.5,
+            "max": 5.5
+          },
+          "mesangial_matrix_grade": {
+            "total_n": 143,
+            "available_n": 77,
+            "missing_n": 66,
+            "missing_pct": 46.15384615384615,
+            "mean": 1.0714285714285714,
+            "sd": 0.17611086733641673,
+            "median": 1.0,
+            "q1": 1.0,
+            "q3": 1.0,
+            "min": 1.0,
+            "max": 1.5
+          },
+          "gbm_thickness_nm": {
+            "total_n": 143,
+            "available_n": 28,
+            "missing_n": 115,
+            "missing_pct": 80.41958041958041,
+            "mean": 251.25,
+            "sd": 83.70611066680235,
+            "median": 240.0,
+            "q1": 200.0,
+            "q3": 258.75,
+            "min": 125.0,
+            "max": 525.0
+          },
+          "spike_presence": {
+            "total_n": 143,
+            "available_n": 3,
+            "missing_n": 140,
+            "missing_pct": 97.9020979020979,
+            "mean": 0.0,
+            "sd": 0.0,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "foot_process_grade": {
+            "total_n": 143,
+            "available_n": 140,
+            "missing_n": 3,
+            "missing_pct": 2.097902097902098,
+            "mean": 1.1928571428571428,
+            "sd": 0.5350509768146762,
+            "median": 1.0,
+            "q1": 1.0,
+            "q3": 1.0,
+            "min": 1.0,
+            "max": 3.0
+          }
+        }
+      },
+      "FSGS": {
+        "cohort_n": 139,
+        "age": {
+          "total_n": 139,
+          "available_n": 138,
+          "missing_n": 1,
+          "missing_pct": 0.7194244604316546,
+          "mean": 38.405797101449274,
+          "sd": 19.63225324837082,
+          "median": 39.0,
+          "q1": 21.25,
+          "q3": 55.0,
+          "min": 1.0,
+          "max": 79.0
+        },
+        "sex": {
+          "total_n": 139,
+          "nonmissing_n": 139,
+          "missing_n": 0,
+          "male_n": 94,
+          "female_n": 45,
+          "male_pct_nonmissing": 67.62589928057554,
+          "female_pct_nonmissing": 32.37410071942446
+        },
+        "features": {
+          "glomerulus_count": {
+            "total_n": 139,
+            "available_n": 129,
+            "missing_n": 10,
+            "missing_pct": 7.194244604316546,
+            "mean": 1.7751937984496124,
+            "sd": 0.5482972231930783,
+            "median": 2.0,
+            "q1": 1.0,
+            "q3": 2.0,
+            "min": 1.0,
+            "max": 4.0
+          },
+          "sclerosis_rate": {
+            "total_n": 139,
+            "available_n": 129,
+            "missing_n": 10,
+            "missing_pct": 7.194244604316546,
+            "mean": 0.4870801033591731,
+            "sd": 0.43780366599302667,
+            "median": 0.5,
+            "q1": 0.0,
+            "q3": 1.0,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "mesangial_cell_count": {
+            "total_n": 139,
+            "available_n": 138,
+            "missing_n": 1,
+            "missing_pct": 0.7194244604316546,
+            "mean": 3.608695652173913,
+            "sd": 1.7264992748658614,
+            "median": 4.5,
+            "q1": 1.5,
+            "q3": 4.5,
+            "min": 1.5,
+            "max": 15.0
+          },
+          "mesangial_matrix_grade": {
+            "total_n": 139,
+            "available_n": 74,
+            "missing_n": 65,
+            "missing_pct": 46.76258992805755,
+            "mean": 1.6418918918918919,
+            "sd": 0.5136511146727815,
+            "median": 1.5,
+            "q1": 1.5,
+            "q3": 1.5,
+            "min": 1.0,
+            "max": 3.0
+          },
+          "gbm_thickness_nm": {
+            "total_n": 139,
+            "available_n": 4,
+            "missing_n": 135,
+            "missing_pct": 97.12230215827338,
+            "mean": 931.25,
+            "sd": 661.870770367348,
+            "median": 800.0,
+            "q1": 631.25,
+            "q3": 1100.0,
+            "min": 275.0,
+            "max": 1850.0
+          },
+          "spike_presence": {
+            "total_n": 139,
+            "available_n": 1,
+            "missing_n": 138,
+            "missing_pct": 99.28057553956835,
+            "mean": 0.0,
+            "sd": null,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "foot_process_grade": {
+            "total_n": 139,
+            "available_n": 139,
+            "missing_n": 0,
+            "missing_pct": 0.0,
+            "mean": 2.2158273381294964,
+            "sd": 0.7872405478103731,
+            "median": 2.0,
+            "q1": 2.0,
+            "q3": 3.0,
+            "min": 1.0,
+            "max": 3.0
+          }
+        }
+      },
+      "MPGN": {
+        "cohort_n": 135,
+        "age": {
+          "total_n": 135,
+          "available_n": 133,
+          "missing_n": 2,
+          "missing_pct": 1.4814814814814814,
+          "mean": 41.4812030075188,
+          "sd": 18.874225452203248,
+          "median": 45.0,
+          "q1": 28.0,
+          "q3": 55.0,
+          "min": 4.0,
+          "max": 80.0
+        },
+        "sex": {
+          "total_n": 135,
+          "nonmissing_n": 135,
+          "missing_n": 0,
+          "male_n": 68,
+          "female_n": 67,
+          "male_pct_nonmissing": 50.37037037037037,
+          "female_pct_nonmissing": 49.629629629629626
+        },
+        "features": {
+          "glomerulus_count": {
+            "total_n": 135,
+            "available_n": 90,
+            "missing_n": 45,
+            "missing_pct": 33.333333333333336,
+            "mean": 1.5777777777777777,
+            "sd": 0.5992088000167205,
+            "median": 2.0,
+            "q1": 1.0,
+            "q3": 2.0,
+            "min": 1.0,
+            "max": 3.0
+          },
+          "sclerosis_rate": {
+            "total_n": 135,
+            "available_n": 89,
+            "missing_n": 46,
+            "missing_pct": 34.074074074074076,
+            "mean": 0.11048689138576778,
+            "sd": 0.2875179180019415,
+            "median": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "mesangial_cell_count": {
+            "total_n": 135,
+            "available_n": 126,
+            "missing_n": 9,
+            "missing_pct": 6.666666666666667,
+            "mean": 3.6785714285714284,
+            "sd": 1.368889017728297,
+            "median": 4.0,
+            "q1": 3.0,
+            "q3": 4.5,
+            "min": 0.5,
+            "max": 6.5
+          },
+          "mesangial_matrix_grade": {
+            "total_n": 135,
+            "available_n": 79,
+            "missing_n": 56,
+            "missing_pct": 41.48148148148148,
+            "mean": 1.7215189873417722,
+            "sd": 0.5814815044517532,
+            "median": 1.5,
+            "q1": 1.5,
+            "q3": 2.0,
+            "min": 1.0,
+            "max": 3.0
+          },
+          "gbm_thickness_nm": {
+            "total_n": 135,
+            "available_n": 34,
+            "missing_n": 101,
+            "missing_pct": 74.81481481481481,
+            "mean": 1304.7058823529412,
+            "sd": 756.4479805228358,
+            "median": 1187.5,
+            "q1": 806.25,
+            "q3": 1693.75,
+            "min": 260.0,
+            "max": 4150.0
+          },
+          "spike_presence": {
+            "total_n": 135,
+            "available_n": 22,
+            "missing_n": 113,
+            "missing_pct": 83.70370370370371,
+            "mean": 0.5909090909090909,
+            "sd": 0.5032362797401964,
+            "median": 1.0,
+            "q1": 0.0,
+            "q3": 1.0,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "foot_process_grade": {
+            "total_n": 135,
+            "available_n": 134,
+            "missing_n": 1,
+            "missing_pct": 0.7407407407407407,
+            "mean": 2.373134328358209,
+            "sd": 0.7625801256167353,
+            "median": 3.0,
+            "q1": 2.0,
+            "q3": 3.0,
+            "min": 1.0,
+            "max": 3.0
+          }
+        }
+      }
+    },
+    "nine_feature_missingness": {
+      "primary_linked_model_cohort": {
+        "overall": {
+          "age": {
+            "n": 8113,
+            "available_n": 8039,
+            "missing_n": 74,
+            "missing_pct": 0.9121163564649328
+          },
+          "sex_binary": {
+            "n": 8113,
+            "available_n": 8099,
+            "missing_n": 14,
+            "missing_pct": 0.1725625539257981
+          },
+          "glomerulus_count": {
+            "n": 8113,
+            "available_n": 5350,
+            "missing_n": 2763,
+            "missing_pct": 34.05645260692716
+          },
+          "sclerosis_rate": {
+            "n": 8113,
+            "available_n": 5345,
+            "missing_n": 2768,
+            "missing_pct": 34.11808209047208
+          },
+          "mesangial_cell_count": {
+            "n": 8113,
+            "available_n": 7850,
+            "missing_n": 263,
+            "missing_pct": 3.2417108344632073
+          },
+          "mesangial_matrix_grade": {
+            "n": 8113,
+            "available_n": 5027,
+            "missing_n": 3086,
+            "missing_pct": 38.0377172439295
+          },
+          "gbm_thickness_nm": {
+            "n": 8113,
+            "available_n": 1003,
+            "missing_n": 7110,
+            "missing_pct": 87.63712560088747
+          },
+          "spike_presence": {
+            "n": 8113,
+            "available_n": 1368,
+            "missing_n": 6745,
+            "missing_pct": 83.13817330210773
+          },
+          "foot_process_grade": {
+            "n": 8113,
+            "available_n": 8017,
+            "missing_n": 96,
+            "missing_pct": 1.1832860840626156
+          }
+        },
+        "development": {
+          "age": {
+            "n": 5139,
+            "available_n": 5076,
+            "missing_n": 63,
+            "missing_pct": 1.2259194395796849
+          },
+          "sex_binary": {
+            "n": 5139,
+            "available_n": 5128,
+            "missing_n": 11,
+            "missing_pct": 0.21404942595835766
+          },
+          "glomerulus_count": {
+            "n": 5139,
+            "available_n": 2435,
+            "missing_n": 2704,
+            "missing_pct": 52.61724070830901
+          },
+          "sclerosis_rate": {
+            "n": 5139,
+            "available_n": 2432,
+            "missing_n": 2707,
+            "missing_pct": 52.675617824479474
+          },
+          "mesangial_cell_count": {
+            "n": 5139,
+            "available_n": 5029,
+            "missing_n": 110,
+            "missing_pct": 2.1404942595835768
+          },
+          "mesangial_matrix_grade": {
+            "n": 5139,
+            "available_n": 2405,
+            "missing_n": 2734,
+            "missing_pct": 53.20101187001362
+          },
+          "gbm_thickness_nm": {
+            "n": 5139,
+            "available_n": 193,
+            "missing_n": 4946,
+            "missing_pct": 96.24440552636699
+          },
+          "spike_presence": {
+            "n": 5139,
+            "available_n": 658,
+            "missing_n": 4481,
+            "missing_pct": 87.19595251994552
+          },
+          "foot_process_grade": {
+            "n": 5139,
+            "available_n": 5060,
+            "missing_n": 79,
+            "missing_pct": 1.5372640591554778
+          }
+        },
+        "temporal_test": {
+          "age": {
+            "n": 2974,
+            "available_n": 2963,
+            "missing_n": 11,
+            "missing_pct": 0.3698722259583053
+          },
+          "sex_binary": {
+            "n": 2974,
+            "available_n": 2971,
+            "missing_n": 3,
+            "missing_pct": 0.10087424344317418
+          },
+          "glomerulus_count": {
+            "n": 2974,
+            "available_n": 2915,
+            "missing_n": 59,
+            "missing_pct": 1.983860121049092
+          },
+          "sclerosis_rate": {
+            "n": 2974,
+            "available_n": 2913,
+            "missing_n": 61,
+            "missing_pct": 2.051109616677875
+          },
+          "mesangial_cell_count": {
+            "n": 2974,
+            "available_n": 2821,
+            "missing_n": 153,
+            "missing_pct": 5.144586415601883
+          },
+          "mesangial_matrix_grade": {
+            "n": 2974,
+            "available_n": 2622,
+            "missing_n": 352,
+            "missing_pct": 11.83591123066577
+          },
+          "gbm_thickness_nm": {
+            "n": 2974,
+            "available_n": 810,
+            "missing_n": 2164,
+            "missing_pct": 72.76395427034296
+          },
+          "spike_presence": {
+            "n": 2974,
+            "available_n": 710,
+            "missing_n": 2264,
+            "missing_pct": 76.12642905178211
+          },
+          "foot_process_grade": {
+            "n": 2974,
+            "available_n": 2957,
+            "missing_n": 17,
+            "missing_pct": 0.5716207128446537
+          }
+        }
+      },
+      "secondary_all_eligible_registry_cohort": {
+        "overall": {
+          "age": {
+            "n": 8208,
+            "available_n": 8131,
+            "missing_n": 77,
+            "missing_pct": 0.9381091617933722
+          },
+          "sex_binary": {
+            "n": 8208,
+            "available_n": 8193,
+            "missing_n": 15,
+            "missing_pct": 0.18274853801169588
+          },
+          "glomerulus_count": {
+            "n": 8208,
+            "available_n": 5350,
+            "missing_n": 2858,
+            "missing_pct": 34.819688109161795
+          },
+          "sclerosis_rate": {
+            "n": 8208,
+            "available_n": 5345,
+            "missing_n": 2863,
+            "missing_pct": 34.88060428849902
+          },
+          "mesangial_cell_count": {
+            "n": 8208,
+            "available_n": 7850,
+            "missing_n": 358,
+            "missing_pct": 4.361598440545809
+          },
+          "mesangial_matrix_grade": {
+            "n": 8208,
+            "available_n": 5027,
+            "missing_n": 3181,
+            "missing_pct": 38.75487329434698
+          },
+          "gbm_thickness_nm": {
+            "n": 8208,
+            "available_n": 1003,
+            "missing_n": 7205,
+            "missing_pct": 87.78021442495127
+          },
+          "spike_presence": {
+            "n": 8208,
+            "available_n": 1368,
+            "missing_n": 6840,
+            "missing_pct": 83.33333333333334
+          },
+          "foot_process_grade": {
+            "n": 8208,
+            "available_n": 8017,
+            "missing_n": 191,
+            "missing_pct": 2.326998050682261
+          }
+        },
+        "development": {
+          "age": {
+            "n": 5208,
+            "available_n": 5144,
+            "missing_n": 64,
+            "missing_pct": 1.228878648233487
+          },
+          "sex_binary": {
+            "n": 5208,
+            "available_n": 5197,
+            "missing_n": 11,
+            "missing_pct": 0.21121351766513058
+          },
+          "glomerulus_count": {
+            "n": 5208,
+            "available_n": 2435,
+            "missing_n": 2773,
+            "missing_pct": 53.245007680491554
+          },
+          "sclerosis_rate": {
+            "n": 5208,
+            "available_n": 2432,
+            "missing_n": 2776,
+            "missing_pct": 53.3026113671275
+          },
+          "mesangial_cell_count": {
+            "n": 5208,
+            "available_n": 5029,
+            "missing_n": 179,
+            "missing_pct": 3.4370199692780337
+          },
+          "mesangial_matrix_grade": {
+            "n": 5208,
+            "available_n": 2405,
+            "missing_n": 2803,
+            "missing_pct": 53.82104454685099
+          },
+          "gbm_thickness_nm": {
+            "n": 5208,
+            "available_n": 193,
+            "missing_n": 5015,
+            "missing_pct": 96.29416282642089
+          },
+          "spike_presence": {
+            "n": 5208,
+            "available_n": 658,
+            "missing_n": 4550,
+            "missing_pct": 87.36559139784946
+          },
+          "foot_process_grade": {
+            "n": 5208,
+            "available_n": 5060,
+            "missing_n": 148,
+            "missing_pct": 2.8417818740399383
+          }
+        },
+        "temporal_test": {
+          "age": {
+            "n": 3000,
+            "available_n": 2987,
+            "missing_n": 13,
+            "missing_pct": 0.4333333333333333
+          },
+          "sex_binary": {
+            "n": 3000,
+            "available_n": 2996,
+            "missing_n": 4,
+            "missing_pct": 0.13333333333333333
+          },
+          "glomerulus_count": {
+            "n": 3000,
+            "available_n": 2915,
+            "missing_n": 85,
+            "missing_pct": 2.833333333333333
+          },
+          "sclerosis_rate": {
+            "n": 3000,
+            "available_n": 2913,
+            "missing_n": 87,
+            "missing_pct": 2.9000000000000004
+          },
+          "mesangial_cell_count": {
+            "n": 3000,
+            "available_n": 2821,
+            "missing_n": 179,
+            "missing_pct": 5.966666666666667
+          },
+          "mesangial_matrix_grade": {
+            "n": 3000,
+            "available_n": 2622,
+            "missing_n": 378,
+            "missing_pct": 12.6
+          },
+          "gbm_thickness_nm": {
+            "n": 3000,
+            "available_n": 810,
+            "missing_n": 2190,
+            "missing_pct": 73.0
+          },
+          "spike_presence": {
+            "n": 3000,
+            "available_n": 710,
+            "missing_n": 2290,
+            "missing_pct": 76.33333333333333
+          },
+          "foot_process_grade": {
+            "n": 3000,
+            "available_n": 2957,
+            "missing_n": 43,
+            "missing_pct": 1.4333333333333333
+          }
+        }
+      },
+      "interpretation": "Use the primary linked-cohort values for model/ablation reporting; the secondary table shows the full 8,208-patient registry task and treats unlinked morphometry as missing."
+    },
+    "temporal_source_data": {
+      "unit": "patient-level earliest canonical check",
+      "annual": {
+        "2014": {
+          "n": 135,
+          "unique_patients_n": 135,
+          "calendar_months_observed_in_window": 8,
+          "months_with_at_least_one_case": 7,
+          "lambda_per_observed_calendar_month_for_Table3": 16.875,
+          "rho_c2_mu22_for_Table3": 0.3835227272727273,
+          "lambda_if_divided_by_12_auxiliary": 11.25,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 0.2556818181818182,
+          "top_disease_code": "IgAVN",
+          "top_disease_n": 50,
+          "top_disease_pct": 37.03703703703704
+        },
+        "2015": {
+          "n": 321,
+          "unique_patients_n": 321,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 12,
+          "lambda_per_observed_calendar_month_for_Table3": 26.75,
+          "rho_c2_mu22_for_Table3": 0.6079545454545454,
+          "lambda_if_divided_by_12_auxiliary": 26.75,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 0.6079545454545454,
+          "top_disease_code": "IgAVN",
+          "top_disease_n": 112,
+          "top_disease_pct": 34.890965732087224
+        },
+        "2016": {
+          "n": 685,
+          "unique_patients_n": 685,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 12,
+          "lambda_per_observed_calendar_month_for_Table3": 57.083333333333336,
+          "rho_c2_mu22_for_Table3": 1.2973484848484849,
+          "lambda_if_divided_by_12_auxiliary": 57.083333333333336,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 1.2973484848484849,
+          "top_disease_code": "IgAVN",
+          "top_disease_n": 204,
+          "top_disease_pct": 29.781021897810216
+        },
+        "2017": {
+          "n": 720,
+          "unique_patients_n": 720,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 12,
+          "lambda_per_observed_calendar_month_for_Table3": 60.0,
+          "rho_c2_mu22_for_Table3": 1.3636363636363635,
+          "lambda_if_divided_by_12_auxiliary": 60.0,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 1.3636363636363635,
+          "top_disease_code": "IgAVN",
+          "top_disease_n": 193,
+          "top_disease_pct": 26.805555555555554
+        },
+        "2018": {
+          "n": 815,
+          "unique_patients_n": 815,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 12,
+          "lambda_per_observed_calendar_month_for_Table3": 67.91666666666667,
+          "rho_c2_mu22_for_Table3": 1.5435606060606062,
+          "lambda_if_divided_by_12_auxiliary": 67.91666666666667,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 1.543560606060606,
+          "top_disease_code": "IgAVN",
+          "top_disease_n": 270,
+          "top_disease_pct": 33.12883435582822
+        },
+        "2019": {
+          "n": 789,
+          "unique_patients_n": 789,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 12,
+          "lambda_per_observed_calendar_month_for_Table3": 65.75,
+          "rho_c2_mu22_for_Table3": 1.4943181818181819,
+          "lambda_if_divided_by_12_auxiliary": 65.75,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 1.4943181818181819,
+          "top_disease_code": "IgAVN",
+          "top_disease_n": 271,
+          "top_disease_pct": 34.347275031685676
+        },
+        "2020": {
+          "n": 625,
+          "unique_patients_n": 625,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 12,
+          "lambda_per_observed_calendar_month_for_Table3": 52.083333333333336,
+          "rho_c2_mu22_for_Table3": 1.1837121212121213,
+          "lambda_if_divided_by_12_auxiliary": 52.083333333333336,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 1.183712121212121,
+          "top_disease_code": "IgAVN",
+          "top_disease_n": 189,
+          "top_disease_pct": 30.240000000000002
+        },
+        "2021": {
+          "n": 1118,
+          "unique_patients_n": 1118,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 12,
+          "lambda_per_observed_calendar_month_for_Table3": 93.16666666666667,
+          "rho_c2_mu22_for_Table3": 2.1174242424242427,
+          "lambda_if_divided_by_12_auxiliary": 93.16666666666667,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 2.117424242424242,
+          "top_disease_code": "IgAN",
+          "top_disease_n": 386,
+          "top_disease_pct": 34.52593917710197
+        },
+        "2022": {
+          "n": 1209,
+          "unique_patients_n": 1209,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 12,
+          "lambda_per_observed_calendar_month_for_Table3": 100.75,
+          "rho_c2_mu22_for_Table3": 2.289772727272727,
+          "lambda_if_divided_by_12_auxiliary": 100.75,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 2.289772727272727,
+          "top_disease_code": "IgAN",
+          "top_disease_n": 460,
+          "top_disease_pct": 38.0479735318445
+        },
+        "2023": {
+          "n": 894,
+          "unique_patients_n": 894,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 12,
+          "lambda_per_observed_calendar_month_for_Table3": 74.5,
+          "rho_c2_mu22_for_Table3": 1.6931818181818181,
+          "lambda_if_divided_by_12_auxiliary": 74.5,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 1.6931818181818181,
+          "top_disease_code": "IgAN",
+          "top_disease_n": 300,
+          "top_disease_pct": 33.557046979865774
+        },
+        "2024": {
+          "n": 460,
+          "unique_patients_n": 460,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 11,
+          "lambda_per_observed_calendar_month_for_Table3": 38.333333333333336,
+          "rho_c2_mu22_for_Table3": 0.8712121212121212,
+          "lambda_if_divided_by_12_auxiliary": 38.333333333333336,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 0.8712121212121212,
+          "top_disease_code": "IgAN",
+          "top_disease_n": 130,
+          "top_disease_pct": 28.26086956521739
+        },
+        "2025": {
+          "n": 315,
+          "unique_patients_n": 315,
+          "calendar_months_observed_in_window": 12,
+          "months_with_at_least_one_case": 12,
+          "lambda_per_observed_calendar_month_for_Table3": 26.25,
+          "rho_c2_mu22_for_Table3": 0.5965909090909091,
+          "lambda_if_divided_by_12_auxiliary": 26.25,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 0.5965909090909091,
+          "top_disease_code": "IgAN",
+          "top_disease_n": 126,
+          "top_disease_pct": 40.0
+        },
+        "2026": {
+          "n": 122,
+          "unique_patients_n": 122,
+          "calendar_months_observed_in_window": 4,
+          "months_with_at_least_one_case": 4,
+          "lambda_per_observed_calendar_month_for_Table3": 30.5,
+          "rho_c2_mu22_for_Table3": 0.6931818181818182,
+          "lambda_if_divided_by_12_auxiliary": 10.166666666666666,
+          "rho_if_divided_by_full_year_capacity_528_auxiliary": 0.23106060606060605,
+          "top_disease_code": "IgAN",
+          "top_disease_n": 55,
+          "top_disease_pct": 45.08196721311475
+        }
+      },
+      "year_month_matrix": {
+        "2014": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 6,
+          "6": 0,
+          "7": 16,
+          "8": 24,
+          "9": 11,
+          "10": 26,
+          "11": 23,
+          "12": 29
+        },
+        "2015": {
+          "1": 18,
+          "2": 14,
+          "3": 12,
+          "4": 18,
+          "5": 11,
+          "6": 11,
+          "7": 19,
+          "8": 14,
+          "9": 45,
+          "10": 54,
+          "11": 49,
+          "12": 56
+        },
+        "2016": {
+          "1": 45,
+          "2": 44,
+          "3": 74,
+          "4": 48,
+          "5": 41,
+          "6": 65,
+          "7": 49,
+          "8": 49,
+          "9": 59,
+          "10": 47,
+          "11": 84,
+          "12": 80
+        },
+        "2017": {
+          "1": 50,
+          "2": 60,
+          "3": 77,
+          "4": 58,
+          "5": 73,
+          "6": 56,
+          "7": 49,
+          "8": 69,
+          "9": 51,
+          "10": 40,
+          "11": 73,
+          "12": 64
+        },
+        "2018": {
+          "1": 73,
+          "2": 31,
+          "3": 81,
+          "4": 61,
+          "5": 98,
+          "6": 45,
+          "7": 55,
+          "8": 63,
+          "9": 71,
+          "10": 77,
+          "11": 80,
+          "12": 80
+        },
+        "2019": {
+          "1": 72,
+          "2": 82,
+          "3": 83,
+          "4": 57,
+          "5": 64,
+          "6": 46,
+          "7": 69,
+          "8": 68,
+          "9": 49,
+          "10": 65,
+          "11": 66,
+          "12": 68
+        },
+        "2020": {
+          "1": 73,
+          "2": 16,
+          "3": 20,
+          "4": 45,
+          "5": 50,
+          "6": 57,
+          "7": 58,
+          "8": 79,
+          "9": 42,
+          "10": 48,
+          "11": 63,
+          "12": 74
+        },
+        "2021": {
+          "1": 58,
+          "2": 49,
+          "3": 71,
+          "4": 64,
+          "5": 61,
+          "6": 93,
+          "7": 122,
+          "8": 90,
+          "9": 129,
+          "10": 89,
+          "11": 149,
+          "12": 143
+        },
+        "2022": {
+          "1": 138,
+          "2": 110,
+          "3": 139,
+          "4": 91,
+          "5": 122,
+          "6": 101,
+          "7": 103,
+          "8": 103,
+          "9": 111,
+          "10": 95,
+          "11": 53,
+          "12": 43
+        },
+        "2023": {
+          "1": 35,
+          "2": 87,
+          "3": 94,
+          "4": 106,
+          "5": 90,
+          "6": 98,
+          "7": 55,
+          "8": 121,
+          "9": 47,
+          "10": 54,
+          "11": 52,
+          "12": 55
+        },
+        "2024": {
+          "1": 61,
+          "2": 21,
+          "3": 49,
+          "4": 47,
+          "5": 29,
+          "6": 36,
+          "7": 71,
+          "8": 68,
+          "9": 0,
+          "10": 32,
+          "11": 20,
+          "12": 26
+        },
+        "2025": {
+          "1": 17,
+          "2": 23,
+          "3": 27,
+          "4": 30,
+          "5": 41,
+          "6": 24,
+          "7": 35,
+          "8": 15,
+          "9": 23,
+          "10": 28,
+          "11": 18,
+          "12": 34
+        },
+        "2026": {
+          "1": 26,
+          "2": 32,
+          "3": 29,
+          "4": 35,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0
+        }
+      },
+      "top_disease_by_year": {
+        "2014": {
+          "disease_code": "IgAVN",
+          "n": 50,
+          "pct": 37.03703703703704
+        },
+        "2015": {
+          "disease_code": "IgAVN",
+          "n": 112,
+          "pct": 34.890965732087224
+        },
+        "2016": {
+          "disease_code": "IgAVN",
+          "n": 204,
+          "pct": 29.781021897810216
+        },
+        "2017": {
+          "disease_code": "IgAVN",
+          "n": 193,
+          "pct": 26.805555555555554
+        },
+        "2018": {
+          "disease_code": "IgAVN",
+          "n": 270,
+          "pct": 33.12883435582822
+        },
+        "2019": {
+          "disease_code": "IgAVN",
+          "n": 271,
+          "pct": 34.347275031685676
+        },
+        "2020": {
+          "disease_code": "IgAVN",
+          "n": 189,
+          "pct": 30.240000000000002
+        },
+        "2021": {
+          "disease_code": "IgAN",
+          "n": 386,
+          "pct": 34.52593917710197
+        },
+        "2022": {
+          "disease_code": "IgAN",
+          "n": 460,
+          "pct": 38.0479735318445
+        },
+        "2023": {
+          "disease_code": "IgAN",
+          "n": 300,
+          "pct": 33.557046979865774
+        },
+        "2024": {
+          "disease_code": "IgAN",
+          "n": 130,
+          "pct": 28.26086956521739
+        },
+        "2025": {
+          "disease_code": "IgAN",
+          "n": 126,
+          "pct": 40.0
+        },
+        "2026": {
+          "disease_code": "IgAN",
+          "n": 55,
+          "pct": 45.08196721311475
+        }
+      },
+      "seasonality_complete_years": {
+        "complete_calendar_years": "2015-2025",
+        "n": 7951,
+        "month_counts": {
+          "1": 640,
+          "2": 537,
+          "3": 727,
+          "4": 625,
+          "5": 680,
+          "6": 632,
+          "7": 685,
+          "8": 739,
+          "9": 627,
+          "10": 629,
+          "11": 707,
+          "12": 723
+        },
+        "overall_month_mean": 662.5833333333334,
+        "May_Aug_mean": 684.0,
+        "May_Aug_pct_vs_overall": 3.232297824173047,
+        "Q2_Q3_mean": 664.6666666666666,
+        "Q2_Q3_pct_vs_overall": 0.3144258583825721
+      }
+    },
+    "pairwise_spearman_available_case": {
+      "scope": "linked model cohort (n=7,754), pairwise complete, no imputation",
+      "features": [
+        "age",
+        "sex_binary",
+        "glomerulus_count",
+        "sclerosis_rate",
+        "mesangial_cell_count",
+        "mesangial_matrix_grade",
+        "gbm_thickness_nm",
+        "spike_presence",
+        "foot_process_grade"
+      ],
+      "nested": {
+        "age": {
+          "age": {
+            "n": 8039,
+            "rho": 1.0,
+            "p": 0.0
+          },
+          "sex_binary": {
+            "n": 8028,
+            "rho": -0.08999374174013271,
+            "p": 6.556882573817925e-16
+          },
+          "glomerulus_count": {
+            "n": 5304,
+            "rho": -0.2589349083136243,
+            "p": 5.287638553362268e-82
+          },
+          "sclerosis_rate": {
+            "n": 5299,
+            "rho": 0.1857013333443553,
+            "p": 2.5299995741054275e-42
+          },
+          "mesangial_cell_count": {
+            "n": 7777,
+            "rho": 0.09009478218253311,
+            "p": 1.7185816123052274e-15
+          },
+          "mesangial_matrix_grade": {
+            "n": 4985,
+            "rho": 0.12698067066230564,
+            "p": 2.265149814699478e-19
+          },
+          "gbm_thickness_nm": {
+            "n": 999,
+            "rho": 0.3282115877519105,
+            "p": 1.6104132017761243e-26
+          },
+          "spike_presence": {
+            "n": 1354,
+            "rho": 0.32806344934054127,
+            "p": 2.441329159708008e-35
+          },
+          "foot_process_grade": {
+            "n": 7943,
+            "rho": 0.2857390491875528,
+            "p": 4.22265406128091e-149
+          }
+        },
+        "sex_binary": {
+          "age": {
+            "n": 8028,
+            "rho": -0.0899937417401327,
+            "p": 6.556882573818059e-16
+          },
+          "sex_binary": {
+            "n": 8099,
+            "rho": 1.0,
+            "p": 0.0
+          },
+          "glomerulus_count": {
+            "n": 5346,
+            "rho": 0.012890638756799648,
+            "p": 0.3460210798661366
+          },
+          "sclerosis_rate": {
+            "n": 5341,
+            "rho": 0.02085214935892113,
+            "p": 0.12757647752550597
+          },
+          "mesangial_cell_count": {
+            "n": 7837,
+            "rho": -0.08364553729161431,
+            "p": 1.200809882629549e-13
+          },
+          "mesangial_matrix_grade": {
+            "n": 5023,
+            "rho": -0.10029171680702452,
+            "p": 1.0469750734730852e-12
+          },
+          "gbm_thickness_nm": {
+            "n": 1003,
+            "rho": 0.0460385931422292,
+            "p": 0.14511506904550228
+          },
+          "spike_presence": {
+            "n": 1365,
+            "rho": 0.0022720016118930866,
+            "p": 0.9331642718976776
+          },
+          "foot_process_grade": {
+            "n": 8003,
+            "rho": 0.09844428325125155,
+            "p": 1.0766852566198371e-18
+          }
+        },
+        "glomerulus_count": {
+          "age": {
+            "n": 5304,
+            "rho": -0.2589349083136243,
+            "p": 5.287638553362268e-82
+          },
+          "sex_binary": {
+            "n": 5346,
+            "rho": 0.01289063875679965,
+            "p": 0.34602107986613667
+          },
+          "glomerulus_count": {
+            "n": 5350,
+            "rho": 1.0,
+            "p": 0.0
+          },
+          "sclerosis_rate": {
+            "n": 5345,
+            "rho": -0.04023902877154628,
+            "p": 0.003257219543258259
+          },
+          "mesangial_cell_count": {
+            "n": 5184,
+            "rho": 0.01622703634215973,
+            "p": 0.24274958360722246
+          },
+          "mesangial_matrix_grade": {
+            "n": 4943,
+            "rho": 0.01600776850224051,
+            "p": 0.26048854226928425
+          },
+          "gbm_thickness_nm": {
+            "n": 926,
+            "rho": -0.04145677013976373,
+            "p": 0.20753315598318617
+          },
+          "spike_presence": {
+            "n": 998,
+            "rho": 0.12926792200860654,
+            "p": 4.2071498928214435e-05
+          },
+          "foot_process_grade": {
+            "n": 5312,
+            "rho": -0.045728887963782244,
+            "p": 0.0008565604628432387
+          }
+        },
+        "sclerosis_rate": {
+          "age": {
+            "n": 5299,
+            "rho": 0.1857013333443553,
+            "p": 2.5299995741054275e-42
+          },
+          "sex_binary": {
+            "n": 5341,
+            "rho": 0.020852149358921133,
+            "p": 0.12757647752550588
+          },
+          "glomerulus_count": {
+            "n": 5345,
+            "rho": -0.04023902877154628,
+            "p": 0.003257219543258259
+          },
+          "sclerosis_rate": {
+            "n": 5345,
+            "rho": 1.0,
+            "p": 0.0
+          },
+          "mesangial_cell_count": {
+            "n": 5183,
+            "rho": 0.248497742252239,
+            "p": 8.6703582167546e-74
+          },
+          "mesangial_matrix_grade": {
+            "n": 4942,
+            "rho": 0.2186176636527391,
+            "p": 1.5112974794320517e-54
+          },
+          "gbm_thickness_nm": {
+            "n": 925,
+            "rho": 0.16075875395934372,
+            "p": 8.893035252622378e-07
+          },
+          "spike_presence": {
+            "n": 998,
+            "rho": -0.07231040603086668,
+            "p": 0.022342380318466925
+          },
+          "foot_process_grade": {
+            "n": 5311,
+            "rho": 0.12022469508039317,
+            "p": 1.4769608195398801e-18
+          }
+        },
+        "mesangial_cell_count": {
+          "age": {
+            "n": 7777,
+            "rho": 0.09009478218253311,
+            "p": 1.7185816123052274e-15
+          },
+          "sex_binary": {
+            "n": 7837,
+            "rho": -0.08364553729161432,
+            "p": 1.200809882629538e-13
+          },
+          "glomerulus_count": {
+            "n": 5184,
+            "rho": 0.01622703634215973,
+            "p": 0.24274958360722246
+          },
+          "sclerosis_rate": {
+            "n": 5183,
+            "rho": 0.24849774225223897,
+            "p": 8.670358216755793e-74
+          },
+          "mesangial_cell_count": {
+            "n": 7850,
+            "rho": 1.0,
+            "p": 0.0
+          },
+          "mesangial_matrix_grade": {
+            "n": 4856,
+            "rho": 0.5850005804521847,
+            "p": 0.0
+          },
+          "gbm_thickness_nm": {
+            "n": 854,
+            "rho": 0.29581143458143233,
+            "p": 1.0440906067505348e-18
+          },
+          "spike_presence": {
+            "n": 1291,
+            "rho": 0.30784023745775074,
+            "p": 9.721660998607982e-30
+          },
+          "foot_process_grade": {
+            "n": 7777,
+            "rho": 0.0016437005182119626,
+            "p": 0.88476589551256
+          }
+        },
+        "mesangial_matrix_grade": {
+          "age": {
+            "n": 4985,
+            "rho": 0.12698067066230564,
+            "p": 2.265149814699478e-19
+          },
+          "sex_binary": {
+            "n": 5023,
+            "rho": -0.10029171680702452,
+            "p": 1.0469750734730852e-12
+          },
+          "glomerulus_count": {
+            "n": 4943,
+            "rho": 0.016007768502240508,
+            "p": 0.26048854226928436
+          },
+          "sclerosis_rate": {
+            "n": 4942,
+            "rho": 0.21861766365273907,
+            "p": 1.511297479432111e-54
+          },
+          "mesangial_cell_count": {
+            "n": 4856,
+            "rho": 0.5850005804521847,
+            "p": 0.0
+          },
+          "mesangial_matrix_grade": {
+            "n": 5027,
+            "rho": 1.0,
+            "p": 0.0
+          },
+          "gbm_thickness_nm": {
+            "n": 902,
+            "rho": 0.3538547386045265,
+            "p": 5.352748738384751e-28
+          },
+          "spike_presence": {
+            "n": 979,
+            "rho": 0.16944042448175192,
+            "p": 9.636199156755704e-08
+          },
+          "foot_process_grade": {
+            "n": 4993,
+            "rho": -0.014962518573469703,
+            "p": 0.29048264529702966
+          }
+        },
+        "gbm_thickness_nm": {
+          "age": {
+            "n": 999,
+            "rho": 0.3282115877519105,
+            "p": 1.6104132017761243e-26
+          },
+          "sex_binary": {
+            "n": 1003,
+            "rho": 0.046038593142229196,
+            "p": 0.14511506904550228
+          },
+          "glomerulus_count": {
+            "n": 926,
+            "rho": -0.04145677013976374,
+            "p": 0.20753315598318609
+          },
+          "sclerosis_rate": {
+            "n": 925,
+            "rho": 0.16075875395934372,
+            "p": 8.893035252622378e-07
+          },
+          "mesangial_cell_count": {
+            "n": 854,
+            "rho": 0.29581143458143233,
+            "p": 1.0440906067505348e-18
+          },
+          "mesangial_matrix_grade": {
+            "n": 902,
+            "rho": 0.35385473860452654,
+            "p": 5.352748738384602e-28
+          },
+          "gbm_thickness_nm": {
+            "n": 1003,
+            "rho": 1.0,
+            "p": 0.0
+          },
+          "spike_presence": {
+            "n": 417,
+            "rho": 0.6292800948750813,
+            "p": 2.2823374895572193e-47
+          },
+          "foot_process_grade": {
+            "n": 994,
+            "rho": 0.47967148657030056,
+            "p": 2.4938734133300596e-58
+          }
+        },
+        "spike_presence": {
+          "age": {
+            "n": 1354,
+            "rho": 0.32806344934054127,
+            "p": 2.441329159708008e-35
+          },
+          "sex_binary": {
+            "n": 1365,
+            "rho": 0.002272001611893087,
+            "p": 0.9331642718976776
+          },
+          "glomerulus_count": {
+            "n": 998,
+            "rho": 0.12926792200860654,
+            "p": 4.2071498928214435e-05
+          },
+          "sclerosis_rate": {
+            "n": 998,
+            "rho": -0.07231040603086668,
+            "p": 0.022342380318466925
+          },
+          "mesangial_cell_count": {
+            "n": 1291,
+            "rho": 0.30784023745775074,
+            "p": 9.721660998607982e-30
+          },
+          "mesangial_matrix_grade": {
+            "n": 979,
+            "rho": 0.16944042448175195,
+            "p": 9.636199156755605e-08
+          },
+          "gbm_thickness_nm": {
+            "n": 417,
+            "rho": 0.6292800948750813,
+            "p": 2.2823374895572193e-47
+          },
+          "spike_presence": {
+            "n": 1368,
+            "rho": 1.0,
+            "p": 0.0
+          },
+          "foot_process_grade": {
+            "n": 1366,
+            "rho": 0.5960069608892598,
+            "p": 3.7612757035998845e-132
+          }
+        },
+        "foot_process_grade": {
+          "age": {
+            "n": 7943,
+            "rho": 0.2857390491875528,
+            "p": 4.22265406128091e-149
+          },
+          "sex_binary": {
+            "n": 8003,
+            "rho": 0.09844428325125157,
+            "p": 1.076685256619825e-18
+          },
+          "glomerulus_count": {
+            "n": 5312,
+            "rho": -0.04572888796378224,
+            "p": 0.0008565604628432409
+          },
+          "sclerosis_rate": {
+            "n": 5311,
+            "rho": 0.12022469508039318,
+            "p": 1.4769608195398801e-18
+          },
+          "mesangial_cell_count": {
+            "n": 7777,
+            "rho": 0.0016437005182119626,
+            "p": 0.88476589551256
+          },
+          "mesangial_matrix_grade": {
+            "n": 4993,
+            "rho": -0.014962518573469705,
+            "p": 0.2904826452970295
+          },
+          "gbm_thickness_nm": {
+            "n": 994,
+            "rho": 0.47967148657030056,
+            "p": 2.4938734133300596e-58
+          },
+          "spike_presence": {
+            "n": 1366,
+            "rho": 0.5960069608892598,
+            "p": 3.7612757035998845e-132
+          },
+          "foot_process_grade": {
+            "n": 8017,
+            "rho": 1.0,
+            "p": 0.0
+          }
+        }
+      },
+      "n_matrix": {
+        "age": {
+          "age": 8039,
+          "sex_binary": 8028,
+          "glomerulus_count": 5304,
+          "sclerosis_rate": 5299,
+          "mesangial_cell_count": 7777,
+          "mesangial_matrix_grade": 4985,
+          "gbm_thickness_nm": 999,
+          "spike_presence": 1354,
+          "foot_process_grade": 7943
+        },
+        "sex_binary": {
+          "age": 8028,
+          "sex_binary": 8099,
+          "glomerulus_count": 5346,
+          "sclerosis_rate": 5341,
+          "mesangial_cell_count": 7837,
+          "mesangial_matrix_grade": 5023,
+          "gbm_thickness_nm": 1003,
+          "spike_presence": 1365,
+          "foot_process_grade": 8003
+        },
+        "glomerulus_count": {
+          "age": 5304,
+          "sex_binary": 5346,
+          "glomerulus_count": 5350,
+          "sclerosis_rate": 5345,
+          "mesangial_cell_count": 5184,
+          "mesangial_matrix_grade": 4943,
+          "gbm_thickness_nm": 926,
+          "spike_presence": 998,
+          "foot_process_grade": 5312
+        },
+        "sclerosis_rate": {
+          "age": 5299,
+          "sex_binary": 5341,
+          "glomerulus_count": 5345,
+          "sclerosis_rate": 5345,
+          "mesangial_cell_count": 5183,
+          "mesangial_matrix_grade": 4942,
+          "gbm_thickness_nm": 925,
+          "spike_presence": 998,
+          "foot_process_grade": 5311
+        },
+        "mesangial_cell_count": {
+          "age": 7777,
+          "sex_binary": 7837,
+          "glomerulus_count": 5184,
+          "sclerosis_rate": 5183,
+          "mesangial_cell_count": 7850,
+          "mesangial_matrix_grade": 4856,
+          "gbm_thickness_nm": 854,
+          "spike_presence": 1291,
+          "foot_process_grade": 7777
+        },
+        "mesangial_matrix_grade": {
+          "age": 4985,
+          "sex_binary": 5023,
+          "glomerulus_count": 4943,
+          "sclerosis_rate": 4942,
+          "mesangial_cell_count": 4856,
+          "mesangial_matrix_grade": 5027,
+          "gbm_thickness_nm": 902,
+          "spike_presence": 979,
+          "foot_process_grade": 4993
+        },
+        "gbm_thickness_nm": {
+          "age": 999,
+          "sex_binary": 1003,
+          "glomerulus_count": 926,
+          "sclerosis_rate": 925,
+          "mesangial_cell_count": 854,
+          "mesangial_matrix_grade": 902,
+          "gbm_thickness_nm": 1003,
+          "spike_presence": 417,
+          "foot_process_grade": 994
+        },
+        "spike_presence": {
+          "age": 1354,
+          "sex_binary": 1365,
+          "glomerulus_count": 998,
+          "sclerosis_rate": 998,
+          "mesangial_cell_count": 1291,
+          "mesangial_matrix_grade": 979,
+          "gbm_thickness_nm": 417,
+          "spike_presence": 1368,
+          "foot_process_grade": 1366
+        },
+        "foot_process_grade": {
+          "age": 7943,
+          "sex_binary": 8003,
+          "glomerulus_count": 5312,
+          "sclerosis_rate": 5311,
+          "mesangial_cell_count": 7777,
+          "mesangial_matrix_grade": 4993,
+          "gbm_thickness_nm": 994,
+          "spike_presence": 1366,
+          "foot_process_grade": 8017
+        }
+      },
+      "rho_matrix": {
+        "age": {
+          "age": 1.0,
+          "sex_binary": -0.08999374174013271,
+          "glomerulus_count": -0.2589349083136243,
+          "sclerosis_rate": 0.1857013333443553,
+          "mesangial_cell_count": 0.09009478218253311,
+          "mesangial_matrix_grade": 0.12698067066230564,
+          "gbm_thickness_nm": 0.3282115877519105,
+          "spike_presence": 0.32806344934054127,
+          "foot_process_grade": 0.2857390491875528
+        },
+        "sex_binary": {
+          "age": -0.0899937417401327,
+          "sex_binary": 1.0,
+          "glomerulus_count": 0.012890638756799648,
+          "sclerosis_rate": 0.02085214935892113,
+          "mesangial_cell_count": -0.08364553729161431,
+          "mesangial_matrix_grade": -0.10029171680702452,
+          "gbm_thickness_nm": 0.0460385931422292,
+          "spike_presence": 0.0022720016118930866,
+          "foot_process_grade": 0.09844428325125155
+        },
+        "glomerulus_count": {
+          "age": -0.2589349083136243,
+          "sex_binary": 0.01289063875679965,
+          "glomerulus_count": 1.0,
+          "sclerosis_rate": -0.04023902877154628,
+          "mesangial_cell_count": 0.01622703634215973,
+          "mesangial_matrix_grade": 0.01600776850224051,
+          "gbm_thickness_nm": -0.04145677013976373,
+          "spike_presence": 0.12926792200860654,
+          "foot_process_grade": -0.045728887963782244
+        },
+        "sclerosis_rate": {
+          "age": 0.1857013333443553,
+          "sex_binary": 0.020852149358921133,
+          "glomerulus_count": -0.04023902877154628,
+          "sclerosis_rate": 1.0,
+          "mesangial_cell_count": 0.248497742252239,
+          "mesangial_matrix_grade": 0.2186176636527391,
+          "gbm_thickness_nm": 0.16075875395934372,
+          "spike_presence": -0.07231040603086668,
+          "foot_process_grade": 0.12022469508039317
+        },
+        "mesangial_cell_count": {
+          "age": 0.09009478218253311,
+          "sex_binary": -0.08364553729161432,
+          "glomerulus_count": 0.01622703634215973,
+          "sclerosis_rate": 0.24849774225223897,
+          "mesangial_cell_count": 1.0,
+          "mesangial_matrix_grade": 0.5850005804521847,
+          "gbm_thickness_nm": 0.29581143458143233,
+          "spike_presence": 0.30784023745775074,
+          "foot_process_grade": 0.0016437005182119626
+        },
+        "mesangial_matrix_grade": {
+          "age": 0.12698067066230564,
+          "sex_binary": -0.10029171680702452,
+          "glomerulus_count": 0.016007768502240508,
+          "sclerosis_rate": 0.21861766365273907,
+          "mesangial_cell_count": 0.5850005804521847,
+          "mesangial_matrix_grade": 1.0,
+          "gbm_thickness_nm": 0.3538547386045265,
+          "spike_presence": 0.16944042448175192,
+          "foot_process_grade": -0.014962518573469703
+        },
+        "gbm_thickness_nm": {
+          "age": 0.3282115877519105,
+          "sex_binary": 0.046038593142229196,
+          "glomerulus_count": -0.04145677013976374,
+          "sclerosis_rate": 0.16075875395934372,
+          "mesangial_cell_count": 0.29581143458143233,
+          "mesangial_matrix_grade": 0.35385473860452654,
+          "gbm_thickness_nm": 1.0,
+          "spike_presence": 0.6292800948750813,
+          "foot_process_grade": 0.47967148657030056
+        },
+        "spike_presence": {
+          "age": 0.32806344934054127,
+          "sex_binary": 0.002272001611893087,
+          "glomerulus_count": 0.12926792200860654,
+          "sclerosis_rate": -0.07231040603086668,
+          "mesangial_cell_count": 0.30784023745775074,
+          "mesangial_matrix_grade": 0.16944042448175195,
+          "gbm_thickness_nm": 0.6292800948750813,
+          "spike_presence": 1.0,
+          "foot_process_grade": 0.5960069608892598
+        },
+        "foot_process_grade": {
+          "age": 0.2857390491875528,
+          "sex_binary": 0.09844428325125157,
+          "glomerulus_count": -0.04572888796378224,
+          "sclerosis_rate": 0.12022469508039318,
+          "mesangial_cell_count": 0.0016437005182119626,
+          "mesangial_matrix_grade": -0.014962518573469705,
+          "gbm_thickness_nm": 0.47967148657030056,
+          "spike_presence": 0.5960069608892598,
+          "foot_process_grade": 1.0
+        }
+      },
+      "p_matrix": {
+        "age": {
+          "age": 0.0,
+          "sex_binary": 6.556882573817925e-16,
+          "glomerulus_count": 5.287638553362268e-82,
+          "sclerosis_rate": 2.5299995741054275e-42,
+          "mesangial_cell_count": 1.7185816123052274e-15,
+          "mesangial_matrix_grade": 2.265149814699478e-19,
+          "gbm_thickness_nm": 1.6104132017761243e-26,
+          "spike_presence": 2.441329159708008e-35,
+          "foot_process_grade": 4.22265406128091e-149
+        },
+        "sex_binary": {
+          "age": 6.556882573818059e-16,
+          "sex_binary": 0.0,
+          "glomerulus_count": 0.3460210798661366,
+          "sclerosis_rate": 0.12757647752550597,
+          "mesangial_cell_count": 1.200809882629549e-13,
+          "mesangial_matrix_grade": 1.0469750734730852e-12,
+          "gbm_thickness_nm": 0.14511506904550228,
+          "spike_presence": 0.9331642718976776,
+          "foot_process_grade": 1.0766852566198371e-18
+        },
+        "glomerulus_count": {
+          "age": 5.287638553362268e-82,
+          "sex_binary": 0.34602107986613667,
+          "glomerulus_count": 0.0,
+          "sclerosis_rate": 0.003257219543258259,
+          "mesangial_cell_count": 0.24274958360722246,
+          "mesangial_matrix_grade": 0.26048854226928425,
+          "gbm_thickness_nm": 0.20753315598318617,
+          "spike_presence": 4.2071498928214435e-05,
+          "foot_process_grade": 0.0008565604628432387
+        },
+        "sclerosis_rate": {
+          "age": 2.5299995741054275e-42,
+          "sex_binary": 0.12757647752550588,
+          "glomerulus_count": 0.003257219543258259,
+          "sclerosis_rate": 0.0,
+          "mesangial_cell_count": 8.6703582167546e-74,
+          "mesangial_matrix_grade": 1.5112974794320517e-54,
+          "gbm_thickness_nm": 8.893035252622378e-07,
+          "spike_presence": 0.022342380318466925,
+          "foot_process_grade": 1.4769608195398801e-18
+        },
+        "mesangial_cell_count": {
+          "age": 1.7185816123052274e-15,
+          "sex_binary": 1.200809882629538e-13,
+          "glomerulus_count": 0.24274958360722246,
+          "sclerosis_rate": 8.670358216755793e-74,
+          "mesangial_cell_count": 0.0,
+          "mesangial_matrix_grade": 0.0,
+          "gbm_thickness_nm": 1.0440906067505348e-18,
+          "spike_presence": 9.721660998607982e-30,
+          "foot_process_grade": 0.88476589551256
+        },
+        "mesangial_matrix_grade": {
+          "age": 2.265149814699478e-19,
+          "sex_binary": 1.0469750734730852e-12,
+          "glomerulus_count": 0.26048854226928436,
+          "sclerosis_rate": 1.511297479432111e-54,
+          "mesangial_cell_count": 0.0,
+          "mesangial_matrix_grade": 0.0,
+          "gbm_thickness_nm": 5.352748738384751e-28,
+          "spike_presence": 9.636199156755704e-08,
+          "foot_process_grade": 0.29048264529702966
+        },
+        "gbm_thickness_nm": {
+          "age": 1.6104132017761243e-26,
+          "sex_binary": 0.14511506904550228,
+          "glomerulus_count": 0.20753315598318609,
+          "sclerosis_rate": 8.893035252622378e-07,
+          "mesangial_cell_count": 1.0440906067505348e-18,
+          "mesangial_matrix_grade": 5.352748738384602e-28,
+          "gbm_thickness_nm": 0.0,
+          "spike_presence": 2.2823374895572193e-47,
+          "foot_process_grade": 2.4938734133300596e-58
+        },
+        "spike_presence": {
+          "age": 2.441329159708008e-35,
+          "sex_binary": 0.9331642718976776,
+          "glomerulus_count": 4.2071498928214435e-05,
+          "sclerosis_rate": 0.022342380318466925,
+          "mesangial_cell_count": 9.721660998607982e-30,
+          "mesangial_matrix_grade": 9.636199156755605e-08,
+          "gbm_thickness_nm": 2.2823374895572193e-47,
+          "spike_presence": 0.0,
+          "foot_process_grade": 3.7612757035998845e-132
+        },
+        "foot_process_grade": {
+          "age": 4.22265406128091e-149,
+          "sex_binary": 1.076685256619825e-18,
+          "glomerulus_count": 0.0008565604628432409,
+          "sclerosis_rate": 1.4769608195398801e-18,
+          "mesangial_cell_count": 0.88476589551256,
+          "mesangial_matrix_grade": 0.2904826452970295,
+          "gbm_thickness_nm": 2.4938734133300596e-58,
+          "spike_presence": 3.7612757035998845e-132,
+          "foot_process_grade": 0.0
+        }
+      }
+    },
+    "available_case_policy": "No imputation for descriptive statistics or correlations; every cell reports its own n."
+  },
+  "feature_definitions": {
+    "age": "registry age in years",
+    "sex_binary": "M=1, F=0; other/missing imputed within fold",
+    "glomerulus_count": "reported TEM glomerulus count",
+    "sclerosis_rate": "(explicit global + segmental sclerotic counts) / TEM glomerulus count",
+    "mesangial_cell_count": "reported range midpoint per region",
+    "mesangial_matrix_grade": "conservative ordinal 0/1/1.5/2/2.5/3",
+    "gbm_thickness_nm": "reported single value or range midpoint, normalized to nm",
+    "spike_presence": "explicit absent=0, explicit formed=1, ambiguous=missing",
+    "foot_process_grade": "none=0, focal/partial=1, mostly=2, diffuse=3"
+  },
+  "methodological_boundaries": [
+    "Disease labels are report-derived and are not an independent diagnostic gold standard.",
+    "Fallback links require a blinded manual linkage audit before inferential publication use.",
+    "Morphometry parsers have not undergone a prespecified field-level manual validation study.",
+    "GBM thickness and spike presence have severe missingness and require available-case interpretation.",
+    "Calendar-year report-template drift limits unadjusted cross-year morphometry comparisons.",
+    "Capacity rho is an assumption-dependent scenario ratio and is not observed turnaround time or proof of understaffing."
+  ],
+  "provenance": {
+    "modeling_source_sha256": "bd32150928756ff5c2afb836d10fa8a35c710f5d6549b05c69e6e67ed1f0e23e",
+    "descriptive_generator": "remote_v2_descriptive_results.py"
+  }
+}

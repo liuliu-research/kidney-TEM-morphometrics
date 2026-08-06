@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "validation_categories": [
+    "arithmetic",
+    "cross_source",
+    "deterministic",
+    "privacy",
+    "visual"
+  ],
+  "checks": [
+    {
+      "category": "arithmetic",
+      "name": "class_total_equals_annual_total",
+      "passed": true,
+      "detail": "10933 vs 10933"
+    },
+    {
+      "category": "arithmetic",
+      "name": "paper_window_total",
+      "passed": true,
+      "detail": "total=10933"
+    },
+    {
+      "category": "cross_source",
+      "name": "confirmed_registry_cohort_counts",
+      "passed": true,
+      "detail": "checks=10933; patients=10787; main11=8208"
+    },
+    {
+      "category": "cross_source",
+      "name": "registry_modeling_linkage_cohort_match",
+      "passed": true,
+      "detail": "eligible=8208; linked=8113; development=5139; temporal_test=2974"
+    },
+    {
+      "category": "arithmetic",
+      "name": "monthly_sums_equal_annual",
+      "passed": true,
+      "detail": "2014-2026"
+    },
+    {
+      "category": "arithmetic",
+      "name": "quarterly_sums_equal_annual",
+      "passed": true,
+      "detail": "complete years 2015-2025"
+    },
+    {
+      "category": "cross_source",
+      "name": "figure4d_table3_single_source",
+      "passed": true,
+      "detail": "same annual-capacity rows"
+    },
+    {
+      "category": "deterministic",
+      "name": "figure4d_table3_source_files_identical",
+      "passed": true,
+      "detail": "byte-identical aggregate CSV"
+    },
+    {
+      "category": "arithmetic",
+      "name": "partial_year_flags",
+      "passed": true,
+      "detail": "2014 and 2026 only"
+    },
+    {
+      "category": "arithmetic",
+      "name": "complete_year_capacity_threshold_counts",
+      "passed": true,
+      "detail": "complete_years=11; rho>=0.85: 10; rho>=1.00: 9"
+    },
+    {
+      "category": "deterministic",
+      "name": "independent_remote_aggregate_repeat",
+      "passed": true,
+      "detail": "registry=True; model_linkage=True; fingerprint=fe2b6d8690b369be"
+    },
+    {
+      "category": "privacy",
+      "name": "no_identifier_columns",
+      "passed": true,
+      "detail": "none"
+    },
+    {
+      "category": "privacy",
+      "name": "aggregate_json_identifier_key_scan",
+      "passed": true,
+      "detail": "none"
+    },
+    {
+      "category": "visual",
+      "name": "high_resolution_png",
+      "passed": true,
+      "detail": "Figure1_v2.png: 7128x6669; Figure2_v2.png: 7269x5704; Figure4_v2.png: 7317x5236"
+    }
+  ]
+}

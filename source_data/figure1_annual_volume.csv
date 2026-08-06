@@ -1,0 +1,14 @@
+﻿year,annual_checks,observed_months,partial_year,window_status,boundary_month_note,mean_per_observed_month
+2014,203,8,True,partial,May-Dec; first observed date May 8,25.375
+2015,520,12,False,complete,full calendar year,43.333333333333336
+2016,947,12,False,complete,full calendar year,78.91666666666667
+2017,1018,12,False,complete,full calendar year,84.83333333333333
+2018,1194,12,False,complete,full calendar year,99.5
+2019,1103,12,False,complete,full calendar year,91.91666666666667
+2020,822,12,False,complete,full calendar year,68.5
+2021,1412,12,False,complete,full calendar year,117.66666666666667
+2022,1499,12,False,complete,full calendar year,124.91666666666667
+2023,1123,12,False,complete,full calendar year,93.58333333333333
+2024,559,12,False,complete,full calendar year,46.583333333333336
+2025,398,12,False,complete,full calendar year,33.166666666666664
+2026,135,4,True,partial,Jan-Apr; April observed only through day 9,33.75

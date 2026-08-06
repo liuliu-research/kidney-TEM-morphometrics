@@ -1,0 +1,13 @@
+{
+  "analysis_window": "2014-05-01 through 2026-04-30",
+  "actual_dated_range": "2014-05-08 through 2026-04-09",
+  "april_2026_status": "partial month through 2026-04-09",
+  "canonical_checks": 10933,
+  "unique_patients_first_check": 10787,
+  "main11_first_check_patients": 8208,
+  "main11_linked_patients": 8113,
+  "development": 5139,
+  "temporal_test": 2974,
+  "patient_overlap_between_periods": 0,
+  "status": "PASS"
+}

@@ -1,0 +1,14 @@
+﻿year,window_status,boundary_month_note,annual_checks,observed_months,mean_checks_per_observed_month,assumed_service_capacity_per_month,rho,scenario_status,interpretation
+2014,partial,May-Dec; first observed date May 8,203,8,25.375,44.0,0.5767045454545454,Below assumed capacity,scenario ratio; not observed turnaround time
+2015,complete,full calendar year,520,12,43.333333333333336,44.0,0.9848484848484849,Near assumed capacity,scenario ratio; not observed turnaround time
+2016,complete,full calendar year,947,12,78.91666666666667,44.0,1.7935606060606062,Exceeds assumed capacity,scenario ratio; not observed turnaround time
+2017,complete,full calendar year,1018,12,84.83333333333333,44.0,1.928030303030303,Exceeds assumed capacity,scenario ratio; not observed turnaround time
+2018,complete,full calendar year,1194,12,99.5,44.0,2.2613636363636362,Exceeds assumed capacity,scenario ratio; not observed turnaround time
+2019,complete,full calendar year,1103,12,91.91666666666667,44.0,2.089015151515152,Exceeds assumed capacity,scenario ratio; not observed turnaround time
+2020,complete,full calendar year,822,12,68.5,44.0,1.5568181818181819,Exceeds assumed capacity,scenario ratio; not observed turnaround time
+2021,complete,full calendar year,1412,12,117.66666666666667,44.0,2.6742424242424243,Exceeds assumed capacity,scenario ratio; not observed turnaround time
+2022,complete,full calendar year,1499,12,124.91666666666667,44.0,2.839015151515152,Exceeds assumed capacity,scenario ratio; not observed turnaround time
+2023,complete,full calendar year,1123,12,93.58333333333333,44.0,2.1268939393939394,Exceeds assumed capacity,scenario ratio; not observed turnaround time
+2024,complete,full calendar year,559,12,46.583333333333336,44.0,1.0587121212121213,Exceeds assumed capacity,scenario ratio; not observed turnaround time
+2025,complete,full calendar year,398,12,33.166666666666664,44.0,0.7537878787878788,Below assumed capacity,scenario ratio; not observed turnaround time
+2026,partial,Jan-Apr; April observed only through day 9,135,4,33.75,44.0,0.7670454545454546,Below assumed capacity,scenario ratio; not observed turnaround time

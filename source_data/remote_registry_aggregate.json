@@ -1,0 +1,2023 @@
+{
+  "analysis": "privacy-preserving locked-registry aggregate source data",
+  "privacy": {
+    "row_level_output": false,
+    "patient_identifiers_output": false,
+    "raw_text_output": false,
+    "remote_writes": false
+  },
+  "cohort": {
+    "window": "2014-05-01 through 2026-04-30",
+    "actual_observed_dates": "2014-05-08 through 2026-04-09",
+    "canonical_checks": 10933,
+    "unique_patients": 10787,
+    "patient_first_main11": 8208,
+    "first_exam_tie_break": "exam date, deterministic internal visit key, then stable canonical order"
+  },
+  "class_groups": [
+    {
+      "category": "IgAN",
+      "group_type": "main11",
+      "n": 1921
+    },
+    {
+      "category": "IgAVN",
+      "group_type": "main11",
+      "n": 1893
+    },
+    {
+      "category": "MCD",
+      "group_type": "main11",
+      "n": 1212
+    },
+    {
+      "category": "MN",
+      "group_type": "main11",
+      "n": 899
+    },
+    {
+      "category": "MsPGN",
+      "group_type": "main11",
+      "n": 744
+    },
+    {
+      "category": "LN",
+      "group_type": "main11",
+      "n": 730
+    },
+    {
+      "category": "EPGN",
+      "group_type": "main11",
+      "n": 298
+    },
+    {
+      "category": "DKD",
+      "group_type": "main11",
+      "n": 166
+    },
+    {
+      "category": "TBMN",
+      "group_type": "main11",
+      "n": 145
+    },
+    {
+      "category": "FSGS",
+      "group_type": "main11",
+      "n": 142
+    },
+    {
+      "category": "MPGN",
+      "group_type": "main11",
+      "n": 135
+    },
+    {
+      "category": "Other",
+      "group_type": "other",
+      "n": 2419
+    },
+    {
+      "category": "Long-tail (8)",
+      "group_type": "long_tail",
+      "n": 229
+    }
+  ],
+  "raw_class_counts": {
+    "EPGN": 298,
+    "IgAVN": 1893,
+    "MsPGN": 744,
+    "Other": 2419,
+    "MN": 899,
+    "MCD": 1212,
+    "LN": 730,
+    "MPGN": 135,
+    "TBMN": 145,
+    "IgAN": 1921,
+    "DKD": 166,
+    "AMY": 93,
+    "anti-GBM": 2,
+    "AAGN": 61,
+    "FSGS": 142,
+    "HN": 29,
+    "FGN": 6,
+    "TMA": 30,
+    "C3G": 1,
+    "MIDD": 7
+  },
+  "age_distribution": [
+    {
+      "disease": "IgAN",
+      "age_band": "0-9",
+      "n": 165,
+      "age_nonmissing": 1884,
+      "cohort_n": 1896
+    },
+    {
+      "disease": "IgAN",
+      "age_band": "10-17",
+      "n": 250,
+      "age_nonmissing": 1884,
+      "cohort_n": 1896
+    },
+    {
+      "disease": "IgAN",
+      "age_band": "18-39",
+      "n": 945,
+      "age_nonmissing": 1884,
+      "cohort_n": 1896
+    },
+    {
+      "disease": "IgAN",
+      "age_band": "40-59",
+      "n": 457,
+      "age_nonmissing": 1884,
+      "cohort_n": 1896
+    },
+    {
+      "disease": "IgAN",
+      "age_band": "60+",
+      "n": 67,
+      "age_nonmissing": 1884,
+      "cohort_n": 1896
+    },
+    {
+      "disease": "IgAN",
+      "age_band": "Missing",
+      "n": 12,
+      "age_nonmissing": 1884,
+      "cohort_n": 1896
+    },
+    {
+      "disease": "IgAVN",
+      "age_band": "0-9",
+      "n": 1047,
+      "age_nonmissing": 1858,
+      "cohort_n": 1875
+    },
+    {
+      "disease": "IgAVN",
+      "age_band": "10-17",
+      "n": 674,
+      "age_nonmissing": 1858,
+      "cohort_n": 1875
+    },
+    {
+      "disease": "IgAVN",
+      "age_band": "18-39",
+      "n": 75,
+      "age_nonmissing": 1858,
+      "cohort_n": 1875
+    },
+    {
+      "disease": "IgAVN",
+      "age_band": "40-59",
+      "n": 47,
+      "age_nonmissing": 1858,
+      "cohort_n": 1875
+    },
+    {
+      "disease": "IgAVN",
+      "age_band": "60+",
+      "n": 15,
+      "age_nonmissing": 1858,
+      "cohort_n": 1875
+    },
+    {
+      "disease": "IgAVN",
+      "age_band": "Missing",
+      "n": 17,
+      "age_nonmissing": 1858,
+      "cohort_n": 1875
+    },
+    {
+      "disease": "MCD",
+      "age_band": "0-9",
+      "n": 433,
+      "age_nonmissing": 1184,
+      "cohort_n": 1202
+    },
+    {
+      "disease": "MCD",
+      "age_band": "10-17",
+      "n": 303,
+      "age_nonmissing": 1184,
+      "cohort_n": 1202
+    },
+    {
+      "disease": "MCD",
+      "age_band": "18-39",
+      "n": 262,
+      "age_nonmissing": 1184,
+      "cohort_n": 1202
+    },
+    {
+      "disease": "MCD",
+      "age_band": "40-59",
+      "n": 127,
+      "age_nonmissing": 1184,
+      "cohort_n": 1202
+    },
+    {
+      "disease": "MCD",
+      "age_band": "60+",
+      "n": 59,
+      "age_nonmissing": 1184,
+      "cohort_n": 1202
+    },
+    {
+      "disease": "MCD",
+      "age_band": "Missing",
+      "n": 18,
+      "age_nonmissing": 1184,
+      "cohort_n": 1202
+    },
+    {
+      "disease": "MN",
+      "age_band": "0-9",
+      "n": 28,
+      "age_nonmissing": 889,
+      "cohort_n": 897
+    },
+    {
+      "disease": "MN",
+      "age_band": "10-17",
+      "n": 25,
+      "age_nonmissing": 889,
+      "cohort_n": 897
+    },
+    {
+      "disease": "MN",
+      "age_band": "18-39",
+      "n": 155,
+      "age_nonmissing": 889,
+      "cohort_n": 897
+    },
+    {
+      "disease": "MN",
+      "age_band": "40-59",
+      "n": 469,
+      "age_nonmissing": 889,
+      "cohort_n": 897
+    },
+    {
+      "disease": "MN",
+      "age_band": "60+",
+      "n": 212,
+      "age_nonmissing": 889,
+      "cohort_n": 897
+    },
+    {
+      "disease": "MN",
+      "age_band": "Missing",
+      "n": 8,
+      "age_nonmissing": 889,
+      "cohort_n": 897
+    },
+    {
+      "disease": "MsPGN",
+      "age_band": "0-9",
+      "n": 122,
+      "age_nonmissing": 732,
+      "cohort_n": 737
+    },
+    {
+      "disease": "MsPGN",
+      "age_band": "10-17",
+      "n": 145,
+      "age_nonmissing": 732,
+      "cohort_n": 737
+    },
+    {
+      "disease": "MsPGN",
+      "age_band": "18-39",
+      "n": 244,
+      "age_nonmissing": 732,
+      "cohort_n": 737
+    },
+    {
+      "disease": "MsPGN",
+      "age_band": "40-59",
+      "n": 177,
+      "age_nonmissing": 732,
+      "cohort_n": 737
+    },
+    {
+      "disease": "MsPGN",
+      "age_band": "60+",
+      "n": 44,
+      "age_nonmissing": 732,
+      "cohort_n": 737
+    },
+    {
+      "disease": "MsPGN",
+      "age_band": "Missing",
+      "n": 5,
+      "age_nonmissing": 732,
+      "cohort_n": 737
+    },
+    {
+      "disease": "LN",
+      "age_band": "0-9",
+      "n": 59,
+      "age_nonmissing": 716,
+      "cohort_n": 722
+    },
+    {
+      "disease": "LN",
+      "age_band": "10-17",
+      "n": 185,
+      "age_nonmissing": 716,
+      "cohort_n": 722
+    },
+    {
+      "disease": "LN",
+      "age_band": "18-39",
+      "n": 297,
+      "age_nonmissing": 716,
+      "cohort_n": 722
+    },
+    {
+      "disease": "LN",
+      "age_band": "40-59",
+      "n": 160,
+      "age_nonmissing": 716,
+      "cohort_n": 722
+    },
+    {
+      "disease": "LN",
+      "age_band": "60+",
+      "n": 15,
+      "age_nonmissing": 716,
+      "cohort_n": 722
+    },
+    {
+      "disease": "LN",
+      "age_band": "Missing",
+      "n": 6,
+      "age_nonmissing": 716,
+      "cohort_n": 722
+    },
+    {
+      "disease": "EPGN",
+      "age_band": "0-9",
+      "n": 120,
+      "age_nonmissing": 294,
+      "cohort_n": 297
+    },
+    {
+      "disease": "EPGN",
+      "age_band": "10-17",
+      "n": 142,
+      "age_nonmissing": 294,
+      "cohort_n": 297
+    },
+    {
+      "disease": "EPGN",
+      "age_band": "18-39",
+      "n": 19,
+      "age_nonmissing": 294,
+      "cohort_n": 297
+    },
+    {
+      "disease": "EPGN",
+      "age_band": "40-59",
+      "n": 9,
+      "age_nonmissing": 294,
+      "cohort_n": 297
+    },
+    {
+      "disease": "EPGN",
+      "age_band": "60+",
+      "n": 4,
+      "age_nonmissing": 294,
+      "cohort_n": 297
+    },
+    {
+      "disease": "EPGN",
+      "age_band": "Missing",
+      "n": 3,
+      "age_nonmissing": 294,
+      "cohort_n": 297
+    },
+    {
+      "disease": "DKD",
+      "age_band": "0-9",
+      "n": 0,
+      "age_nonmissing": 163,
+      "cohort_n": 165
+    },
+    {
+      "disease": "DKD",
+      "age_band": "10-17",
+      "n": 3,
+      "age_nonmissing": 163,
+      "cohort_n": 165
+    },
+    {
+      "disease": "DKD",
+      "age_band": "18-39",
+      "n": 33,
+      "age_nonmissing": 163,
+      "cohort_n": 165
+    },
+    {
+      "disease": "DKD",
+      "age_band": "40-59",
+      "n": 102,
+      "age_nonmissing": 163,
+      "cohort_n": 165
+    },
+    {
+      "disease": "DKD",
+      "age_band": "60+",
+      "n": 25,
+      "age_nonmissing": 163,
+      "cohort_n": 165
+    },
+    {
+      "disease": "DKD",
+      "age_band": "Missing",
+      "n": 2,
+      "age_nonmissing": 163,
+      "cohort_n": 165
+    },
+    {
+      "disease": "TBMN",
+      "age_band": "0-9",
+      "n": 68,
+      "age_nonmissing": 140,
+      "cohort_n": 143
+    },
+    {
+      "disease": "TBMN",
+      "age_band": "10-17",
+      "n": 38,
+      "age_nonmissing": 140,
+      "cohort_n": 143
+    },
+    {
+      "disease": "TBMN",
+      "age_band": "18-39",
+      "n": 21,
+      "age_nonmissing": 140,
+      "cohort_n": 143
+    },
+    {
+      "disease": "TBMN",
+      "age_band": "40-59",
+      "n": 13,
+      "age_nonmissing": 140,
+      "cohort_n": 143
+    },
+    {
+      "disease": "TBMN",
+      "age_band": "60+",
+      "n": 0,
+      "age_nonmissing": 140,
+      "cohort_n": 143
+    },
+    {
+      "disease": "TBMN",
+      "age_band": "Missing",
+      "n": 3,
+      "age_nonmissing": 140,
+      "cohort_n": 143
+    },
+    {
+      "disease": "FSGS",
+      "age_band": "0-9",
+      "n": 10,
+      "age_nonmissing": 138,
+      "cohort_n": 139
+    },
+    {
+      "disease": "FSGS",
+      "age_band": "10-17",
+      "n": 20,
+      "age_nonmissing": 138,
+      "cohort_n": 139
+    },
+    {
+      "disease": "FSGS",
+      "age_band": "18-39",
+      "n": 42,
+      "age_nonmissing": 138,
+      "cohort_n": 139
+    },
+    {
+      "disease": "FSGS",
+      "age_band": "40-59",
+      "n": 43,
+      "age_nonmissing": 138,
+      "cohort_n": 139
+    },
+    {
+      "disease": "FSGS",
+      "age_band": "60+",
+      "n": 23,
+      "age_nonmissing": 138,
+      "cohort_n": 139
+    },
+    {
+      "disease": "FSGS",
+      "age_band": "Missing",
+      "n": 1,
+      "age_nonmissing": 138,
+      "cohort_n": 139
+    },
+    {
+      "disease": "MPGN",
+      "age_band": "0-9",
+      "n": 9,
+      "age_nonmissing": 133,
+      "cohort_n": 135
+    },
+    {
+      "disease": "MPGN",
+      "age_band": "10-17",
+      "n": 11,
+      "age_nonmissing": 133,
+      "cohort_n": 135
+    },
+    {
+      "disease": "MPGN",
+      "age_band": "18-39",
+      "n": 38,
+      "age_nonmissing": 133,
+      "cohort_n": 135
+    },
+    {
+      "disease": "MPGN",
+      "age_band": "40-59",
+      "n": 55,
+      "age_nonmissing": 133,
+      "cohort_n": 135
+    },
+    {
+      "disease": "MPGN",
+      "age_band": "60+",
+      "n": 20,
+      "age_nonmissing": 133,
+      "cohort_n": 135
+    },
+    {
+      "disease": "MPGN",
+      "age_band": "Missing",
+      "n": 2,
+      "age_nonmissing": 133,
+      "cohort_n": 135
+    }
+  ],
+  "sex_distribution": [
+    {
+      "disease": "IgAN",
+      "male_n": 866,
+      "female_n": 1030,
+      "missing_n": 0,
+      "nonmissing_n": 1896,
+      "cohort_n": 1896
+    },
+    {
+      "disease": "IgAVN",
+      "male_n": 1089,
+      "female_n": 781,
+      "missing_n": 5,
+      "nonmissing_n": 1870,
+      "cohort_n": 1875
+    },
+    {
+      "disease": "MCD",
+      "male_n": 884,
+      "female_n": 316,
+      "missing_n": 2,
+      "nonmissing_n": 1200,
+      "cohort_n": 1202
+    },
+    {
+      "disease": "MN",
+      "male_n": 561,
+      "female_n": 333,
+      "missing_n": 3,
+      "nonmissing_n": 894,
+      "cohort_n": 897
+    },
+    {
+      "disease": "MsPGN",
+      "male_n": 372,
+      "female_n": 364,
+      "missing_n": 1,
+      "nonmissing_n": 736,
+      "cohort_n": 737
+    },
+    {
+      "disease": "LN",
+      "male_n": 128,
+      "female_n": 593,
+      "missing_n": 1,
+      "nonmissing_n": 721,
+      "cohort_n": 722
+    },
+    {
+      "disease": "EPGN",
+      "male_n": 190,
+      "female_n": 105,
+      "missing_n": 2,
+      "nonmissing_n": 295,
+      "cohort_n": 297
+    },
+    {
+      "disease": "DKD",
+      "male_n": 118,
+      "female_n": 47,
+      "missing_n": 0,
+      "nonmissing_n": 165,
+      "cohort_n": 165
+    },
+    {
+      "disease": "TBMN",
+      "male_n": 65,
+      "female_n": 77,
+      "missing_n": 1,
+      "nonmissing_n": 142,
+      "cohort_n": 143
+    },
+    {
+      "disease": "FSGS",
+      "male_n": 94,
+      "female_n": 45,
+      "missing_n": 0,
+      "nonmissing_n": 139,
+      "cohort_n": 139
+    },
+    {
+      "disease": "MPGN",
+      "male_n": 68,
+      "female_n": 67,
+      "missing_n": 0,
+      "nonmissing_n": 135,
+      "cohort_n": 135
+    }
+  ],
+  "annual": [
+    {
+      "year": 2014,
+      "annual_checks": 203,
+      "observed_months": 8,
+      "partial_year": true,
+      "boundary_month_note": "May-Dec; first observed date May 8",
+      "mean_per_observed_month": 25.375
+    },
+    {
+      "year": 2015,
+      "annual_checks": 520,
+      "observed_months": 12,
+      "partial_year": false,
+      "boundary_month_note": "full calendar year",
+      "mean_per_observed_month": 43.333333333333336
+    },
+    {
+      "year": 2016,
+      "annual_checks": 947,
+      "observed_months": 12,
+      "partial_year": false,
+      "boundary_month_note": "full calendar year",
+      "mean_per_observed_month": 78.91666666666667
+    },
+    {
+      "year": 2017,
+      "annual_checks": 1018,
+      "observed_months": 12,
+      "partial_year": false,
+      "boundary_month_note": "full calendar year",
+      "mean_per_observed_month": 84.83333333333333
+    },
+    {
+      "year": 2018,
+      "annual_checks": 1194,
+      "observed_months": 12,
+      "partial_year": false,
+      "boundary_month_note": "full calendar year",
+      "mean_per_observed_month": 99.5
+    },
+    {
+      "year": 2019,
+      "annual_checks": 1103,
+      "observed_months": 12,
+      "partial_year": false,
+      "boundary_month_note": "full calendar year",
+      "mean_per_observed_month": 91.91666666666667
+    },
+    {
+      "year": 2020,
+      "annual_checks": 822,
+      "observed_months": 12,
+      "partial_year": false,
+      "boundary_month_note": "full calendar year",
+      "mean_per_observed_month": 68.5
+    },
+    {
+      "year": 2021,
+      "annual_checks": 1412,
+      "observed_months": 12,
+      "partial_year": false,
+      "boundary_month_note": "full calendar year",
+      "mean_per_observed_month": 117.66666666666667
+    },
+    {
+      "year": 2022,
+      "annual_checks": 1499,
+      "observed_months": 12,
+      "partial_year": false,
+      "boundary_month_note": "full calendar year",
+      "mean_per_observed_month": 124.91666666666667
+    },
+    {
+      "year": 2023,
+      "annual_checks": 1123,
+      "observed_months": 12,
+      "partial_year": false,
+      "boundary_month_note": "full calendar year",
+      "mean_per_observed_month": 93.58333333333333
+    },
+    {
+      "year": 2024,
+      "annual_checks": 559,
+      "observed_months": 12,
+      "partial_year": false,
+      "boundary_month_note": "full calendar year",
+      "mean_per_observed_month": 46.583333333333336
+    },
+    {
+      "year": 2025,
+      "annual_checks": 398,
+      "observed_months": 12,
+      "partial_year": false,
+      "boundary_month_note": "full calendar year",
+      "mean_per_observed_month": 33.166666666666664
+    },
+    {
+      "year": 2026,
+      "annual_checks": 135,
+      "observed_months": 4,
+      "partial_year": true,
+      "boundary_month_note": "Jan-Apr; April observed only through day 9",
+      "mean_per_observed_month": 33.75
+    }
+  ],
+  "monthly": [
+    {
+      "year": 2014,
+      "month": 1,
+      "observed": false,
+      "n": null
+    },
+    {
+      "year": 2014,
+      "month": 2,
+      "observed": false,
+      "n": null
+    },
+    {
+      "year": 2014,
+      "month": 3,
+      "observed": false,
+      "n": null
+    },
+    {
+      "year": 2014,
+      "month": 4,
+      "observed": false,
+      "n": null
+    },
+    {
+      "year": 2014,
+      "month": 5,
+      "observed": true,
+      "n": 8
+    },
+    {
+      "year": 2014,
+      "month": 6,
+      "observed": true,
+      "n": 0
+    },
+    {
+      "year": 2014,
+      "month": 7,
+      "observed": true,
+      "n": 29
+    },
+    {
+      "year": 2014,
+      "month": 8,
+      "observed": true,
+      "n": 34
+    },
+    {
+      "year": 2014,
+      "month": 9,
+      "observed": true,
+      "n": 20
+    },
+    {
+      "year": 2014,
+      "month": 10,
+      "observed": true,
+      "n": 31
+    },
+    {
+      "year": 2014,
+      "month": 11,
+      "observed": true,
+      "n": 37
+    },
+    {
+      "year": 2014,
+      "month": 12,
+      "observed": true,
+      "n": 44
+    },
+    {
+      "year": 2015,
+      "month": 1,
+      "observed": true,
+      "n": 22
+    },
+    {
+      "year": 2015,
+      "month": 2,
+      "observed": true,
+      "n": 26
+    },
+    {
+      "year": 2015,
+      "month": 3,
+      "observed": true,
+      "n": 28
+    },
+    {
+      "year": 2015,
+      "month": 4,
+      "observed": true,
+      "n": 24
+    },
+    {
+      "year": 2015,
+      "month": 5,
+      "observed": true,
+      "n": 28
+    },
+    {
+      "year": 2015,
+      "month": 6,
+      "observed": true,
+      "n": 30
+    },
+    {
+      "year": 2015,
+      "month": 7,
+      "observed": true,
+      "n": 47
+    },
+    {
+      "year": 2015,
+      "month": 8,
+      "observed": true,
+      "n": 37
+    },
+    {
+      "year": 2015,
+      "month": 9,
+      "observed": true,
+      "n": 61
+    },
+    {
+      "year": 2015,
+      "month": 10,
+      "observed": true,
+      "n": 74
+    },
+    {
+      "year": 2015,
+      "month": 11,
+      "observed": true,
+      "n": 67
+    },
+    {
+      "year": 2015,
+      "month": 12,
+      "observed": true,
+      "n": 76
+    },
+    {
+      "year": 2016,
+      "month": 1,
+      "observed": true,
+      "n": 62
+    },
+    {
+      "year": 2016,
+      "month": 2,
+      "observed": true,
+      "n": 61
+    },
+    {
+      "year": 2016,
+      "month": 3,
+      "observed": true,
+      "n": 106
+    },
+    {
+      "year": 2016,
+      "month": 4,
+      "observed": true,
+      "n": 73
+    },
+    {
+      "year": 2016,
+      "month": 5,
+      "observed": true,
+      "n": 58
+    },
+    {
+      "year": 2016,
+      "month": 6,
+      "observed": true,
+      "n": 87
+    },
+    {
+      "year": 2016,
+      "month": 7,
+      "observed": true,
+      "n": 76
+    },
+    {
+      "year": 2016,
+      "month": 8,
+      "observed": true,
+      "n": 77
+    },
+    {
+      "year": 2016,
+      "month": 9,
+      "observed": true,
+      "n": 79
+    },
+    {
+      "year": 2016,
+      "month": 10,
+      "observed": true,
+      "n": 75
+    },
+    {
+      "year": 2016,
+      "month": 11,
+      "observed": true,
+      "n": 99
+    },
+    {
+      "year": 2016,
+      "month": 12,
+      "observed": true,
+      "n": 94
+    },
+    {
+      "year": 2017,
+      "month": 1,
+      "observed": true,
+      "n": 67
+    },
+    {
+      "year": 2017,
+      "month": 2,
+      "observed": true,
+      "n": 75
+    },
+    {
+      "year": 2017,
+      "month": 3,
+      "observed": true,
+      "n": 106
+    },
+    {
+      "year": 2017,
+      "month": 4,
+      "observed": true,
+      "n": 85
+    },
+    {
+      "year": 2017,
+      "month": 5,
+      "observed": true,
+      "n": 95
+    },
+    {
+      "year": 2017,
+      "month": 6,
+      "observed": true,
+      "n": 71
+    },
+    {
+      "year": 2017,
+      "month": 7,
+      "observed": true,
+      "n": 86
+    },
+    {
+      "year": 2017,
+      "month": 8,
+      "observed": true,
+      "n": 111
+    },
+    {
+      "year": 2017,
+      "month": 9,
+      "observed": true,
+      "n": 75
+    },
+    {
+      "year": 2017,
+      "month": 10,
+      "observed": true,
+      "n": 64
+    },
+    {
+      "year": 2017,
+      "month": 11,
+      "observed": true,
+      "n": 94
+    },
+    {
+      "year": 2017,
+      "month": 12,
+      "observed": true,
+      "n": 89
+    },
+    {
+      "year": 2018,
+      "month": 1,
+      "observed": true,
+      "n": 103
+    },
+    {
+      "year": 2018,
+      "month": 2,
+      "observed": true,
+      "n": 51
+    },
+    {
+      "year": 2018,
+      "month": 3,
+      "observed": true,
+      "n": 110
+    },
+    {
+      "year": 2018,
+      "month": 4,
+      "observed": true,
+      "n": 100
+    },
+    {
+      "year": 2018,
+      "month": 5,
+      "observed": true,
+      "n": 119
+    },
+    {
+      "year": 2018,
+      "month": 6,
+      "observed": true,
+      "n": 69
+    },
+    {
+      "year": 2018,
+      "month": 7,
+      "observed": true,
+      "n": 96
+    },
+    {
+      "year": 2018,
+      "month": 8,
+      "observed": true,
+      "n": 120
+    },
+    {
+      "year": 2018,
+      "month": 9,
+      "observed": true,
+      "n": 101
+    },
+    {
+      "year": 2018,
+      "month": 10,
+      "observed": true,
+      "n": 108
+    },
+    {
+      "year": 2018,
+      "month": 11,
+      "observed": true,
+      "n": 110
+    },
+    {
+      "year": 2018,
+      "month": 12,
+      "observed": true,
+      "n": 107
+    },
+    {
+      "year": 2019,
+      "month": 1,
+      "observed": true,
+      "n": 109
+    },
+    {
+      "year": 2019,
+      "month": 2,
+      "observed": true,
+      "n": 111
+    },
+    {
+      "year": 2019,
+      "month": 3,
+      "observed": true,
+      "n": 105
+    },
+    {
+      "year": 2019,
+      "month": 4,
+      "observed": true,
+      "n": 88
+    },
+    {
+      "year": 2019,
+      "month": 5,
+      "observed": true,
+      "n": 81
+    },
+    {
+      "year": 2019,
+      "month": 6,
+      "observed": true,
+      "n": 71
+    },
+    {
+      "year": 2019,
+      "month": 7,
+      "observed": true,
+      "n": 95
+    },
+    {
+      "year": 2019,
+      "month": 8,
+      "observed": true,
+      "n": 105
+    },
+    {
+      "year": 2019,
+      "month": 9,
+      "observed": true,
+      "n": 70
+    },
+    {
+      "year": 2019,
+      "month": 10,
+      "observed": true,
+      "n": 89
+    },
+    {
+      "year": 2019,
+      "month": 11,
+      "observed": true,
+      "n": 86
+    },
+    {
+      "year": 2019,
+      "month": 12,
+      "observed": true,
+      "n": 93
+    },
+    {
+      "year": 2020,
+      "month": 1,
+      "observed": true,
+      "n": 95
+    },
+    {
+      "year": 2020,
+      "month": 2,
+      "observed": true,
+      "n": 18
+    },
+    {
+      "year": 2020,
+      "month": 3,
+      "observed": true,
+      "n": 35
+    },
+    {
+      "year": 2020,
+      "month": 4,
+      "observed": true,
+      "n": 63
+    },
+    {
+      "year": 2020,
+      "month": 5,
+      "observed": true,
+      "n": 66
+    },
+    {
+      "year": 2020,
+      "month": 6,
+      "observed": true,
+      "n": 72
+    },
+    {
+      "year": 2020,
+      "month": 7,
+      "observed": true,
+      "n": 83
+    },
+    {
+      "year": 2020,
+      "month": 8,
+      "observed": true,
+      "n": 120
+    },
+    {
+      "year": 2020,
+      "month": 9,
+      "observed": true,
+      "n": 51
+    },
+    {
+      "year": 2020,
+      "month": 10,
+      "observed": true,
+      "n": 62
+    },
+    {
+      "year": 2020,
+      "month": 11,
+      "observed": true,
+      "n": 74
+    },
+    {
+      "year": 2020,
+      "month": 12,
+      "observed": true,
+      "n": 83
+    },
+    {
+      "year": 2021,
+      "month": 1,
+      "observed": true,
+      "n": 82
+    },
+    {
+      "year": 2021,
+      "month": 2,
+      "observed": true,
+      "n": 61
+    },
+    {
+      "year": 2021,
+      "month": 3,
+      "observed": true,
+      "n": 83
+    },
+    {
+      "year": 2021,
+      "month": 4,
+      "observed": true,
+      "n": 74
+    },
+    {
+      "year": 2021,
+      "month": 5,
+      "observed": true,
+      "n": 80
+    },
+    {
+      "year": 2021,
+      "month": 6,
+      "observed": true,
+      "n": 129
+    },
+    {
+      "year": 2021,
+      "month": 7,
+      "observed": true,
+      "n": 162
+    },
+    {
+      "year": 2021,
+      "month": 8,
+      "observed": true,
+      "n": 128
+    },
+    {
+      "year": 2021,
+      "month": 9,
+      "observed": true,
+      "n": 148
+    },
+    {
+      "year": 2021,
+      "month": 10,
+      "observed": true,
+      "n": 110
+    },
+    {
+      "year": 2021,
+      "month": 11,
+      "observed": true,
+      "n": 183
+    },
+    {
+      "year": 2021,
+      "month": 12,
+      "observed": true,
+      "n": 172
+    },
+    {
+      "year": 2022,
+      "month": 1,
+      "observed": true,
+      "n": 164
+    },
+    {
+      "year": 2022,
+      "month": 2,
+      "observed": true,
+      "n": 138
+    },
+    {
+      "year": 2022,
+      "month": 3,
+      "observed": true,
+      "n": 167
+    },
+    {
+      "year": 2022,
+      "month": 4,
+      "observed": true,
+      "n": 113
+    },
+    {
+      "year": 2022,
+      "month": 5,
+      "observed": true,
+      "n": 146
+    },
+    {
+      "year": 2022,
+      "month": 6,
+      "observed": true,
+      "n": 133
+    },
+    {
+      "year": 2022,
+      "month": 7,
+      "observed": true,
+      "n": 129
+    },
+    {
+      "year": 2022,
+      "month": 8,
+      "observed": true,
+      "n": 135
+    },
+    {
+      "year": 2022,
+      "month": 9,
+      "observed": true,
+      "n": 145
+    },
+    {
+      "year": 2022,
+      "month": 10,
+      "observed": true,
+      "n": 110
+    },
+    {
+      "year": 2022,
+      "month": 11,
+      "observed": true,
+      "n": 64
+    },
+    {
+      "year": 2022,
+      "month": 12,
+      "observed": true,
+      "n": 55
+    },
+    {
+      "year": 2023,
+      "month": 1,
+      "observed": true,
+      "n": 43
+    },
+    {
+      "year": 2023,
+      "month": 2,
+      "observed": true,
+      "n": 103
+    },
+    {
+      "year": 2023,
+      "month": 3,
+      "observed": true,
+      "n": 118
+    },
+    {
+      "year": 2023,
+      "month": 4,
+      "observed": true,
+      "n": 135
+    },
+    {
+      "year": 2023,
+      "month": 5,
+      "observed": true,
+      "n": 113
+    },
+    {
+      "year": 2023,
+      "month": 6,
+      "observed": true,
+      "n": 126
+    },
+    {
+      "year": 2023,
+      "month": 7,
+      "observed": true,
+      "n": 73
+    },
+    {
+      "year": 2023,
+      "month": 8,
+      "observed": true,
+      "n": 152
+    },
+    {
+      "year": 2023,
+      "month": 9,
+      "observed": true,
+      "n": 60
+    },
+    {
+      "year": 2023,
+      "month": 10,
+      "observed": true,
+      "n": 77
+    },
+    {
+      "year": 2023,
+      "month": 11,
+      "observed": true,
+      "n": 60
+    },
+    {
+      "year": 2023,
+      "month": 12,
+      "observed": true,
+      "n": 63
+    },
+    {
+      "year": 2024,
+      "month": 1,
+      "observed": true,
+      "n": 73
+    },
+    {
+      "year": 2024,
+      "month": 2,
+      "observed": true,
+      "n": 22
+    },
+    {
+      "year": 2024,
+      "month": 3,
+      "observed": true,
+      "n": 55
+    },
+    {
+      "year": 2024,
+      "month": 4,
+      "observed": true,
+      "n": 58
+    },
+    {
+      "year": 2024,
+      "month": 5,
+      "observed": true,
+      "n": 42
+    },
+    {
+      "year": 2024,
+      "month": 6,
+      "observed": true,
+      "n": 47
+    },
+    {
+      "year": 2024,
+      "month": 7,
+      "observed": true,
+      "n": 87
+    },
+    {
+      "year": 2024,
+      "month": 8,
+      "observed": true,
+      "n": 85
+    },
+    {
+      "year": 2024,
+      "month": 9,
+      "observed": true,
+      "n": 0
+    },
+    {
+      "year": 2024,
+      "month": 10,
+      "observed": true,
+      "n": 41
+    },
+    {
+      "year": 2024,
+      "month": 11,
+      "observed": true,
+      "n": 22
+    },
+    {
+      "year": 2024,
+      "month": 12,
+      "observed": true,
+      "n": 27
+    },
+    {
+      "year": 2025,
+      "month": 1,
+      "observed": true,
+      "n": 19
+    },
+    {
+      "year": 2025,
+      "month": 2,
+      "observed": true,
+      "n": 31
+    },
+    {
+      "year": 2025,
+      "month": 3,
+      "observed": true,
+      "n": 36
+    },
+    {
+      "year": 2025,
+      "month": 4,
+      "observed": true,
+      "n": 39
+    },
+    {
+      "year": 2025,
+      "month": 5,
+      "observed": true,
+      "n": 44
+    },
+    {
+      "year": 2025,
+      "month": 6,
+      "observed": true,
+      "n": 33
+    },
+    {
+      "year": 2025,
+      "month": 7,
+      "observed": true,
+      "n": 41
+    },
+    {
+      "year": 2025,
+      "month": 8,
+      "observed": true,
+      "n": 24
+    },
+    {
+      "year": 2025,
+      "month": 9,
+      "observed": true,
+      "n": 31
+    },
+    {
+      "year": 2025,
+      "month": 10,
+      "observed": true,
+      "n": 33
+    },
+    {
+      "year": 2025,
+      "month": 11,
+      "observed": true,
+      "n": 21
+    },
+    {
+      "year": 2025,
+      "month": 12,
+      "observed": true,
+      "n": 46
+    },
+    {
+      "year": 2026,
+      "month": 1,
+      "observed": true,
+      "n": 27
+    },
+    {
+      "year": 2026,
+      "month": 2,
+      "observed": true,
+      "n": 35
+    },
+    {
+      "year": 2026,
+      "month": 3,
+      "observed": true,
+      "n": 33
+    },
+    {
+      "year": 2026,
+      "month": 4,
+      "observed": true,
+      "n": 40
+    },
+    {
+      "year": 2026,
+      "month": 5,
+      "observed": false,
+      "n": null
+    },
+    {
+      "year": 2026,
+      "month": 6,
+      "observed": false,
+      "n": null
+    },
+    {
+      "year": 2026,
+      "month": 7,
+      "observed": false,
+      "n": null
+    },
+    {
+      "year": 2026,
+      "month": 8,
+      "observed": false,
+      "n": null
+    },
+    {
+      "year": 2026,
+      "month": 9,
+      "observed": false,
+      "n": null
+    },
+    {
+      "year": 2026,
+      "month": 10,
+      "observed": false,
+      "n": null
+    },
+    {
+      "year": 2026,
+      "month": 11,
+      "observed": false,
+      "n": null
+    },
+    {
+      "year": 2026,
+      "month": 12,
+      "observed": false,
+      "n": null
+    }
+  ],
+  "top_categories": [
+    {
+      "year": 2014,
+      "top_all_category": "Other",
+      "top_all_n": 67,
+      "top_main11_category": "IgAVN",
+      "top_main11_n": 50
+    },
+    {
+      "year": 2015,
+      "top_all_category": "Other",
+      "top_all_n": 195,
+      "top_main11_category": "IgAVN",
+      "top_main11_n": 112
+    },
+    {
+      "year": 2016,
+      "top_all_category": "Other",
+      "top_all_n": 253,
+      "top_main11_category": "IgAVN",
+      "top_main11_n": 204
+    },
+    {
+      "year": 2017,
+      "top_all_category": "Other",
+      "top_all_n": 283,
+      "top_main11_category": "IgAVN",
+      "top_main11_n": 195
+    },
+    {
+      "year": 2018,
+      "top_all_category": "Other",
+      "top_all_n": 346,
+      "top_main11_category": "IgAVN",
+      "top_main11_n": 273
+    },
+    {
+      "year": 2019,
+      "top_all_category": "Other",
+      "top_all_n": 288,
+      "top_main11_category": "IgAVN",
+      "top_main11_n": 273
+    },
+    {
+      "year": 2020,
+      "top_all_category": "IgAVN",
+      "top_all_n": 193,
+      "top_main11_category": "IgAVN",
+      "top_main11_n": 193
+    },
+    {
+      "year": 2021,
+      "top_all_category": "IgAN",
+      "top_all_n": 394,
+      "top_main11_category": "IgAN",
+      "top_main11_n": 394
+    },
+    {
+      "year": 2022,
+      "top_all_category": "IgAN",
+      "top_all_n": 462,
+      "top_main11_category": "IgAN",
+      "top_main11_n": 462
+    },
+    {
+      "year": 2023,
+      "top_all_category": "IgAN",
+      "top_all_n": 305,
+      "top_main11_category": "IgAN",
+      "top_main11_n": 305
+    },
+    {
+      "year": 2024,
+      "top_all_category": "IgAN",
+      "top_all_n": 135,
+      "top_main11_category": "IgAN",
+      "top_main11_n": 135
+    },
+    {
+      "year": 2025,
+      "top_all_category": "IgAN",
+      "top_all_n": 130,
+      "top_main11_category": "IgAN",
+      "top_main11_n": 130
+    },
+    {
+      "year": 2026,
+      "top_all_category": "IgAN",
+      "top_all_n": 55,
+      "top_main11_category": "IgAN",
+      "top_main11_n": 55
+    }
+  ],
+  "quarterly_complete_years": [
+    {
+      "year": 2015,
+      "quarter": "Q1",
+      "n": 76
+    },
+    {
+      "year": 2015,
+      "quarter": "Q2",
+      "n": 82
+    },
+    {
+      "year": 2015,
+      "quarter": "Q3",
+      "n": 145
+    },
+    {
+      "year": 2015,
+      "quarter": "Q4",
+      "n": 217
+    },
+    {
+      "year": 2016,
+      "quarter": "Q1",
+      "n": 229
+    },
+    {
+      "year": 2016,
+      "quarter": "Q2",
+      "n": 218
+    },
+    {
+      "year": 2016,
+      "quarter": "Q3",
+      "n": 232
+    },
+    {
+      "year": 2016,
+      "quarter": "Q4",
+      "n": 268
+    },
+    {
+      "year": 2017,
+      "quarter": "Q1",
+      "n": 248
+    },
+    {
+      "year": 2017,
+      "quarter": "Q2",
+      "n": 251
+    },
+    {
+      "year": 2017,
+      "quarter": "Q3",
+      "n": 272
+    },
+    {
+      "year": 2017,
+      "quarter": "Q4",
+      "n": 247
+    },
+    {
+      "year": 2018,
+      "quarter": "Q1",
+      "n": 264
+    },
+    {
+      "year": 2018,
+      "quarter": "Q2",
+      "n": 288
+    },
+    {
+      "year": 2018,
+      "quarter": "Q3",
+      "n": 317
+    },
+    {
+      "year": 2018,
+      "quarter": "Q4",
+      "n": 325
+    },
+    {
+      "year": 2019,
+      "quarter": "Q1",
+      "n": 325
+    },
+    {
+      "year": 2019,
+      "quarter": "Q2",
+      "n": 240
+    },
+    {
+      "year": 2019,
+      "quarter": "Q3",
+      "n": 270
+    },
+    {
+      "year": 2019,
+      "quarter": "Q4",
+      "n": 268
+    },
+    {
+      "year": 2020,
+      "quarter": "Q1",
+      "n": 148
+    },
+    {
+      "year": 2020,
+      "quarter": "Q2",
+      "n": 201
+    },
+    {
+      "year": 2020,
+      "quarter": "Q3",
+      "n": 254
+    },
+    {
+      "year": 2020,
+      "quarter": "Q4",
+      "n": 219
+    },
+    {
+      "year": 2021,
+      "quarter": "Q1",
+      "n": 226
+    },
+    {
+      "year": 2021,
+      "quarter": "Q2",
+      "n": 283
+    },
+    {
+      "year": 2021,
+      "quarter": "Q3",
+      "n": 438
+    },
+    {
+      "year": 2021,
+      "quarter": "Q4",
+      "n": 465
+    },
+    {
+      "year": 2022,
+      "quarter": "Q1",
+      "n": 469
+    },
+    {
+      "year": 2022,
+      "quarter": "Q2",
+      "n": 392
+    },
+    {
+      "year": 2022,
+      "quarter": "Q3",
+      "n": 409
+    },
+    {
+      "year": 2022,
+      "quarter": "Q4",
+      "n": 229
+    },
+    {
+      "year": 2023,
+      "quarter": "Q1",
+      "n": 264
+    },
+    {
+      "year": 2023,
+      "quarter": "Q2",
+      "n": 374
+    },
+    {
+      "year": 2023,
+      "quarter": "Q3",
+      "n": 285
+    },
+    {
+      "year": 2023,
+      "quarter": "Q4",
+      "n": 200
+    },
+    {
+      "year": 2024,
+      "quarter": "Q1",
+      "n": 150
+    },
+    {
+      "year": 2024,
+      "quarter": "Q2",
+      "n": 147
+    },
+    {
+      "year": 2024,
+      "quarter": "Q3",
+      "n": 172
+    },
+    {
+      "year": 2024,
+      "quarter": "Q4",
+      "n": 90
+    },
+    {
+      "year": 2025,
+      "quarter": "Q1",
+      "n": 86
+    },
+    {
+      "year": 2025,
+      "quarter": "Q2",
+      "n": 116
+    },
+    {
+      "year": 2025,
+      "quarter": "Q3",
+      "n": 96
+    },
+    {
+      "year": 2025,
+      "quarter": "Q4",
+      "n": 100
+    }
+  ],
+  "determinism_repeat": {
+    "exact_aggregate_match": true,
+    "repeat_sha256": "9dd697d5b9426b02381abf3460a3e05541fd1ca1f2168f1eb6745dd1f122b26c"
+  }
+}

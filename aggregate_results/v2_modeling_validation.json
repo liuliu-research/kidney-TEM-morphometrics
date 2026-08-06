@@ -1,0 +1,4220 @@
+{
+  "report_type": "v2_modeling_three_round_validation",
+  "generated_utc": "2026-07-22T05:04:05.874700+00:00",
+  "overall_status": "PASS",
+  "rounds": {
+    "round_1_structure_privacy": "PASS",
+    "round_2_numerical": "PASS",
+    "round_3_protocol_source": "PASS"
+  },
+  "check_count": 529,
+  "result_sha256": "a9354f98998f4fd6e4a66bcb606d471db0c52d7d00ba928450b5fa5d93954aef",
+  "script_sha256": "bd32150928756ff5c2afb836d10fa8a35c710f5d6549b05c69e6e67ed1f0e23e",
+  "source_registry_sha256": "32076f080f7faea0daa293ae068c0b398fdcb342182a0b0fe21cff2bc4dbff96",
+  "checks": [
+    {
+      "round": "round_1_structure_privacy",
+      "check": "utf8_no_bom",
+      "status": "PASS",
+      "evidence": "7b0d0a2020227265"
+    },
+    {
+      "round": "round_1_structure_privacy",
+      "check": "required_top_level_keys",
+      "status": "PASS",
+      "evidence": [
+        "analysis_protocol",
+        "audit",
+        "exact_stem_only_sensitivity",
+        "generated_date",
+        "headline6_direct_binary",
+        "limitations",
+        "major_source_loho",
+        "mode",
+        "model_results",
+        "privacy",
+        "report_type",
+        "runtime_seconds"
+      ]
+    },
+    {
+      "round": "round_1_structure_privacy",
+      "check": "aggregate_privacy_flags",
+      "status": "PASS",
+      "evidence": {
+        "row_level_records_exported": false,
+        "patient_identifiers_exported": false,
+        "remote_files_written": false,
+        "output_scope": "aggregate JSON only"
+      }
+    },
+    {
+      "round": "round_1_structure_privacy",
+      "check": "no_patient_code_pattern",
+      "status": "PASS",
+      "evidence": "no P-code value found"
+    },
+    {
+      "round": "round_1_structure_privacy",
+      "check": "no_sensitive_key_admission_no",
+      "status": "PASS",
+      "evidence": "\"admission_no\""
+    },
+    {
+      "round": "round_1_structure_privacy",
+      "check": "no_sensitive_key_path_no",
+      "status": "PASS",
+      "evidence": "\"path_no\""
+    },
+    {
+      "round": "round_1_structure_privacy",
+      "check": "no_sensitive_key_old_P",
+      "status": "PASS",
+      "evidence": "\"old_P\""
+    },
+    {
+      "round": "round_1_structure_privacy",
+      "check": "no_sensitive_key_visit_id",
+      "status": "PASS",
+      "evidence": "\"visit_id\""
+    },
+    {
+      "round": "round_1_structure_privacy",
+      "check": "no_sensitive_key_PT\":",
+      "status": "PASS",
+      "evidence": "\"PT\":"
+    },
+    {
+      "round": "round_1_structure_privacy",
+      "check": "complete_model_grid",
+      "status": "PASS",
+      "evidence": {
+        "full": 6,
+        "full_minus_age": 6,
+        "age_sex_only": 6,
+        "morphometry_only": 6,
+        "missingness_only_diagnostic": 6
+      }
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "split_counts",
+      "status": "PASS",
+      "evidence": {
+        "dev": 5139,
+        "test": 2974
+      }
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "linkage_method_sum",
+      "status": "PASS",
+      "evidence": {
+        "canonical_registry_rows": 10981,
+        "legacy_rows": 13009,
+        "linked_registry_rows": 10794,
+        "linked_pct": 98.297,
+        "method_counts": {
+          "exact_stem": 8892,
+          "old_p_sex_birth_pm1": 1059,
+          "unique_old_p": 835,
+          "old_p_date": 8
+        },
+        "duplicate_old_rows_resolved": 612,
+        "publication_caveat": "Fallback links (all methods other than exact_stem) require a manually audited linkage sample before inferential publication use."
+      }
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "cohort_arithmetic",
+      "status": "PASS",
+      "evidence": {
+        "canonical_checks_in_window": 10933,
+        "actual_first_dated_check": "2014-05-08",
+        "actual_last_dated_check": "2026-04-09",
+        "unique_patients_first_check": 10787,
+        "main11_first_check_patients": 8208,
+        "main11_linked_patients": 8113,
+        "main11_linkage_pct": 98.843,
+        "development": 5139,
+        "temporal_test": 2974
+      }
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_logistic_regression_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_logistic_regression_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_logistic_regression_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_logistic_regression_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.38802958977807667,
+        0.38802958977807667
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_logistic_regression_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_logistic_regression_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.38802958977807667
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_logistic_regression_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.38825753444326505
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_logistic_regression_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.3035789246090376
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_logistic_regression_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.41581139201296324
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_logistic_regression_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.7763566721816972
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_logistic_regression_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.38802958977807667,
+        [
+          0.3700319435104237,
+          0.40248823133826495
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_logistic_regression_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.38825753444326505,
+        [
+          0.3587487484864269,
+          0.4172480322726595
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_logistic_regression_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.3035789246090376,
+        [
+          0.28845242673225313,
+          0.3200014668559047
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_logistic_regression_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.7763566721816972,
+        [
+          0.762027568438861,
+          0.790212838827467
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_random_forest_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_random_forest_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_random_forest_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_random_forest_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.4562878278412912,
+        0.4562878278412912
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_random_forest_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_random_forest_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.4562878278412912
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_random_forest_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.37331133835273805
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_random_forest_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.3186412567976059
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_random_forest_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.48055801947670257
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_random_forest_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.8340946027084719
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_random_forest_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.4562878278412912,
+        [
+          0.43844989912575655,
+          0.474016476126429
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_random_forest_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.37331133835273805,
+        [
+          0.3481875321438079,
+          0.40018985203060115
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_random_forest_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.3186412567976059,
+        [
+          0.3023401615441362,
+          0.3362695792989324
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_random_forest_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.8340946027084719,
+        [
+          0.8208832016801382,
+          0.8466033932555239
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_gradient_boosting_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_gradient_boosting_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_gradient_boosting_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_gradient_boosting_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.46267652992602554,
+        0.46267652992602554
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_gradient_boosting_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_gradient_boosting_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.46267652992602554
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_gradient_boosting_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.42780122523977016
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_gradient_boosting_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.3527329443189615
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_gradient_boosting_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.4906706837882832
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_gradient_boosting_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.8319162068234779
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_gradient_boosting_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.46267652992602554,
+        [
+          0.44620040349697376,
+          0.4773117014122394
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_gradient_boosting_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.42780122523977016,
+        [
+          0.40047001505139157,
+          0.4543374272118787
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_gradient_boosting_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.3527329443189615,
+        [
+          0.33614450579541133,
+          0.3685260102958017
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_gradient_boosting_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.8319162068234779,
+        [
+          0.8206645718575759,
+          0.8440598972036372
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_svm_rbf_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_svm_rbf_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_svm_rbf_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_svm_rbf_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.38802958977807667,
+        0.38802958977807667
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_svm_rbf_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_svm_rbf_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.38802958977807667
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_svm_rbf_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.36296475958381835
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_svm_rbf_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.2982134316764536
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_svm_rbf_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.430922530445888
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_svm_rbf_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.8285267715141618
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_svm_rbf_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.38802958977807667,
+        [
+          0.37171318090114325,
+          0.40333725622057837
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_svm_rbf_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.36296475958381835,
+        [
+          0.33529615792841794,
+          0.3897103262798961
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_svm_rbf_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.2982134316764536,
+        [
+          0.2829979337379287,
+          0.3132538881780694
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_svm_rbf_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.8285267715141618,
+        [
+          0.8182277931648252,
+          0.8384621496754424
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_mlp_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_mlp_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_mlp_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_mlp_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.531607262945528,
+        0.531607262945528
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_mlp_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_mlp_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.531607262945528
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_mlp_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.34245452098771784
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_mlp_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.34180313579756594
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_mlp_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.5317176393295762
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_mlp_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.7708517850505084
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_mlp_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.531607262945528,
+        [
+          0.5166358439811701,
+          0.5464189643577674
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_mlp_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.34245452098771784,
+        [
+          0.3223724067288917,
+          0.36168500389277736
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_mlp_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.34180313579756594,
+        [
+          0.3220554837210157,
+          0.3601068203026914
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_mlp_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.7708517850505084,
+        [
+          0.7562224850597878,
+          0.7859004745182486
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_adaboost_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_adaboost_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_adaboost_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_adaboost_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.37794216543375925,
+        0.37794216543375925
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_adaboost_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_adaboost_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.37794216543375925
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_adaboost_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.3230392312596508
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_adaboost_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.2821299867128549
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_adaboost_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.42543877422199355
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_adaboost_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.8106006117924014
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_adaboost_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.37794216543375925,
+        [
+          0.36196200403496975,
+          0.3929303967720242
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_adaboost_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.3230392312596508,
+        [
+          0.30091171407507533,
+          0.3492497694247774
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_adaboost_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.2821299867128549,
+        [
+          0.2676572429883921,
+          0.29736009961459486
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_adaboost_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.8106006117924014,
+        [
+          0.797332883007896,
+          0.8226685450576388
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_logistic_regression_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_logistic_regression_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_logistic_regression_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_logistic_regression_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.32985877605917957,
+        0.32985877605917957
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_logistic_regression_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_logistic_regression_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.32985877605917957
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_logistic_regression_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.33522547282084825
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_logistic_regression_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.24194744216671094
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_logistic_regression_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.3479107660692243
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_logistic_regression_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.7403919740347952
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_logistic_regression_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.32985877605917957,
+        [
+          0.31504707464694015,
+          0.3441745124411567
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_logistic_regression_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.33522547282084825,
+        [
+          0.3107211422618501,
+          0.3603836500987512
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_logistic_regression_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.24194744216671094,
+        [
+          0.22794153788396151,
+          0.25464118675056047
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_logistic_regression_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.7403919740347952,
+        [
+          0.7251399279063403,
+          0.7553607309727703
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_random_forest_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_random_forest_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_random_forest_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_random_forest_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.37592468056489575,
+        0.37592468056489575
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_random_forest_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_random_forest_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.37592468056489575
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_random_forest_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.3368654643241792
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_random_forest_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.26678414723110877
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_random_forest_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.3915733856004932
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_random_forest_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.8069446489305702
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_random_forest_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.37592468056489575,
+        [
+          0.3609364492266308,
+          0.3915685944855414
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_random_forest_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.3368654643241792,
+        [
+          0.3150697741472272,
+          0.36081153964324486
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_random_forest_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.26678414723110877,
+        [
+          0.25120770994670094,
+          0.28158694716590804
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_random_forest_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.8069446489305702,
+        [
+          0.792815075266965,
+          0.8186401618104403
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_gradient_boosting_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_gradient_boosting_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_gradient_boosting_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_gradient_boosting_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.386684599865501,
+        0.386684599865501
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_gradient_boosting_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_gradient_boosting_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.386684599865501
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_gradient_boosting_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.33029828799007416
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_gradient_boosting_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.2830896853748337
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_gradient_boosting_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.40948305826620607
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_gradient_boosting_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.7713918223220687
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_gradient_boosting_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.386684599865501,
+        [
+          0.36900638870208474,
+          0.4023285137861466
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_gradient_boosting_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.33029828799007416,
+        [
+          0.3055258719248811,
+          0.3565502054795974
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_gradient_boosting_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.2830896853748337,
+        [
+          0.2672195159891152,
+          0.3005804932824274
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_gradient_boosting_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.7713918223220687,
+        [
+          0.754913836243403,
+          0.7860197645397609
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_svm_rbf_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_svm_rbf_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_svm_rbf_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_svm_rbf_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.36583725622057833,
+        0.36583725622057833
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_svm_rbf_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_svm_rbf_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.36583725622057833
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_svm_rbf_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.2862028253156901
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_svm_rbf_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.23938790794097467
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_svm_rbf_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.37858563289460256
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_svm_rbf_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.7925611836837425
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_svm_rbf_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.36583725622057833,
+        [
+          0.3512020847343645,
+          0.3797999327505044
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_svm_rbf_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.2862028253156901,
+        [
+          0.26428083781512235,
+          0.31289906909770954
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_svm_rbf_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.23938790794097467,
+        [
+          0.22692690564104934,
+          0.2533697569844295
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_svm_rbf_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.7925611836837425,
+        [
+          0.779654186525992,
+          0.8034603314321148
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_mlp_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_mlp_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_mlp_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_mlp_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.4445191661062542,
+        0.4445191661062542
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_mlp_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_mlp_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.4445191661062542
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_mlp_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.26710605473561994
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_mlp_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.2523658962895273
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_mlp_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.42944043243900143
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_mlp_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.7610165609355164
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_mlp_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.4445191661062542,
+        [
+          0.4263281775386685,
+          0.4573133826496301
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_mlp_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.26710605473561994,
+        [
+          0.24802681774467814,
+          0.2823325027264049
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_mlp_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.2523658962895273,
+        [
+          0.2351253529612717,
+          0.2672447324687413
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_mlp_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.7610165609355164,
+        [
+          0.745732242075992,
+          0.7767992102156509
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_adaboost_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_adaboost_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_adaboost_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_adaboost_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.3140551445864156,
+        0.3140551445864156
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_adaboost_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_adaboost_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.3140551445864156
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_adaboost_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.23841163805068397
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_adaboost_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.2133536438091004
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_adaboost_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.3354473266316447
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_adaboost_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.7876045322721835
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_adaboost_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.3140551445864156,
+        [
+          0.2983944182918628,
+          0.3285137861466039
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_adaboost_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.23841163805068397,
+        [
+          0.21693083110036898,
+          0.2613679844466162
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_adaboost_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.2133536438091004,
+        [
+          0.19354212648345281,
+          0.23093509849202587
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "full_minus_age_adaboost_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.7876045322721835,
+        [
+          0.7759134103211505,
+          0.7996809089218176
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_logistic_regression_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_logistic_regression_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_logistic_regression_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_logistic_regression_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.16577000672494957,
+        0.16577000672494957
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_logistic_regression_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_logistic_regression_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.16577000672494957
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_logistic_regression_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.2153617843480604
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_logistic_regression_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.13668631921092622
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_logistic_regression_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.14107543606410763
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_logistic_regression_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.6932950020612446
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_logistic_regression_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.16577000672494957,
+        [
+          0.15449731002017483,
+          0.17854741089441828
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_logistic_regression_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.2153617843480604,
+        [
+          0.1941561755969194,
+          0.23841887789715085
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_logistic_regression_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.13668631921092622,
+        [
+          0.12466870317316596,
+          0.14923828334133643
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_logistic_regression_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.6932950020612446,
+        [
+          0.6772567636989585,
+          0.7101128945877478
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_random_forest_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_random_forest_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_random_forest_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_random_forest_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.2054472091459314,
+        0.2054472091459314
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_random_forest_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_random_forest_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.2054472091459314
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_random_forest_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.19843021284945586
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_random_forest_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.16158808959890064
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_random_forest_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.2311752757468701
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_random_forest_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.6613310690240121
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_random_forest_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.2054472091459314,
+        [
+          0.19316577000672494,
+          0.22227639542703428
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_random_forest_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.19843021284945586,
+        [
+          0.17501634441861888,
+          0.22048184950575658
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_random_forest_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.16158808959890064,
+        [
+          0.14914785502930522,
+          0.17608488328842697
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_random_forest_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.6613310690240121,
+        [
+          0.6455870352385145,
+          0.676048644159291
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_gradient_boosting_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_gradient_boosting_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_gradient_boosting_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_gradient_boosting_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.22125084061869535,
+        0.22125084061869535
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_gradient_boosting_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_gradient_boosting_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.22125084061869535
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_gradient_boosting_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.20820934310919767
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_gradient_boosting_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.1674846480883547
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_gradient_boosting_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.23269691265688566
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_gradient_boosting_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.6723254687027856
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_gradient_boosting_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.22125084061869535,
+        [
+          0.20695191661062542,
+          0.2370712844653665
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_gradient_boosting_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.20820934310919767,
+        [
+          0.18642088614160907,
+          0.2316639291195848
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_gradient_boosting_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.1674846480883547,
+        [
+          0.1555803531898574,
+          0.18346526543691558
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_gradient_boosting_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.6723254687027856,
+        [
+          0.6548330091042155,
+          0.6878443709324825
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_svm_rbf_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_svm_rbf_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_svm_rbf_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_svm_rbf_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.19737726967047747,
+        0.19737726967047747
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_svm_rbf_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_svm_rbf_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.19737726967047747
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_svm_rbf_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.22442135151421502
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_svm_rbf_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.14618534730876165
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_svm_rbf_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.1592372098201425
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_svm_rbf_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.7035314720343743
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_svm_rbf_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.19737726967047747,
+        [
+          0.1862811028917283,
+          0.20880968392737054
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_svm_rbf_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.22442135151421502,
+        [
+          0.2043205460784088,
+          0.24487466616078404
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_svm_rbf_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.14618534730876165,
+        [
+          0.13561867209928236,
+          0.1569196321289752
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_svm_rbf_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.7035314720343743,
+        [
+          0.6874076811258557,
+          0.7195803792647033
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_mlp_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_mlp_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_mlp_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_mlp_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.42871553463349027,
+        0.42871553463349027
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_mlp_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_mlp_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.42871553463349027
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_mlp_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.22139173152402744
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_mlp_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.17765395907725617
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_mlp_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.374248281278047
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_mlp_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.7090140672335293
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_mlp_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.42871553463349027,
+        [
+          0.41390383322125085,
+          0.44404001344989913
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_mlp_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.22139173152402744,
+        [
+          0.21433022376658042,
+          0.22958394325802056
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_mlp_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.17765395907725617,
+        [
+          0.17000982017479868,
+          0.18593669757840178
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_mlp_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.7090140672335293,
+        [
+          0.6921507274637406,
+          0.7236860750625129
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_adaboost_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_adaboost_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_adaboost_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_adaboost_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.20342972427706793,
+        0.20342972427706793
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_adaboost_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_adaboost_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.20342972427706793
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_adaboost_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.20028046338301927
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_adaboost_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.14629847509004598
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_adaboost_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.1806203197368108
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_adaboost_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.6819515897617331
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_adaboost_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.20342972427706793,
+        [
+          0.1909717552118359,
+          0.21656018829858775
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_adaboost_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.20028046338301927,
+        [
+          0.1813231535333196,
+          0.22096978177515167
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_adaboost_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.14629847509004598,
+        [
+          0.1350763155634213,
+          0.15810758742681938
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "age_sex_only_adaboost_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.6819515897617331,
+        [
+          0.6676542457839628,
+          0.6975158597963936
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_logistic_regression_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_logistic_regression_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_logistic_regression_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_logistic_regression_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.2995965030262273,
+        0.2995965030262273
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_logistic_regression_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_logistic_regression_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.2995965030262273
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_logistic_regression_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.29849926924199943
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_logistic_regression_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.20848593418891745
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_logistic_regression_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.31310845878008614
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_logistic_regression_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.7400366430206791
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_logistic_regression_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.2995965030262273,
+        [
+          0.28614660390047075,
+          0.3133826496301278
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_logistic_regression_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.29849926924199943,
+        [
+          0.27362775333724537,
+          0.3248526859638618
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_logistic_regression_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.20848593418891745,
+        [
+          0.19769000115821753,
+          0.2196489508018796
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_logistic_regression_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.7400366430206791,
+        [
+          0.7247049648923688,
+          0.7553024434863241
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_random_forest_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_random_forest_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_random_forest_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_random_forest_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.4317417619367855,
+        0.4317417619367855
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_random_forest_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_random_forest_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.4317417619367855
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_random_forest_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.27468591666841247
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_random_forest_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.26095978212250565
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_random_forest_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.4287407397425333
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_random_forest_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.7473921337871214
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_random_forest_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.4317417619367855,
+        [
+          0.4156018829858776,
+          0.44588096839273705
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_random_forest_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.27468591666841247,
+        [
+          0.2543366107235251,
+          0.2927895387328704
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_random_forest_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.26095978212250565,
+        [
+          0.2439460179350523,
+          0.2758313898588142
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_random_forest_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.7473921337871214,
+        [
+          0.7321963331624727,
+          0.7616595932307629
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_gradient_boosting_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_gradient_boosting_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_gradient_boosting_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_gradient_boosting_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.4008069939475454,
+        0.4008069939475454
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_gradient_boosting_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_gradient_boosting_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.4008069939475454
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_gradient_boosting_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.32056379686876263
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_gradient_boosting_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.27760691075658883
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_gradient_boosting_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.4148132134415288
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_gradient_boosting_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.7800960361611615
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_gradient_boosting_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.4008069939475454,
+        [
+          0.38567585743106925,
+          0.4149293880295898
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_gradient_boosting_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.32056379686876263,
+        [
+          0.29855515247491954,
+          0.34471915210453286
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_gradient_boosting_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.27760691075658883,
+        [
+          0.26089114466731333,
+          0.2942114258914726
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_gradient_boosting_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.7800960361611615,
+        [
+          0.7640720031898822,
+          0.7938268467338805
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_svm_rbf_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_svm_rbf_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_svm_rbf_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_svm_rbf_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.40450571620712844,
+        0.40450571620712844
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_svm_rbf_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_svm_rbf_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.40450571620712844
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_svm_rbf_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.28362424226728683
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_svm_rbf_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.258157208993139
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_svm_rbf_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.4032758639058309
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_svm_rbf_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.7839068695709844
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_svm_rbf_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.40450571620712844,
+        [
+          0.38817249495628786,
+          0.4200067249495628
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_svm_rbf_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.28362424226728683,
+        [
+          0.2612663257907287,
+          0.3078802006349231
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_svm_rbf_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.258157208993139,
+        [
+          0.2408647452028369,
+          0.2743231932687873
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_svm_rbf_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.7839068695709844,
+        [
+          0.7705714411770199,
+          0.7965411394259587
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_mlp_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_mlp_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_mlp_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_mlp_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.45090786819098855,
+        0.45090786819098855
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_mlp_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_mlp_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.45090786819098855
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_mlp_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.26683760029395187
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_mlp_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.26187393862708
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_mlp_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.4338612586899979
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_mlp_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.7568183129132545
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_mlp_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.45090786819098855,
+        [
+          0.4347679892400807,
+          0.46469401479488903
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_mlp_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.26683760029395187,
+        [
+          0.2478778040375754,
+          0.28477248683923234
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_mlp_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.26187393862708,
+        [
+          0.2401955388909933,
+          0.283625784062766
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_mlp_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.7568183129132545,
+        [
+          0.7424325917887797,
+          0.7721116811939552
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_adaboost_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_adaboost_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_adaboost_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_adaboost_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.3419636852723605,
+        0.3419636852723605
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_adaboost_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_adaboost_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.3419636852723605
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_adaboost_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.23497863673241962
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_adaboost_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.20558714720008672
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_adaboost_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.3456281244095577
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_adaboost_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.7759963394321251
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_adaboost_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.3419636852723605,
+        [
+          0.32833725622057836,
+          0.35642232683254876
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_adaboost_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.23497863673241962,
+        [
+          0.2176576523122603,
+          0.2539235715442944
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_adaboost_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.20558714720008672,
+        [
+          0.18938678326568853,
+          0.22165663585205947
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "morphometry_only_adaboost_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.7759963394321251,
+        [
+          0.7622848566035912,
+          0.7877444546468257
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_logistic_regression_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_logistic_regression_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_logistic_regression_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_logistic_regression_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.11533288500336247,
+        0.11533288500336247
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_logistic_regression_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_logistic_regression_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.11533288500336247
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_logistic_regression_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.12994135137419754
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_logistic_regression_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.07435389901945767
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_logistic_regression_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.08068168375022017
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_logistic_regression_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.5989116562544466
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_logistic_regression_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.11533288500336247,
+        [
+          0.10928043039677203,
+          0.121049092131809
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_logistic_regression_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.12994135137419754,
+        [
+          0.11463936432761446,
+          0.1459358158507948
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_logistic_regression_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.07435389901945767,
+        [
+          0.06727928016906554,
+          0.08213938405970496
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_logistic_regression_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.5989116562544466,
+        [
+          0.585002817223755,
+          0.61229565143461
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_random_forest_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_random_forest_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_random_forest_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_random_forest_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.12138533960995293,
+        0.12138533960995293
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_random_forest_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_random_forest_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.12138533960995293
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_random_forest_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.12974963488980862
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_random_forest_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.06687357019866748
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_random_forest_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.07831433350578691
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_random_forest_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.6007412755367704
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_random_forest_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.12138533960995293,
+        [
+          0.11616509751176866,
+          0.12642905178211164
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_random_forest_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.12974963488980862,
+        [
+          0.11565631170548685,
+          0.14418630461343043
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_random_forest_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.06687357019866748,
+        [
+          0.06194716484337463,
+          0.07265481390170221
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_random_forest_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.6007412755367704,
+        [
+          0.5856582343031974,
+          0.614378763880224
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_gradient_boosting_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_gradient_boosting_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_gradient_boosting_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_gradient_boosting_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.12138533960995293,
+        0.12138533960995293
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_gradient_boosting_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_gradient_boosting_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.12138533960995293
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_gradient_boosting_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.12958410700164713
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_gradient_boosting_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.07188218162565944
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_gradient_boosting_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.0874662517311189
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_gradient_boosting_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.5986388813539452
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_gradient_boosting_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.12138533960995293,
+        [
+          0.11566913248150638,
+          0.12710154673839946
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_gradient_boosting_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.12958410700164713,
+        [
+          0.11440970369621836,
+          0.14428602537454463
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_gradient_boosting_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.07188218162565944,
+        [
+          0.06644875950995859,
+          0.07717159487716968
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_gradient_boosting_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.5986388813539452,
+        [
+          0.5858758402166301,
+          0.6113280996020015
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_svm_rbf_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_svm_rbf_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_svm_rbf_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_svm_rbf_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.11970410221923336,
+        0.11970410221923336
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_svm_rbf_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_svm_rbf_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.11970410221923336
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_svm_rbf_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.1251013188602671
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_svm_rbf_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.07351985560062307
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_svm_rbf_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.09471660142502103
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_svm_rbf_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.61815033728866
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_svm_rbf_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.11970410221923336,
+        [
+          0.11297915265635508,
+          0.12575655682582382
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_svm_rbf_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.1251013188602671,
+        [
+          0.11059255249951201,
+          0.14013095257344232
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_svm_rbf_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.07351985560062307,
+        [
+          0.06792512749992637,
+          0.08065829119742997
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_svm_rbf_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.61815033728866,
+        [
+          0.6036942485480987,
+          0.6315977594704463
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_mlp_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_mlp_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_mlp_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_mlp_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.26227303295225285,
+        0.26227303295225285
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_mlp_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_mlp_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.26227303295225285
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_mlp_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.17192311702938595
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_mlp_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.1251304173987787
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_mlp_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.21046094985964928
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_mlp_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.602666998015044
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_mlp_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.26227303295225285,
+        [
+          0.2518493611297915,
+          0.2750504371217216
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_mlp_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.17192311702938595,
+        [
+          0.1633726767300241,
+          0.18136278950948934
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_mlp_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.1251304173987787,
+        [
+          0.11611585994043656,
+          0.13454625370510306
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_mlp_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.602666998015044,
+        [
+          0.5889706477022398,
+          0.6173362950668747
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_adaboost_completed",
+      "status": "PASS",
+      "evidence": "completed"
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_adaboost_cm_shape",
+      "status": "PASS",
+      "evidence": [
+        11,
+        11
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_adaboost_cm_total",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_adaboost_accuracy_recompute",
+      "status": "PASS",
+      "evidence": [
+        0.12474781439139207,
+        0.12474781439139207
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_adaboost_support_sum",
+      "status": "PASS",
+      "evidence": 2974
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_adaboost_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.12474781439139207
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_adaboost_balanced_accuracy_bounds",
+      "status": "PASS",
+      "evidence": 0.13675456794332388
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_adaboost_macro_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.07689952689075678
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_adaboost_weighted_f1_bounds",
+      "status": "PASS",
+      "evidence": 0.08083459048422574
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_adaboost_macro_ovr_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.6041043853852277
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_adaboost_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.12474781439139207,
+        [
+          0.11919132481506388,
+          0.1296318090114324
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_adaboost_balanced_accuracy_ci",
+      "status": "PASS",
+      "evidence": [
+        0.13675456794332388,
+        [
+          0.12278293541362399,
+          0.15251817687225266
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_adaboost_macro_f1_ci",
+      "status": "PASS",
+      "evidence": [
+        0.07689952689075678,
+        [
+          0.06905751948616189,
+          0.0847697649100083
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "missingness_only_diagnostic_adaboost_macro_ovr_auc_ci",
+      "status": "PASS",
+      "evidence": [
+        0.6041043853852277,
+        [
+          0.5884024066402851,
+          0.6181828406340232
+        ]
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "all_30_model_outputs_checked",
+      "status": "PASS",
+      "evidence": 30
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "exact_subset",
+      "status": "PASS",
+      "evidence": {
+        "n_total": 6609,
+        "n_development": 4080,
+        "n_temporal_test": 2529
+      }
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "headline6_classes",
+      "status": "PASS",
+      "evidence": [
+        "FSGS",
+        "IgAN",
+        "IgAVN",
+        "LN",
+        "MCD",
+        "MN"
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAN_direct_binary_rf_support",
+      "status": "PASS",
+      "evidence": [
+        1052,
+        1922
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAN_direct_binary_rf_roc_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.8257931475847006
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAN_direct_binary_rf_average_precision_bounds",
+      "status": "PASS",
+      "evidence": 0.7158609370346475
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAN_direct_binary_rf_f1_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.6706254948535234
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAN_direct_binary_rf_sensitivity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.8051330798479087
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAN_direct_binary_rf_specificity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.673777315296566
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAN_multiclass_rf_ovr_output_support",
+      "status": "PASS",
+      "evidence": [
+        1052,
+        1922
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAN_multiclass_rf_ovr_output_roc_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.813857109791369
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAN_multiclass_rf_ovr_output_average_precision_bounds",
+      "status": "PASS",
+      "evidence": 0.7002528465125886
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAN_multiclass_rf_ovr_output_f1_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.3177283192632387
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAN_multiclass_rf_ovr_output_sensitivity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.1967680608365019
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAN_multiclass_rf_ovr_output_specificity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.9771071800208116
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAVN_direct_binary_rf_support",
+      "status": "PASS",
+      "evidence": [
+        392,
+        2582
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAVN_direct_binary_rf_roc_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.8684292946458211
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAVN_direct_binary_rf_average_precision_bounds",
+      "status": "PASS",
+      "evidence": 0.5489208663047997
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAVN_direct_binary_rf_f1_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.5925925925925926
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAVN_direct_binary_rf_sensitivity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.6530612244897959
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAVN_direct_binary_rf_specificity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.9163439194422928
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAVN_multiclass_rf_ovr_output_support",
+      "status": "PASS",
+      "evidence": [
+        392,
+        2582
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAVN_multiclass_rf_ovr_output_roc_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.8621806778482114
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAVN_multiclass_rf_ovr_output_average_precision_bounds",
+      "status": "PASS",
+      "evidence": 0.5310817852235346
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAVN_multiclass_rf_ovr_output_f1_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.010126582278481013
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAVN_multiclass_rf_ovr_output_sensitivity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.00510204081632653
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_IgAVN_multiclass_rf_ovr_output_specificity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.9996127033307514
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MCD_direct_binary_rf_support",
+      "status": "PASS",
+      "evidence": [
+        406,
+        2568
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MCD_direct_binary_rf_roc_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.9468074290625048
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MCD_direct_binary_rf_average_precision_bounds",
+      "status": "PASS",
+      "evidence": 0.7370821478156625
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MCD_direct_binary_rf_f1_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.6692913385826772
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MCD_direct_binary_rf_sensitivity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.8374384236453202
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MCD_direct_binary_rf_specificity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.8948598130841121
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MCD_multiclass_rf_ovr_output_support",
+      "status": "PASS",
+      "evidence": [
+        406,
+        2568
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MCD_multiclass_rf_ovr_output_roc_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.9399184544910455
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MCD_multiclass_rf_ovr_output_average_precision_bounds",
+      "status": "PASS",
+      "evidence": 0.7109686949434247
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MCD_multiclass_rf_ovr_output_f1_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.6123680241327301
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MCD_multiclass_rf_ovr_output_sensitivity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.5
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MCD_multiclass_rf_ovr_output_specificity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.9789719626168224
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MN_direct_binary_rf_support",
+      "status": "PASS",
+      "evidence": [
+        350,
+        2624
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MN_direct_binary_rf_roc_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.9428331881533101
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MN_direct_binary_rf_average_precision_bounds",
+      "status": "PASS",
+      "evidence": 0.7183886639769597
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MN_direct_binary_rf_f1_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.6545454545454545
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MN_direct_binary_rf_sensitivity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.8742857142857143
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MN_direct_binary_rf_specificity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.8936737804878049
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MN_multiclass_rf_ovr_output_support",
+      "status": "PASS",
+      "evidence": [
+        350,
+        2624
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MN_multiclass_rf_ovr_output_roc_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.938402656794425
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MN_multiclass_rf_ovr_output_average_precision_bounds",
+      "status": "PASS",
+      "evidence": 0.6992385528611257
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MN_multiclass_rf_ovr_output_f1_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.6535947712418301
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MN_multiclass_rf_ovr_output_sensitivity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.5714285714285714
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_MN_multiclass_rf_ovr_output_specificity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.9763719512195121
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_LN_direct_binary_rf_support",
+      "status": "PASS",
+      "evidence": [
+        267,
+        2707
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_LN_direct_binary_rf_roc_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.8316820450240672
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_LN_direct_binary_rf_average_precision_bounds",
+      "status": "PASS",
+      "evidence": 0.3756483815446785
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_LN_direct_binary_rf_f1_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.3783783783783784
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_LN_direct_binary_rf_sensitivity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.6554307116104869
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_LN_direct_binary_rf_specificity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.8215736978204654
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_LN_multiclass_rf_ovr_output_support",
+      "status": "PASS",
+      "evidence": [
+        267,
+        2707
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_LN_multiclass_rf_ovr_output_roc_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.8192043377621343
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_LN_multiclass_rf_ovr_output_average_precision_bounds",
+      "status": "PASS",
+      "evidence": 0.3393172724203296
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_LN_multiclass_rf_ovr_output_f1_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.2153846153846154
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_LN_multiclass_rf_ovr_output_sensitivity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.13108614232209737
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_LN_multiclass_rf_ovr_output_specificity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.9915035094200222
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_FSGS_direct_binary_rf_support",
+      "status": "PASS",
+      "evidence": [
+        79,
+        2895
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_FSGS_direct_binary_rf_roc_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.858577643689469
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_FSGS_direct_binary_rf_average_precision_bounds",
+      "status": "PASS",
+      "evidence": 0.11731946596826152
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_FSGS_direct_binary_rf_f1_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.20069204152249134
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_FSGS_direct_binary_rf_sensitivity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.3670886075949367
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_FSGS_direct_binary_rf_specificity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.9374784110535406
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_FSGS_multiclass_rf_ovr_output_support",
+      "status": "PASS",
+      "evidence": [
+        79,
+        2895
+      ]
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_FSGS_multiclass_rf_ovr_output_roc_auc_bounds",
+      "status": "PASS",
+      "evidence": 0.8356725913294418
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_FSGS_multiclass_rf_ovr_output_average_precision_bounds",
+      "status": "PASS",
+      "evidence": 0.09249319042515412
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_FSGS_multiclass_rf_ovr_output_f1_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.022222222222222223
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_FSGS_multiclass_rf_ovr_output_sensitivity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.012658227848101266
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "binary_FSGS_multiclass_rf_ovr_output_specificity_at_0_5_bounds",
+      "status": "PASS",
+      "evidence": 0.9965457685664939
+    },
+    {
+      "round": "round_2_numerical",
+      "check": "four_major_source_holdouts",
+      "status": "PASS",
+      "evidence": {
+        "Source A": 2523,
+        "Source B": 2138,
+        "Source C": 2006,
+        "Source D": 1151
+      }
+    },
+    {
+      "round": "round_3_protocol_source",
+      "check": "live_frozen_registry_identical",
+      "status": "PASS",
+      "evidence": "32076f080f7faea0daa293ae068c0b398fdcb342182a0b0fe21cff2bc4dbff96"
+    },
+    {
+      "round": "round_3_protocol_source",
+      "check": "actual_date_window",
+      "status": "PASS",
+      "evidence": {
+        "first": "2014-05-08",
+        "last": "2026-04-09"
+      }
+    },
+    {
+      "round": "round_3_protocol_source",
+      "check": "fixed_seed",
+      "status": "PASS",
+      "evidence": "SEED = 20260722"
+    },
+    {
+      "round": "round_3_protocol_source",
+      "check": "patient_first_visit",
+      "status": "PASS",
+      "evidence": "drop_duplicates(subset=[\"PT\"]"
+    },
+    {
+      "round": "round_3_protocol_source",
+      "check": "fold_imputer",
+      "status": "PASS",
+      "evidence": "(\"imputer\", make_imputer())"
+    },
+    {
+      "round": "round_3_protocol_source",
+      "check": "fold_scaler",
+      "status": "PASS",
+      "evidence": "(\"scaler\", StandardScaler())"
+    },
+    {
+      "round": "round_3_protocol_source",
+      "check": "inner_grid",
+      "status": "PASS",
+      "evidence": "GridSearchCV("
+    },
+    {
+      "round": "round_3_protocol_source",
+      "check": "single_process",
+      "status": "PASS",
+      "evidence": "n_jobs=1"
+    },
+    {
+      "round": "round_3_protocol_source",
+      "check": "window_end",
+      "status": "PASS",
+      "evidence": "WINDOW_END = pd.Timestamp(\"2026-04-30\")"
+    },
+    {
+      "round": "round_3_protocol_source",
+      "check": "no_remote_file_write_.to_csv(",
+      "status": "PASS",
+      "evidence": ".to_csv("
+    },
+    {
+      "round": "round_3_protocol_source",
+      "check": "no_remote_file_write_.to_excel(",
+      "status": "PASS",
+      "evidence": ".to_excel("
+    },
+    {
+      "round": "round_3_protocol_source",
+      "check": "no_remote_file_write_.write_text(",
+      "status": "PASS",
+      "evidence": ".write_text("
+    },
+    {
+      "round": "round_3_protocol_source",
+      "check": "no_remote_file_write_.write_bytes(",
+      "status": "PASS",
+      "evidence": ".write_bytes("
+    },
+    {
+      "round": "round_3_protocol_source",
+      "check": "v2_modeling_temporal_metrics.csv_row_count",
+      "status": "PASS",
+      "evidence": 30
+    },
+    {
+      "round": "round_3_protocol_source",
+      "check": "v2_modeling_headline6_binary.csv_row_count",
+      "status": "PASS",
+      "evidence": 12
+    },
+    {
+      "round": "round_3_protocol_source",
+      "check": "v2_modeling_loho.csv_row_count",
+      "status": "PASS",
+      "evidence": 4
+    },
+    {
+      "round": "round_3_protocol_source",
+      "check": "v2_modeling_feature_missingness.csv_row_count",
+      "status": "PASS",
+      "evidence": 18
+    },
+    {
+      "round": "round_3_protocol_source",
+      "check": "repeat_linkage_and_summary_audit_identical",
+      "status": "PASS",
+      "evidence": {
+        "repeat_sha256": "8d5b1fa5e27de8e8b23aac2fe76339838a8e08161de95c7ab77c5f455a368db6",
+        "main11_linked": 8113
+      }
+    },
+    {
+      "round": "round_1_structure_privacy",
+      "check": "no_nonfinite_json_literals",
+      "status": "PASS",
+      "evidence": "NaN/Infinity literals absent"
+    },
+    {
+      "round": "round_1_structure_privacy",
+      "check": "binary_and_loho_complete",
+      "status": "PASS",
+      "evidence": {
+        "binary": [
+          "IgAN",
+          "IgAVN",
+          "MCD",
+          "MN",
+          "LN",
+          "FSGS"
+        ],
+        "loho_n": 4
+      }
+    }
+  ],
+  "determinism": {
+    "fixed_seed": 20260722,
+    "single_process_n_jobs": 1,
+    "repeat_audit_identical": true,
+    "full_model_rerun_note": "Full final run completed once after the date-window correction; linkage/build audit was independently rerun and matched exactly."
+  },
+  "csv_outputs": [
+    "logs\\v2_modeling_temporal_metrics.csv",
+    "logs\\v2_modeling_headline6_binary.csv",
+    "logs\\v2_modeling_loho.csv",
+    "logs\\v2_modeling_feature_missingness.csv"
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "executed_at_utc": "2026-07-31T14:06:52Z",
+  "environment": {
+    "python": "3.12.13",
+    "implementation": "CPython",
+    "platform": "Windows",
+    "packages_used_for_aggregate_rebuild": {
+      "numpy": "2.5.1",
+      "pandas": "3.0.5",
+      "matplotlib": "3.10.8",
+      "seaborn": "0.13.2",
+      "Pillow": "12.3.0"
+    }
+  },
+  "commands": [
+    {
+      "command": "python scripts/build_v2_model_figure.py",
+      "exit_code": 0,
+      "stdout_sha256": "a34b224931a2e5a7deff97b485b49126681951f357c56fb24f1ce177c5fbf2cd"
+    },
+    {
+      "command": "python scripts/build_v2_descriptive_figures.py --reuse-aggregate",
+      "exit_code": 0,
+      "stdout_sha256": "c8e8a90b25b25709408ccedd81008651fa265ac64010648c26488c0ec2a1fce0"
+    },
+    {
+      "command": "python scripts/build_v2_model_figure.py",
+      "exit_code": 0,
+      "stdout_sha256": "a34b224931a2e5a7deff97b485b49126681951f357c56fb24f1ce177c5fbf2cd"
+    },
+    {
+      "command": "python scripts/build_v2_descriptive_figures.py --reuse-aggregate",
+      "exit_code": 0,
+      "stdout_sha256": "c8e8a90b25b25709408ccedd81008651fa265ac64010648c26488c0ec2a1fce0"
+    }
+  ],
+  "determinism": {
+    "passed": true,
+    "compared_file_count": 27,
+    "mismatches": [],
+    "run_1_sha256": {
+      "Figure1_v2.png": "ced7b448a1e8bf98a8314f94eceaf2f3eaad92b4d3aac1c2d968b34443f41000",
+      "Figure2_v2.png": "300bb1a28fb7e322da9f9915bad2edb2f14840072765952f765709fed0f744da",
+      "Figure3_v2.png": "41076bb5bdf3106df17f8e283f3bb3f1fe593ae3183f5dcdc7c41215f8fea3e9",
+      "Figure3_v2_manifest.json": "90f382f7c13308a233919c39e334a376a367173a5c52d9116db6f2e0dbe8f974",
+      "Figure4_v2.png": "0733d091fec7dbc63a637e5275f27f7e33570e6ff4ce19b750593e71b575b15e",
+      "manifest.json": "8c39338c2db2295e5fa5aed0659058689498752279592d30839f359e44c29de1",
+      "manifest.md": "17b56764a55a330b179bd9e51efa8552d37190ee5eecd0647de0302ee7f36d34",
+      "source_data/figure1_age_distribution.csv": "fc2682f10e3f4bb32a8ea9fb82f7b0d631f45f6b07151bf5e344b006862ff835",
+      "source_data/figure1_annual_volume.csv": "b0c209bf949021c31a63ffaddc15907d9f05bc3b87ff71c5f76b9b5b773be470",
+      "source_data/figure1_class_counts.csv": "d4742c3f2723bd54d85effcd7b151eb88dc9fb51414f1e114136ed4aeb0e12b6",
+      "source_data/figure1_sex_proportion.csv": "ee519ee7c8db752374b0772650db844efd74d1ddd51e14db0129b6dcad6e4404",
+      "source_data/figure1_year_month.csv": "f179da88da874f689e25c1caa0f54397618ae3f4b58d00cb5d282aeb9c12c25d",
+      "source_data/figure2_availability_by_year.csv": "4b8783e993e18c052bd163af77237fc14196737aed1640b7a92353d803e89d78",
+      "source_data/figure2_available_case_morphometry.csv": "d99ec01ecc76608d25c29fe7fe1e5faae4efacf431e79c39e9586a8b0bd2edb3",
+      "source_data/figure2_dev_test_missingness.csv": "6e0a52f13bcf0e550aacc157babfe737785c8241e6265b268af5847d245a7c1d",
+      "source_data/figure2_missingness_overall.csv": "cfd996ad6c8b8c1e1b71a81e97761545a5b49f07f875a718b9fa67dabe2e5292",
+      "source_data/figure3a_cohort_flow.csv": "d5bfd14d3ac6b32d8879111d179d695e7e5ee4885b0c910f284efcafa08cd1f6",
+      "source_data/figure3b_temporal_models.csv": "c97c8de084d65f03536205de9203a8c184535369b076e92c1814df8ed4585efe",
+      "source_data/figure3c_confusion_matrix_row_normalized.csv": "ec2623d4bc79b4fd523406fc7d7e0ab8724be6af24555e4f666bfc845f2d4c84",
+      "source_data/figure3d_direct_binary.csv": "f57a1359b9f28053c40f01301a028456590df762892f2d063d4047ba7898b0d0",
+      "source_data/figure3e_feature_set_sensitivity.csv": "182e872cbae32eb023e5fe016a7afe6429b6c41b66eea39a4fa8d777799b7af9",
+      "source_data/figure3f_source_holdout.csv": "8a39bca50bd34ae64431b95f18a83e76a8c144c035f5b0828579c6f90969e3e2",
+      "source_data/figure4_annual_capacity.csv": "6ba8ea9fb757f2932c33d4e7b6e54bfb95f6e532cc60396fb87ee856ff2a216b",
+      "source_data/figure4_quarterly_volume.csv": "47be62889d4b88f09d64508a3e6b41d8cdc7e83b38785f21a6ae4cf7caa73986",
+      "source_data/figure4_yearly_top_category.csv": "005a2749f6e904347d219d2c873f8695dae20ff1c3e293568cdc154470bbb0c5",
+      "source_data/table3_scenario_capacity_source.csv": "6ba8ea9fb757f2932c33d4e7b6e54bfb95f6e532cc60396fb87ee856ff2a216b",
+      "validation.json": "0c48e7ceb56e8fd2ab3a3f2908884f957a3c300f9a3d1fa86735dab6fee93256"
+    },
+    "run_2_sha256": {
+      "Figure1_v2.png": "ced7b448a1e8bf98a8314f94eceaf2f3eaad92b4d3aac1c2d968b34443f41000",
+      "Figure2_v2.png": "300bb1a28fb7e322da9f9915bad2edb2f14840072765952f765709fed0f744da",
+      "Figure3_v2.png": "41076bb5bdf3106df17f8e283f3bb3f1fe593ae3183f5dcdc7c41215f8fea3e9",
+      "Figure3_v2_manifest.json": "90f382f7c13308a233919c39e334a376a367173a5c52d9116db6f2e0dbe8f974",
+      "Figure4_v2.png": "0733d091fec7dbc63a637e5275f27f7e33570e6ff4ce19b750593e71b575b15e",
+      "manifest.json": "8c39338c2db2295e5fa5aed0659058689498752279592d30839f359e44c29de1",
+      "manifest.md": "17b56764a55a330b179bd9e51efa8552d37190ee5eecd0647de0302ee7f36d34",
+      "source_data/figure1_age_distribution.csv": "fc2682f10e3f4bb32a8ea9fb82f7b0d631f45f6b07151bf5e344b006862ff835",
+      "source_data/figure1_annual_volume.csv": "b0c209bf949021c31a63ffaddc15907d9f05bc3b87ff71c5f76b9b5b773be470",
+      "source_data/figure1_class_counts.csv": "d4742c3f2723bd54d85effcd7b151eb88dc9fb51414f1e114136ed4aeb0e12b6",
+      "source_data/figure1_sex_proportion.csv": "ee519ee7c8db752374b0772650db844efd74d1ddd51e14db0129b6dcad6e4404",
+      "source_data/figure1_year_month.csv": "f179da88da874f689e25c1caa0f54397618ae3f4b58d00cb5d282aeb9c12c25d",
+      "source_data/figure2_availability_by_year.csv": "4b8783e993e18c052bd163af77237fc14196737aed1640b7a92353d803e89d78",
+      "source_data/figure2_available_case_morphometry.csv": "d99ec01ecc76608d25c29fe7fe1e5faae4efacf431e79c39e9586a8b0bd2edb3",
+      "source_data/figure2_dev_test_missingness.csv": "6e0a52f13bcf0e550aacc157babfe737785c8241e6265b268af5847d245a7c1d",
+      "source_data/figure2_missingness_overall.csv": "cfd996ad6c8b8c1e1b71a81e97761545a5b49f07f875a718b9fa67dabe2e5292",
+      "source_data/figure3a_cohort_flow.csv": "d5bfd14d3ac6b32d8879111d179d695e7e5ee4885b0c910f284efcafa08cd1f6",
+      "source_data/figure3b_temporal_models.csv": "c97c8de084d65f03536205de9203a8c184535369b076e92c1814df8ed4585efe",
+      "source_data/figure3c_confusion_matrix_row_normalized.csv": "ec2623d4bc79b4fd523406fc7d7e0ab8724be6af24555e4f666bfc845f2d4c84",
+      "source_data/figure3d_direct_binary.csv": "f57a1359b9f28053c40f01301a028456590df762892f2d063d4047ba7898b0d0",
+      "source_data/figure3e_feature_set_sensitivity.csv": "182e872cbae32eb023e5fe016a7afe6429b6c41b66eea39a4fa8d777799b7af9",
+      "source_data/figure3f_source_holdout.csv": "8a39bca50bd34ae64431b95f18a83e76a8c144c035f5b0828579c6f90969e3e2",
+      "source_data/figure4_annual_capacity.csv": "6ba8ea9fb757f2932c33d4e7b6e54bfb95f6e532cc60396fb87ee856ff2a216b",
+      "source_data/figure4_quarterly_volume.csv": "47be62889d4b88f09d64508a3e6b41d8cdc7e83b38785f21a6ae4cf7caa73986",
+      "source_data/figure4_yearly_top_category.csv": "005a2749f6e904347d219d2c873f8695dae20ff1c3e293568cdc154470bbb0c5",
+      "source_data/table3_scenario_capacity_source.csv": "6ba8ea9fb757f2932c33d4e7b6e54bfb95f6e532cc60396fb87ee856ff2a216b",
+      "validation.json": "0c48e7ceb56e8fd2ab3a3f2908884f957a3c300f9a3d1fa86735dab6fee93256"
+    }
+  },
+  "reference_hash_matches": {
+    "Figure1_v2.png": true,
+    "Figure2_v2.png": true,
+    "Figure3_v2.png": true,
+    "Figure4_v2.png": true
+  },
+  "source_data_sync_matches": {
+    "figure1_age_distribution.csv": true,
+    "figure1_annual_volume.csv": true,
+    "figure1_class_counts.csv": true,
+    "figure1_sex_proportion.csv": true,
+    "figure1_year_month.csv": true,
+    "figure2_availability_by_year.csv": true,
+    "figure2_available_case_morphometry.csv": true,
+    "figure2_dev_test_missingness.csv": true,
+    "figure2_missingness_overall.csv": true,
+    "figure3a_cohort_flow.csv": true,
+    "figure3b_temporal_models.csv": true,
+    "figure3c_confusion_matrix_row_normalized.csv": true,
+    "figure3d_direct_binary.csv": true,
+    "figure3e_feature_set_sensitivity.csv": true,
+    "figure3f_source_holdout.csv": true,
+    "figure4_annual_capacity.csv": true,
+    "figure4_quarterly_volume.csv": true,
+    "figure4_yearly_top_category.csv": true,
+    "table3_scenario_capacity_source.csv": true
+  },
+  "aggregate_validation": {
+    "passed": true,
+    "checks_passed": 14,
+    "checks_failed": 0
+  },
+  "metric_alignment": {
+    "passed": true,
+    "checks": {
+      "Figure3D_source_matches_direct_binary_aggregate": true,
+      "Figure3F_source_matches_present_class_aggregate": true,
+      "Figure3D_plots_average_precision": true,
+      "Figure3F_plots_present_class_macro_f1": true
+    }
+  },
+  "privacy_scan": {
+    "passed": true,
+    "scanned_text_file_count": 66,
+    "identifier_fields_checked": [
+      "admission_id",
+      "admission_no",
+      "id_card",
+      "medical_record_number",
+      "patient_id",
+      "patient_key",
+      "patient_name",
+      "phone",
+      "source_hospital",
+      "visit_id",
+      "visit_key"
+    ],
+    "issues": []
+  },
+  "gates": {
+    "commands_succeeded": true,
+    "deterministic_rebuild": true,
+    "reference_hash_matches": true,
+    "source_data_sync_matches": true,
+    "aggregate_validation": true,
+    "metric_alignment": true,
+    "privacy_scan": true
+  },
+  "overall_pass": true
+}

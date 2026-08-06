@@ -1,0 +1,58 @@
+{
+  "title": "Analysis code and de-identified aggregate data for: Limited temporal generalization of report-derived TEM morphometrics for 11-class glomerular disease phenotyping",
+  "description": "Deterministic extraction rules, record-linkage procedure, modelling scripts and figure scripts, together with the de-identified aggregate source tables needed to regenerate every figure and table reported in the accompanying iScience submission. Contains no patient-level record, direct identifier, or raw report text; referral sources are anonymised as Source A-D.",
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Liu, Liu",
+      "affiliation": "Central South University, Changsha, China"
+    },
+    {
+      "name": "Zhang, Qiqi",
+      "affiliation": "Central South University, Changsha, China"
+    },
+    {
+      "name": "Li, Jialin",
+      "affiliation": "Central South University, Changsha, China"
+    },
+    {
+      "name": "Liu, Ziyu",
+      "affiliation": "Central South University, Changsha, China"
+    },
+    {
+      "name": "Liu, Jie",
+      "affiliation": "Central South University, Changsha, China"
+    },
+    {
+      "name": "Li, Xiaoyang",
+      "affiliation": "Central South University, Changsha, China"
+    },
+    {
+      "name": "Wang, Haixin",
+      "affiliation": "Central South University, Changsha, China"
+    },
+    {
+      "name": "Wang, Weiyuan",
+      "affiliation": "Central South University, Changsha, China"
+    },
+    {
+      "name": "Wang, Huiling",
+      "affiliation": "Central South University, Changsha, China"
+    },
+    {
+      "name": "Wang, Junpu",
+      "affiliation": "Central South University, Changsha, China"
+    }
+  ],
+  "keywords": [
+    "transmission electron microscopy",
+    "glomerular disease",
+    "report-derived morphometrics",
+    "temporal generalization",
+    "data-quality drift",
+    "reproducibility"
+  ],
+  "language": "eng"
+}

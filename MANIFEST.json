@@ -1,0 +1,295 @@
+{
+  "repository": "kidney-TEM-morphometrics",
+  "description": "Analysis code and de-identified aggregate source data for the accompanying iScience submission.",
+  "analysis_window": "2014-05-01 through 2026-04-30",
+  "privacy": "No patient-level records, direct identifiers, pseudonymous keys, institution names in data files, or raw report text. Referral sources are anonymised as Source A-D.",
+  "note": "Category label 其他 in the upstream aggregate outputs was normalised to Other for this public release; no numeric value was altered. .gitattributes disables end-of-line conversion so the SHA-256 values below reproduce on any platform after checkout.",
+  "file_count": 57,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 89,
+      "sha256": "a94608e14e57cf905e8241685d1ac4578cb440596130380423fd2cf819cd1857"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 88,
+      "sha256": "c53271ae3443a635bda24efb66b376c3bd998c0b087e1a0fe3fbee1269657f6f"
+    },
+    {
+      "path": ".zenodo.json",
+      "bytes": 2010,
+      "sha256": "385007ed33569d6b5e0fff42f36fab19d76825b12d462913305106cc0698ce6e"
+    },
+    {
+      "path": "aggregate_results/figure_reference_manifest.json",
+      "bytes": 3466,
+      "sha256": "4e42f7bd5efb1b9aabbe0d08e9322c4876a706a0dc2d960f6ca28abd75eebd1a"
+    },
+    {
+      "path": "aggregate_results/remote_v2_descriptive_results.json",
+      "bytes": 106970,
+      "sha256": "1e3c4d0919b3ba4de1018518570a84167832fcdefeb706c38b9c3fb578504d38"
+    },
+    {
+      "path": "aggregate_results/reproducibility_bundle_self_test.json",
+      "bytes": 9387,
+      "sha256": "1f33d6d0b91ca7b27fa78baa0e4e78ba78d31d9f301582ac140a77497092bdfe"
+    },
+    {
+      "path": "aggregate_results/v2_modeling_feature_missingness.csv",
+      "bytes": 661,
+      "sha256": "04d490b1860da2b3e413a088bd098e8544c33a798a9535408afaf1c1332a577c"
+    },
+    {
+      "path": "aggregate_results/v2_modeling_headline6_binary.csv",
+      "bytes": 1668,
+      "sha256": "8cee74d87a3a3ac725ba7074b26dd0a4342d0ee09e1f7b0ea7fb128d40197566"
+    },
+    {
+      "path": "aggregate_results/v2_modeling_loho.csv",
+      "bytes": 524,
+      "sha256": "f1dd31b4be03c0485c0ffd607d1a9a780620aae52ab6b1d9330b558b7107aa8b"
+    },
+    {
+      "path": "aggregate_results/v2_modeling_results.json",
+      "bytes": 187919,
+      "sha256": "320d322608bddfa5917fc4908c0286209ab86555e7e6faeb70830c04e1c3f8cf"
+    },
+    {
+      "path": "aggregate_results/v2_modeling_summary.md",
+      "bytes": 3900,
+      "sha256": "04633076389a2a4ec0fbd82d93280cbab10b0f697bda1eca1773482e6b9f96b5"
+    },
+    {
+      "path": "aggregate_results/v2_modeling_temporal_metrics.csv",
+      "bytes": 5845,
+      "sha256": "0439f58c4dfe602a8b71c760e21e2a2565cc4445f249b794e7a80317a88291aa"
+    },
+    {
+      "path": "aggregate_results/v2_modeling_validation.json",
+      "bytes": 106815,
+      "sha256": "91137a63bc066cc0f19f48ad9de5571730e41847daa5fd7bce1c6dca32caa056"
+    },
+    {
+      "path": "aggregate_results/validation.json",
+      "bytes": 2451,
+      "sha256": "ab52323ae20b21c0a480b5ef9373e5b3bf8d98bd85466a2d7469c6614e8f5cd9"
+    },
+    {
+      "path": "aggregate_results/window_audit_summary.json",
+      "bytes": 423,
+      "sha256": "8d63034604183ef947a68be6a73ce0b6a8af1928adb9c2cc85fa0b6a41199419"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 1387,
+      "sha256": "c697d20f9467b0c041940e4d56ba67f2a24eb58c405d76788e74b3dc0a02d795"
+    },
+    {
+      "path": "data_dictionary.csv",
+      "bytes": 2831,
+      "sha256": "3220de71bb15ba3c081c5b81753382354a53c5d3d64bb654b4ae53cb6e2dae72"
+    },
+    {
+      "path": "EXTRACTION_RULES.md",
+      "bytes": 6055,
+      "sha256": "6f1625893eab8fdf7ed11d4eb411240c0985c38c679285c7a38a9f2a227cd789"
+    },
+    {
+      "path": "figures/Figure1.pdf",
+      "bytes": 115779,
+      "sha256": "ebddf15a101260a2a023f1498e0ad9940d83b4236132be5d89e30fa6efb81bbe"
+    },
+    {
+      "path": "figures/Figure1.png",
+      "bytes": 1358450,
+      "sha256": "65dd41dc0544aa9f6baf68448fb60ed5f0b03ac2d0c17824935656c1f7fc47cb"
+    },
+    {
+      "path": "figures/Figure2.pdf",
+      "bytes": 114202,
+      "sha256": "263a1d3d2857364856a8358dc8bc51ee3f397e679aefdf036c882c938594ae69"
+    },
+    {
+      "path": "figures/Figure2.png",
+      "bytes": 1235422,
+      "sha256": "6d35a9de1ffe8a487781ce52566cb9c8aaa14d282960e8f2a0b838d21a501a43"
+    },
+    {
+      "path": "figures/Figure3.pdf",
+      "bytes": 79678,
+      "sha256": "c34e6bb89b10520327c894de689047c594ef19911473ac36e33fa2959294c6b0"
+    },
+    {
+      "path": "figures/Figure3.png",
+      "bytes": 921373,
+      "sha256": "254a08d2370b3ad493228af97aa022f5f1c52a84f8d6f3b12deb010c884b356d"
+    },
+    {
+      "path": "figures/Figure4.pdf",
+      "bytes": 91042,
+      "sha256": "f649b8f5ffe955d14ccaf60687201d23a9dcebfebd444a92f474e4ebf377de07"
+    },
+    {
+      "path": "figures/Figure4.png",
+      "bytes": 889859,
+      "sha256": "83ffe21822e26f35f00a050583c4d157bc6beb5837b9c9bf6c886887b209907a"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1068,
+      "sha256": "9f1abe28a25b5f6f95c58a81a647de3fa72ff6388d228c59bddd079255709989"
+    },
+    {
+      "path": "METHODS.md",
+      "bytes": 3717,
+      "sha256": "85a47dea6d343ecbb8a74c586b1deaf43644787e07bb8fb73131addcc50dc73f"
+    },
+    {
+      "path": "PRIVACY_AUDIT.py",
+      "bytes": 4863,
+      "sha256": "07d4ada4ec0176dd0aa77214e65e397fe641897330bd748a9db23b8f83bbd181"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5796,
+      "sha256": "6783d8b9fe912150901eda43bcee3c12cfe234663b2e41da2f5980fffefed31e"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 165,
+      "sha256": "ddebdd72354abe9970540d8a9e39ff85bcbea33a83560abd2baee87f66f2e006"
+    },
+    {
+      "path": "scripts/build_v2_descriptive_figures.py",
+      "bytes": 59332,
+      "sha256": "2c02b1b082f04dd3aeb803150087950790775aac4aaffcb7b1808d51d75a6a9f"
+    },
+    {
+      "path": "scripts/build_v2_model_figure.py",
+      "bytes": 18295,
+      "sha256": "99a36119b6f4e97dde7fa1013db5b9e49a07c7e31e96f99e9a2379dac2d1cecc"
+    },
+    {
+      "path": "scripts/finalize_bundle.py",
+      "bytes": 23063,
+      "sha256": "7789f2347b01b8cc5b552145a8ef27359f4381ac5d0a858c99e5ca2d803e1d42"
+    },
+    {
+      "path": "scripts/remote_model_aggregate_tail.py",
+      "bytes": 6777,
+      "sha256": "59374c85396e720b2420026b512237f43102aaeb6262d667b85f61a5f5a69a93"
+    },
+    {
+      "path": "scripts/remote_v2_modeling.py",
+      "bytes": 42646,
+      "sha256": "d350bfed33650abb16a9bb2f1197c7f040b32c21b14525b5996df3efd77af530"
+    },
+    {
+      "path": "source_data/figure1_age_distribution.csv",
+      "bytes": 2680,
+      "sha256": "f36b656a8d62996ae714f57ce269bccf60f4acd042172489a88e0296a959c8ad"
+    },
+    {
+      "path": "source_data/figure1_annual_volume.csv",
+      "bytes": 937,
+      "sha256": "72a026d847cb29c698a5d1eb08f4530836489837391ea00d1d9ebc6b47e16ce4"
+    },
+    {
+      "path": "source_data/figure1_class_counts.csv",
+      "bytes": 493,
+      "sha256": "a206242c36b006df81ad0dccef4c007c9f2f5d717931a819fe27e0b8bfa6581b"
+    },
+    {
+      "path": "source_data/figure1_sex_proportion.csv",
+      "bytes": 948,
+      "sha256": "d9dab05603eabc0ae660aed5dc897ceb5273bcc5f9bd6aad428850ac3ccbf3ee"
+    },
+    {
+      "path": "source_data/figure1_year_month.csv",
+      "bytes": 2429,
+      "sha256": "4cd30460a9e52c18d3dbf3943c3ec5a14a4dd83749c3c16fa11ba880026bb2ee"
+    },
+    {
+      "path": "source_data/figure2_availability_by_year.csv",
+      "bytes": 8254,
+      "sha256": "63d9b3f4584e08ec7ca193f684c61456a1de89d668f8883045e8352d091ac033"
+    },
+    {
+      "path": "source_data/figure2_available_case_morphometry.csv",
+      "bytes": 6446,
+      "sha256": "3167e0a5323627a4ac0468447a29a8db179dd6295362860e63d8d547ed1cb186"
+    },
+    {
+      "path": "source_data/figure2_dev_test_missingness.csv",
+      "bytes": 1769,
+      "sha256": "dd9ca3878004bf41faa59c2f9d32fe03ab19c79e622b1dc03bab7eba70db27a0"
+    },
+    {
+      "path": "source_data/figure2_missingness_overall.csv",
+      "bytes": 703,
+      "sha256": "18eb443995be0a5791577ee017b5772357d3e3c45478f596ef7653672a69f5ab"
+    },
+    {
+      "path": "source_data/figure3a_cohort_flow.csv",
+      "bytes": 174,
+      "sha256": "052c222b9dc855b94b44fe773737e52c2063bca9c898b85eec57d2bc1fde26ff"
+    },
+    {
+      "path": "source_data/figure3b_temporal_models.csv",
+      "bytes": 587,
+      "sha256": "9e63a9c6c0ba68aeb64342a2a01d803fea71f3338a15a24662b93548c057001d"
+    },
+    {
+      "path": "source_data/figure3c_confusion_matrix_row_normalized.csv",
+      "bytes": 2328,
+      "sha256": "654f823692e3d910a2eb5410d2fa8d6e15b4bc01490c2f4fa02f5dac8458464d"
+    },
+    {
+      "path": "source_data/figure3d_direct_binary.csv",
+      "bytes": 767,
+      "sha256": "b6864a695cabf9e1bae7a175d208bb420f997c4c70471340f770020652153934"
+    },
+    {
+      "path": "source_data/figure3e_feature_set_sensitivity.csv",
+      "bytes": 386,
+      "sha256": "a76db2c76d0cf6febf31efa1b127e95da47ad4a4814378bfb1011a8fa372f12d"
+    },
+    {
+      "path": "source_data/figure3f_source_holdout.csv",
+      "bytes": 343,
+      "sha256": "27253404b8ad78001a25680ddcdd0adeb4cb49cf55ad9bb982e390fce64c5d6b"
+    },
+    {
+      "path": "source_data/figure4_annual_capacity.csv",
+      "bytes": 2135,
+      "sha256": "ae248f6b9744cdb43dbf104c79931bf001d92c7b549c23540e55de681a7b1d38"
+    },
+    {
+      "path": "source_data/figure4_quarterly_volume.csv",
+      "bytes": 541,
+      "sha256": "8eb2db5489672bcdde5deb87a463427f1e0d9ce1958a990c854d8d357dd864c9"
+    },
+    {
+      "path": "source_data/figure4_yearly_top_category.csv",
+      "bytes": 377,
+      "sha256": "1143a6b2588c4ec2dbb9d85465dea191a1c1c59165b76ab1df5109a5bf7b9d69"
+    },
+    {
+      "path": "source_data/remote_morphometry_aggregate.json",
+      "bytes": 29684,
+      "sha256": "9dadda0b43e6bae59fcf56d9175aa0d8d0e52fd0414cb0ccb6c6052645302576"
+    },
+    {
+      "path": "source_data/remote_registry_aggregate.json",
+      "bytes": 34668,
+      "sha256": "128e528caa90d382f8f29f0e22f2d8e464a76b6be8cd1d89a3a668d27b2cdb60"
+    },
+    {
+      "path": "source_data/table3_scenario_capacity_source.csv",
+      "bytes": 2135,
+      "sha256": "ae248f6b9744cdb43dbf104c79931bf001d92c7b549c23540e55de681a7b1d38"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+variable,domain,encoding,definition,missingness_handling,main_limitation
+age,demographic,continuous years,Age recorded in the canonical registry,Median imputation fitted within each training fold,May encode referral-population and temporal structure
+sex_binary,demographic,binary numeric,Sex recorded in the canonical registry and encoded as 0 or 1,Median imputation fitted within each training fold,Demographic rather than morphologic information
+glomerulus_count,TEM report,continuous count,Number of glomeruli stated in the TEM report,Median imputation fitted within each training fold,Strong report-template drift and tissue-sampling dependence
+sclerosis_rate,TEM report,continuous proportion,Parsed sclerosed glomeruli divided by parsed total glomeruli,Median imputation fitted within each training fold,Sensitive to small denominators and report-template drift
+mesangial_cell_count,TEM report,continuous,Midpoint of a reported numeric range or the reported count per mesangial area,Median imputation fitted within each training fold,Reporting convention may vary over time
+mesangial_matrix_grade,TEM report,ordinal 0-3,Conservative mapping from absent mild moderate or severe matrix expansion,Median imputation fitted within each training fold,Category boundaries are report-derived and template-dependent
+gbm_thickness_nm,TEM report,continuous nm,Midpoint of an explicitly reported GBM thickness range,Median imputation fitted within each training fold,Extensive missingness; available-case summaries only for biological interpretation
+spike_presence,TEM report,binary,Explicitly reported presence or absence of subepithelial spikes,Median imputation fitted within each training fold,Text absence is treated as missing rather than pathological absence
+foot_process_grade,TEM report,ordinal 0-3,0 absent 1 partial segmental or sparse 2 mostly or relatively extensive 3 diffuse or widespread,Median imputation fitted within each training fold,Rule-based report-derived grade without an independent manual gold standard
+disease_code,outcome,categorical,Canonical disease code assigned by the locked registry classifier,Not applicable,Derived partly from the same report and therefore not an independent clinical gold standard
+patient_grouping_key,grouping key,pseudonymous identifier,Used remotely to retain the first eligible examination and prevent patient overlap,Excluded from all predictors and outputs,Not released in the review bundle
+referral_source,validation stratum,categorical,Referring source recorded in the canonical registry,Not used as a predictor,Holdout represents referral-source transport rather than an independent pathology laboratory
+song_ymd,split key,date,Specimen or registry date used for temporal splitting,Not used as a predictor,Date extraction and report templates changed over the study period

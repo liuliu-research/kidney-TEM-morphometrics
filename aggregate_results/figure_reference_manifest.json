@@ -1,0 +1,58 @@
+{
+  "purpose": "Reference hashes for aggregate-only figure reproduction",
+  "analysis_identity": "Locked second-extraction registry with an April 2026 data freeze",
+  "metric_alignment": {
+    "Figure3D": "ROC AUC and average precision",
+    "Figure3F": "Macro-F1 over classes present in each holdout and mean one-vs-rest AUC over present classes"
+  },
+  "figures": {
+    "Figure1_v2.png": {
+      "bytes": 1894950,
+      "sha256": "ced7b448a1e8bf98a8314f94eceaf2f3eaad92b4d3aac1c2d968b34443f41000",
+      "width_px": 7128,
+      "height_px": 6669
+    },
+    "Figure2_v2.png": {
+      "bytes": 1686714,
+      "sha256": "300bb1a28fb7e322da9f9915bad2edb2f14840072765952f765709fed0f744da",
+      "width_px": 7269,
+      "height_px": 5704
+    },
+    "Figure3_v2.png": {
+      "bytes": 1798986,
+      "sha256": "41076bb5bdf3106df17f8e283f3bb3f1fe593ae3183f5dcdc7c41215f8fea3e9",
+      "width_px": 10200,
+      "height_px": 6300
+    },
+    "Figure4_v2.png": {
+      "bytes": 1417478,
+      "sha256": "0733d091fec7dbc63a637e5275f27f7e33570e6ff4ce19b750593e71b575b15e",
+      "width_px": 7317,
+      "height_px": 5236
+    }
+  },
+  "source_data_sha256": {
+    "figure1_age_distribution.csv": "fc2682f10e3f4bb32a8ea9fb82f7b0d631f45f6b07151bf5e344b006862ff835",
+    "figure1_annual_volume.csv": "b0c209bf949021c31a63ffaddc15907d9f05bc3b87ff71c5f76b9b5b773be470",
+    "figure1_class_counts.csv": "d4742c3f2723bd54d85effcd7b151eb88dc9fb51414f1e114136ed4aeb0e12b6",
+    "figure1_sex_proportion.csv": "ee519ee7c8db752374b0772650db844efd74d1ddd51e14db0129b6dcad6e4404",
+    "figure1_year_month.csv": "f179da88da874f689e25c1caa0f54397618ae3f4b58d00cb5d282aeb9c12c25d",
+    "figure2_availability_by_year.csv": "4b8783e993e18c052bd163af77237fc14196737aed1640b7a92353d803e89d78",
+    "figure2_available_case_morphometry.csv": "d99ec01ecc76608d25c29fe7fe1e5faae4efacf431e79c39e9586a8b0bd2edb3",
+    "figure2_dev_test_missingness.csv": "6e0a52f13bcf0e550aacc157babfe737785c8241e6265b268af5847d245a7c1d",
+    "figure2_missingness_overall.csv": "cfd996ad6c8b8c1e1b71a81e97761545a5b49f07f875a718b9fa67dabe2e5292",
+    "figure3a_cohort_flow.csv": "d5bfd14d3ac6b32d8879111d179d695e7e5ee4885b0c910f284efcafa08cd1f6",
+    "figure3b_temporal_models.csv": "c97c8de084d65f03536205de9203a8c184535369b076e92c1814df8ed4585efe",
+    "figure3c_confusion_matrix_row_normalized.csv": "ec2623d4bc79b4fd523406fc7d7e0ab8724be6af24555e4f666bfc845f2d4c84",
+    "figure3d_direct_binary.csv": "f57a1359b9f28053c40f01301a028456590df762892f2d063d4047ba7898b0d0",
+    "figure3e_feature_set_sensitivity.csv": "182e872cbae32eb023e5fe016a7afe6429b6c41b66eea39a4fa8d777799b7af9",
+    "figure3f_source_holdout.csv": "8a39bca50bd34ae64431b95f18a83e76a8c144c035f5b0828579c6f90969e3e2",
+    "figure4_annual_capacity.csv": "6ba8ea9fb757f2932c33d4e7b6e54bfb95f6e532cc60396fb87ee856ff2a216b",
+    "figure4_quarterly_volume.csv": "47be62889d4b88f09d64508a3e6b41d8cdc7e83b38785f21a6ae4cf7caa73986",
+    "figure4_yearly_top_category.csv": "005a2749f6e904347d219d2c873f8695dae20ff1c3e293568cdc154470bbb0c5",
+    "remote_morphometry_aggregate.json": "ec3e05e7be0dacd75d413e1fcc31ea0e87f9cd1e3f48e5a188aeb6c4e9bf69fe",
+    "remote_registry_aggregate.json": "55af52c1137db2c5bceabf98ed348a2a2cb836741ff5d04c86e9438dd77f034c",
+    "table3_scenario_capacity_source.csv": "6ba8ea9fb757f2932c33d4e7b6e54bfb95f6e532cc60396fb87ee856ff2a216b"
+  },
+  "privacy": "Aggregate source data only; referral sources are anonymised as Source A-D."
+}
