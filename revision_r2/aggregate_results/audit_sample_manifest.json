@@ -1,0 +1,64 @@
+{
+  "seed": 20260929,
+  "per_stratum": 100,
+  "n_sample": 200,
+  "population": {
+    "linked_model_records": 8113,
+    "by_split": {
+      "development": 5139,
+      "temporal_test": 2974
+    }
+  },
+  "frozen_reproduction_checks": {
+    "counts_match_frozen": true,
+    "linkage_match_frozen": true,
+    "missingness_match_frozen": true,
+    "class_counts_match_frozen": true
+  },
+  "registry_sha256": "32076f080f7faea0daa293ae068c0b398fdcb342182a0b0fe21cff2bc4dbff96",
+  "morphometry_sha256": "b7b8ee667973d80f3e5eda3a4c214baa39f3dd4b219a233ff97be08cb00c49e1",
+  "modeling_script_sha256": "d350bfed33650abb16a9bb2f1197c7f040b32c21b14525b5996df3efd77af530",
+  "sample_composition": {
+    "by_split": {
+      "development": 100,
+      "temporal_test": 100
+    },
+    "by_class": {
+      "IgAN": 51,
+      "IgAVN": 49,
+      "MN": 25,
+      "MCD": 25,
+      "MsPGN": 21,
+      "LN": 8,
+      "FSGS": 7,
+      "TBMN": 6,
+      "DKD": 4,
+      "MPGN": 3,
+      "EPGN": 1
+    },
+    "by_link_method": {
+      "exact_stem": 167,
+      "unique_old_p": 19,
+      "old_p_sex_birth_pm1": 13,
+      "old_p_date": 1
+    },
+    "parser_nonmissing": {
+      "glomerulus_count": 138,
+      "sclerosis_rate": 138,
+      "mesangial_cell_count": 190,
+      "mesangial_matrix_grade": 127,
+      "gbm_thickness_nm": 36,
+      "spike_presence": 35,
+      "foot_process_grade": 196
+    }
+  },
+  "outputs": {
+    "key": "audit_key_CONFIDENTIAL.json",
+    "key_sha256": "ba399178e7b113a559055d24eaca5eba4e8388b5bfde5f4c2c3355fecc22f254",
+    "worksheets": [
+      "audit_worksheet_reader1.xlsx",
+      "audit_worksheet_reader2.xlsx"
+    ],
+    "key_includes_reextracted_values": true
+  }
+}

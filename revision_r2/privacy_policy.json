@@ -1,0 +1,17 @@
+{
+  "forbidden_suffixes": [
+    ".xls",
+    ".xlsx",
+    ".zip",
+    ".7z",
+    ".env",
+    ".pkl",
+    ".pickle",
+    ".npy",
+    ".npz",
+    ".pt",
+    ".pth"
+  ],
+  "max_file_bytes": 20971520,
+  "banned_content_hashes": []
+}

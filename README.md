@@ -6,6 +6,18 @@ Analysis code and de-identified aggregate source data for:
 > *Limited temporal generalization of report-derived TEM morphometrics for 11-class
 > glomerular disease phenotyping.* Submitted to **iScience**.
 
+## Current revision status
+
+The [revision_r2](revision_r2/README.md) directory contains incremental revision
+code and existing aggregate sensitivity results. The independent 200-report
+dual-reader field audit is still pending; no human audit results or report text
+are published. This is a development snapshot, not a complete v1.1.0 release.
+Frozen [v1.0.0](https://github.com/liuliu-research/kidney-TEM-morphometrics/releases/tag/v1.0.0)
+and [its Zenodo DOI](https://doi.org/10.5281/zenodo.21825234) remain unchanged.
+The original reproducibility results described below refer to that frozen
+analysis. Revision-specific code, data, environment and privacy boundaries are
+documented separately in the incremental directory.
+
 Locked registry: 10,933 canonical transmission electron microscopy (TEM) examinations
 from 10,787 patients, 1 May 2014 – 30 April 2026 (actual dated observations 2014-05-08
 to 2026-04-09). Patient-first main 11-class task: 8,208 patients, of whom 8,113 linked

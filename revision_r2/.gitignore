@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+controlled_runtime/
+generated_figures/
+*.xlsx
+*.xls

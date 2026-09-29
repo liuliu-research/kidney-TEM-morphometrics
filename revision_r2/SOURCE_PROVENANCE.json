@@ -1,0 +1,221 @@
+{
+  "status": "CURRENT_R2_CANDIDATE_HUMAN_AUDIT_PENDING",
+  "base_public_commit": "52964cf38ed5fc1d2a3e2265402033354e46ccee",
+  "frozen_parser_sha256": "d350bfed33650abb16a9bb2f1197c7f040b32c21b14525b5996df3efd77af530",
+  "base_public_doi": "10.5281/zenodo.21825234",
+  "records": [
+    {
+      "source_name": "audit_contract.py",
+      "source_sha256": "54956d2949fcbf5b57fec8859ee328b8c9d6287ab610893f7a96a8a1798f0463",
+      "destination": "scripts/audit_contract.py",
+      "destination_sha256": "54956d2949fcbf5b57fec8859ee328b8c9d6287ab610893f7a96a8a1798f0463",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "source_name": "test_audit_contract.py",
+      "source_sha256": "4825a83ccfb6056ab3a155e5c16be810bfc4a7f5aeffa3b137bdffa6c895dde6",
+      "destination": "scripts/test_audit_contract.py",
+      "destination_sha256": "4825a83ccfb6056ab3a155e5c16be810bfc4a7f5aeffa3b137bdffa6c895dde6",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "source_name": "compare_audit.py",
+      "source_sha256": "eb182b44471c0da2ad445eda63f0006d330b1c468a59a1b7ad13cfdf483b9762",
+      "destination": "scripts/compare_audit.py",
+      "destination_sha256": "787d956f99fb9f8df1abb1f0b0a721e781bd59d7c52beaf0b9bde84288f8836d",
+      "transformation": "Explicit path/output adaptations only"
+    },
+    {
+      "source_name": "build_audit_sample.py",
+      "source_sha256": "4e4aa8d6be363345ed9bcdff7aab977e3c514e1c19d7cdae01643705e15a4b47",
+      "destination": "scripts/build_audit_sample.py",
+      "destination_sha256": "235b5abb56226516c0f2b45c5f81e4fdde918e4e73cdc02bc13601821429cd1e",
+      "transformation": "Explicit path/output adaptations only"
+    },
+    {
+      "source_name": "tabulate_report_templates.py",
+      "source_sha256": "77e70a3530dbcaa16f2136f1038f162a1e4904af1a891d7b8f391f9035823e72",
+      "destination": "scripts/tabulate_report_templates.py",
+      "destination_sha256": "733b9e03519e9556716661b330f81fc357e071ad68fb1b93fe3c5989f6264c00",
+      "transformation": "Explicit path/output adaptations only"
+    },
+    {
+      "source_name": "reextract_sensitivity.py",
+      "source_sha256": "65930eb774f01f47d3838cefc33b92a8c77ea20513a36f7b0ef16b58234931c1",
+      "destination": "scripts/reextract_sensitivity.py",
+      "destination_sha256": "64f6594459d3b03a2118c47b0a2f5b22048424656cd80b3934e62904f65503df",
+      "transformation": "Explicit path/output adaptations only"
+    },
+    {
+      "source_name": "build_fig1.py",
+      "source_sha256": "70b47625b96d3593faba9adb745b21c3b033a153a90d19ba13abb267e31da3a7",
+      "destination": "scripts/build_fig1.py",
+      "destination_sha256": "9e9eb1b31f1fa70686cc3e9e1f6b0d9c27a9700cc4b9ef483a68436f501083be",
+      "transformation": "Explicit path/output adaptations only"
+    },
+    {
+      "source_name": "build_fig4.py",
+      "source_sha256": "3192e329526b39b77cd4286b48cfb426f68ffe52909f0343c434bd8f88fb36a3",
+      "destination": "scripts/build_fig4.py",
+      "destination_sha256": "830359d1463e66626b8bbc2d045a0df2009a316906a0cea13bfbfa446984602d",
+      "transformation": "Explicit path/output adaptations only"
+    },
+    {
+      "source_name": "figstyle.py",
+      "source_sha256": "e6273ed23cf60dc2913a0524f16ecc98df8f67028b3d29506c3edf1ccb117b20",
+      "destination": "scripts/figstyle.py",
+      "destination_sha256": "e6273ed23cf60dc2913a0524f16ecc98df8f67028b3d29506c3edf1ccb117b20",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "source_name": "build_all.py",
+      "source_sha256": "da728d335012a6bc87edde340fb017f8f65c23543375c8535b75b2a7d49b117f",
+      "destination": "scripts/figure_gate.py",
+      "destination_sha256": "cdf628505baf6d719d54c6afc9e5de81921bc00060235efabee30fd561613bdc",
+      "transformation": "Exact three project gate function ASTs"
+    },
+    {
+      "source_name": "build_figS1.py",
+      "source_sha256": "4ed0a81a0e12f16d35a8a20d49b35008a83e09e906ac5902045187109d096474",
+      "destination": "scripts/build_figS1.py",
+      "destination_sha256": "2efcc17d867c2ef17fd40a893eae861a271aec3297b1690b4353c1758f48685d",
+      "transformation": "Explicit path/output adaptations only"
+    },
+    {
+      "source_name": "rebuild_figure1_labels.py",
+      "source_sha256": "4f62d160b3d297f7c5872261e01665b6230ac09991f5790b39eafb3d58b7e96c",
+      "destination": "scripts/rebuild_figure1_labels.py",
+      "destination_sha256": "af2cd4b6700aa75d33e192926d696e6b931a82fd03eb0a04f409e627e6e93819",
+      "transformation": "Explicit path/output adaptations only"
+    },
+    {
+      "source_name": "Figure1.png",
+      "source_sha256": "3f9c0d2596318e89040a698552dcd5878ed4f5cc1c9c7ae487f46ca2b264a5c0",
+      "destination": "figures/Figure1.png",
+      "destination_sha256": "3f9c0d2596318e89040a698552dcd5878ed4f5cc1c9c7ae487f46ca2b264a5c0",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "source_name": "Figure1.pdf",
+      "source_sha256": "2383c22f571706a2973eff5956508fd0cb43b6b795b2f4bccb78cb284168dabe",
+      "destination": "figures/Figure1.pdf",
+      "destination_sha256": "2383c22f571706a2973eff5956508fd0cb43b6b795b2f4bccb78cb284168dabe",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "source_name": "FigureS1.png",
+      "source_sha256": "b435091251fac34400f1053b0da2730485308a065242f5a07d8c17fc477a50c3",
+      "destination": "figures/FigureS1.png",
+      "destination_sha256": "b435091251fac34400f1053b0da2730485308a065242f5a07d8c17fc477a50c3",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "source_name": "FigureS1.pdf",
+      "source_sha256": "5f68f24cd5317ac2d71894279b391ee1388142e40ac27055864dcb5961dfc1c3",
+      "destination": "figures/FigureS1.pdf",
+      "destination_sha256": "5f68f24cd5317ac2d71894279b391ee1388142e40ac27055864dcb5961dfc1c3",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "source_name": "figure1_class_counts.csv",
+      "source_sha256": "a206242c36b006df81ad0dccef4c007c9f2f5d717931a819fe27e0b8bfa6581b",
+      "destination": "source_data/figure1_class_counts.csv",
+      "destination_sha256": "a206242c36b006df81ad0dccef4c007c9f2f5d717931a819fe27e0b8bfa6581b",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "source_name": "figure1_annual_volume.csv",
+      "source_sha256": "72a026d847cb29c698a5d1eb08f4530836489837391ea00d1d9ebc6b47e16ce4",
+      "destination": "source_data/figure1_annual_volume.csv",
+      "destination_sha256": "72a026d847cb29c698a5d1eb08f4530836489837391ea00d1d9ebc6b47e16ce4",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "source_name": "figure1_age_distribution.csv",
+      "source_sha256": "f36b656a8d62996ae714f57ce269bccf60f4acd042172489a88e0296a959c8ad",
+      "destination": "source_data/figure1_age_distribution.csv",
+      "destination_sha256": "f36b656a8d62996ae714f57ce269bccf60f4acd042172489a88e0296a959c8ad",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "source_name": "figure1_sex_proportion.csv",
+      "source_sha256": "d9dab05603eabc0ae660aed5dc897ceb5273bcc5f9bd6aad428850ac3ccbf3ee",
+      "destination": "source_data/figure1_sex_proportion.csv",
+      "destination_sha256": "d9dab05603eabc0ae660aed5dc897ceb5273bcc5f9bd6aad428850ac3ccbf3ee",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "source_name": "figure1_year_month.csv",
+      "source_sha256": "4cd30460a9e52c18d3dbf3943c3ec5a14a4dd83749c3c16fa11ba880026bb2ee",
+      "destination": "source_data/figure1_year_month.csv",
+      "destination_sha256": "4cd30460a9e52c18d3dbf3943c3ec5a14a4dd83749c3c16fa11ba880026bb2ee",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "source_name": "figure4_annual_capacity.csv",
+      "source_sha256": "ae248f6b9744cdb43dbf104c79931bf001d92c7b549c23540e55de681a7b1d38",
+      "destination": "source_data/figure4_annual_capacity.csv",
+      "destination_sha256": "ae248f6b9744cdb43dbf104c79931bf001d92c7b549c23540e55de681a7b1d38",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "source_name": "figure4_yearly_top_category.csv",
+      "source_sha256": "1143a6b2588c4ec2dbb9d85465dea191a1c1c59165b76ab1df5109a5bf7b9d69",
+      "destination": "source_data/figure4_yearly_top_category.csv",
+      "destination_sha256": "1143a6b2588c4ec2dbb9d85465dea191a1c1c59165b76ab1df5109a5bf7b9d69",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "source_name": "figure4_quarterly_volume.csv",
+      "source_sha256": "8eb2db5489672bcdde5deb87a463427f1e0d9ce1958a990c854d8d357dd864c9",
+      "destination": "source_data/figure4_quarterly_volume.csv",
+      "destination_sha256": "8eb2db5489672bcdde5deb87a463427f1e0d9ce1958a990c854d8d357dd864c9",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "source_name": "reextraction_sensitivity_results.json",
+      "source_sha256": "d12e73f9ce6e0e5d5c24f0f9eddfbb4305794e30e47ad961ad0d890292597842",
+      "destination": "aggregate_results/reextraction_sensitivity_results.json",
+      "destination_sha256": "d12e73f9ce6e0e5d5c24f0f9eddfbb4305794e30e47ad961ad0d890292597842",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "source_name": "reextraction_sensitivity_results_local_x86.json",
+      "source_sha256": "3cf550ca7490f0a7a75f2d40214cf5208109fb5d15af643902803e13b8d0008e",
+      "destination": "aggregate_results/reextraction_sensitivity_results_local_x86.json",
+      "destination_sha256": "3cf550ca7490f0a7a75f2d40214cf5208109fb5d15af643902803e13b8d0008e",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "source_name": "report_template_by_period.json",
+      "source_sha256": "5dd36759af4febc1635855366918339fe34c175a6a6f48e9249da17f6fee4f56",
+      "destination": "aggregate_results/report_template_by_period.json",
+      "destination_sha256": "1e1f50f0d5c9379d1d87beb5fca6adc9e6d9e51569353f94e5331a34d5491df8",
+      "omitted_fields": [
+        "internal_expectation_not_for_manuscript"
+      ],
+      "retained_values_equal": true
+    },
+    {
+      "source_name": "audit_sample_manifest.json",
+      "source_sha256": "c2c613188d15f86bdaddec6feb1534bd20bbd836dcb528d81f059b365cf395ea",
+      "destination": "aggregate_results/audit_sample_manifest.json",
+      "destination_sha256": "f121c6051a4b9701b13d9a532e04f49daceaa9be3f4f3f5e91500cb23ed9aced",
+      "omitted_fields": [
+        "privacy_note"
+      ],
+      "retained_values_equal": true
+    },
+    {
+      "source_name": "remote_local_comparison.json",
+      "source_sha256": "d40127f696c8a3f19a9f233f353f853c8b783a63ca75d1e5423da7b3321d10d8",
+      "destination": "aggregate_results/remote_local_comparison.json",
+      "destination_sha256": "df4fa3bd1ac3fd9004cb7f349e74370fdd5aee877630fdbc79a749734bcd759c",
+      "omitted_fields": [
+        "frozen_holdout_alias_provenance/source_paths",
+        "frozen_pipeline_remote_vs_deposited/metadata_differences"
+      ],
+      "retained_values_equal": true
+    }
+  ]
+}

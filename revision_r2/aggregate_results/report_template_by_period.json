@@ -1,0 +1,58 @@
+{
+  "definition": {
+    "itemised": "report contains the itemised headings '肾小球：总数' or '肾小球硬化：'",
+    "narrative": "all other reports (running-text template)"
+  },
+  "by_split": {
+    "development": {
+      "narrative": 2687,
+      "itemised": 2452
+    },
+    "temporal_test": {
+      "itemised": 2974
+    }
+  },
+  "by_year": {
+    "2014": {
+      "narrative": 133
+    },
+    "2015": {
+      "narrative": 311
+    },
+    "2016": {
+      "narrative": 668
+    },
+    "2017": {
+      "narrative": 710
+    },
+    "2018": {
+      "narrative": 800
+    },
+    "2019": {
+      "narrative": 65,
+      "itemised": 719
+    },
+    "2020": {
+      "itemised": 620
+    },
+    "2021": {
+      "itemised": 1113
+    },
+    "2022": {
+      "itemised": 1194
+    },
+    "2023": {
+      "itemised": 889
+    },
+    "2024": {
+      "itemised": 454
+    },
+    "2025": {
+      "itemised": 315
+    },
+    "2026": {
+      "itemised": 122
+    }
+  },
+  "n_records": 8113
+}

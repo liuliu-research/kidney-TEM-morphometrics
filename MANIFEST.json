@@ -4,7 +4,7 @@
   "analysis_window": "2014-05-01 through 2026-04-30",
   "privacy": "No patient-level records, direct identifiers, pseudonymous keys, institution names in data files, or raw report text. Referral sources are anonymised as Source A-D.",
   "note": "Category label 其他 in the upstream aggregate outputs was normalised to Other for this public release; no numeric value was altered. .gitattributes disables end-of-line conversion so the SHA-256 values below reproduce on any platform after checkout.",
-  "file_count": 57,
+  "file_count": 92,
   "files": [
     {
       "path": ".gitattributes",
@@ -18,8 +18,38 @@
     },
     {
       "path": ".zenodo.json",
-      "bytes": 2010,
-      "sha256": "385007ed33569d6b5e0fff42f36fab19d76825b12d462913305106cc0698ce6e"
+      "bytes": 1952,
+      "sha256": "7470dfba205ee09d6676ec8810bea2b5a7b541537cbcac5b00c1dbe04b040a70"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 1387,
+      "sha256": "c697d20f9467b0c041940e4d56ba67f2a24eb58c405d76788e74b3dc0a02d795"
+    },
+    {
+      "path": "EXTRACTION_RULES.md",
+      "bytes": 6055,
+      "sha256": "6f1625893eab8fdf7ed11d4eb411240c0985c38c679285c7a38a9f2a227cd789"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1068,
+      "sha256": "9f1abe28a25b5f6f95c58a81a647de3fa72ff6388d228c59bddd079255709989"
+    },
+    {
+      "path": "METHODS.md",
+      "bytes": 3717,
+      "sha256": "85a47dea6d343ecbb8a74c586b1deaf43644787e07bb8fb73131addcc50dc73f"
+    },
+    {
+      "path": "PRIVACY_AUDIT.py",
+      "bytes": 4863,
+      "sha256": "07d4ada4ec0176dd0aa77214e65e397fe641897330bd748a9db23b8f83bbd181"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6522,
+      "sha256": "de5c4c57dc3f45845291fcc0b83606fc87d3c2cd7b43bf69136ceadb91fe8278"
     },
     {
       "path": "aggregate_results/figure_reference_manifest.json",
@@ -82,19 +112,9 @@
       "sha256": "8d63034604183ef947a68be6a73ce0b6a8af1928adb9c2cc85fa0b6a41199419"
     },
     {
-      "path": "CITATION.cff",
-      "bytes": 1387,
-      "sha256": "c697d20f9467b0c041940e4d56ba67f2a24eb58c405d76788e74b3dc0a02d795"
-    },
-    {
       "path": "data_dictionary.csv",
       "bytes": 2831,
       "sha256": "3220de71bb15ba3c081c5b81753382354a53c5d3d64bb654b4ae53cb6e2dae72"
-    },
-    {
-      "path": "EXTRACTION_RULES.md",
-      "bytes": 6055,
-      "sha256": "6f1625893eab8fdf7ed11d4eb411240c0985c38c679285c7a38a9f2a227cd789"
     },
     {
       "path": "figures/Figure1.pdf",
@@ -137,29 +157,184 @@
       "sha256": "83ffe21822e26f35f00a050583c4d157bc6beb5837b9c9bf6c886887b209907a"
     },
     {
-      "path": "LICENSE",
-      "bytes": 1068,
-      "sha256": "9f1abe28a25b5f6f95c58a81a647de3fa72ff6388d228c59bddd079255709989"
-    },
-    {
-      "path": "METHODS.md",
-      "bytes": 3717,
-      "sha256": "85a47dea6d343ecbb8a74c586b1deaf43644787e07bb8fb73131addcc50dc73f"
-    },
-    {
-      "path": "PRIVACY_AUDIT.py",
-      "bytes": 4863,
-      "sha256": "07d4ada4ec0176dd0aa77214e65e397fe641897330bd748a9db23b8f83bbd181"
-    },
-    {
-      "path": "README.md",
-      "bytes": 5796,
-      "sha256": "6783d8b9fe912150901eda43bcee3c12cfe234663b2e41da2f5980fffefed31e"
-    },
-    {
       "path": "requirements.txt",
       "bytes": 165,
       "sha256": "ddebdd72354abe9970540d8a9e39ff85bcbea33a83560abd2baee87f66f2e006"
+    },
+    {
+      "path": "revision_r2/.gitignore",
+      "bytes": 93,
+      "sha256": "9366825cfefadae879bbc09f0698399dfd69a490a3a0148bb46315b99f438914"
+    },
+    {
+      "path": "revision_r2/MANIFEST.json",
+      "bytes": 5584,
+      "sha256": "d30fe8b7c6832d190ac21bf67ea0cdfc403b537c420d2d7384a4ac4e65170d38"
+    },
+    {
+      "path": "revision_r2/MANIFEST.sha256",
+      "bytes": 3228,
+      "sha256": "082c3463211ccea84511f3e6da4b936a97172ff9163e90f98b467708c9a6b53e"
+    },
+    {
+      "path": "revision_r2/README.md",
+      "bytes": 3767,
+      "sha256": "30e6aaf455812e3724cb32ba944bf6475ec3ed8f5b62d6d2ec0aa0426c2a61e2"
+    },
+    {
+      "path": "revision_r2/SOURCE_PROVENANCE.json",
+      "bytes": 10904,
+      "sha256": "f48ca485d6fb5d49f80a82a38e159b8b288f96f1f364a06df3de51d37035662b"
+    },
+    {
+      "path": "revision_r2/aggregate_results/audit_sample_manifest.json",
+      "bytes": 1666,
+      "sha256": "f121c6051a4b9701b13d9a532e04f49daceaa9be3f4f3f5e91500cb23ed9aced"
+    },
+    {
+      "path": "revision_r2/aggregate_results/reextraction_sensitivity_results.json",
+      "bytes": 62116,
+      "sha256": "d12e73f9ce6e0e5d5c24f0f9eddfbb4305794e30e47ad961ad0d890292597842"
+    },
+    {
+      "path": "revision_r2/aggregate_results/reextraction_sensitivity_results_local_x86.json",
+      "bytes": 61940,
+      "sha256": "c62ee367aac3c8d036f978bde3bc953410f8a48b1605581d53a252123ca6f432"
+    },
+    {
+      "path": "revision_r2/aggregate_results/remote_local_comparison.json",
+      "bytes": 50000,
+      "sha256": "df4fa3bd1ac3fd9004cb7f349e74370fdd5aee877630fdbc79a749734bcd759c"
+    },
+    {
+      "path": "revision_r2/aggregate_results/report_template_by_period.json",
+      "bytes": 967,
+      "sha256": "1e1f50f0d5c9379d1d87beb5fca6adc9e6d9e51569353f94e5331a34d5491df8"
+    },
+    {
+      "path": "revision_r2/figures/Figure1.pdf",
+      "bytes": 98717,
+      "sha256": "2383c22f571706a2973eff5956508fd0cb43b6b795b2f4bccb78cb284168dabe"
+    },
+    {
+      "path": "revision_r2/figures/Figure1.png",
+      "bytes": 1235884,
+      "sha256": "3f9c0d2596318e89040a698552dcd5878ed4f5cc1c9c7ae487f46ca2b264a5c0"
+    },
+    {
+      "path": "revision_r2/figures/FigureS1.pdf",
+      "bytes": 90136,
+      "sha256": "5f68f24cd5317ac2d71894279b391ee1388142e40ac27055864dcb5961dfc1c3"
+    },
+    {
+      "path": "revision_r2/figures/FigureS1.png",
+      "bytes": 817331,
+      "sha256": "b435091251fac34400f1053b0da2730485308a065242f5a07d8c17fc477a50c3"
+    },
+    {
+      "path": "revision_r2/privacy_policy.json",
+      "bytes": 228,
+      "sha256": "844e7c5401ff277214c79d7917d6da328f4aab294acc9a270116f95e7085e259"
+    },
+    {
+      "path": "revision_r2/scripts/audit_contract.py",
+      "bytes": 9217,
+      "sha256": "54956d2949fcbf5b57fec8859ee328b8c9d6287ab610893f7a96a8a1798f0463"
+    },
+    {
+      "path": "revision_r2/scripts/build_audit_sample.py",
+      "bytes": 12511,
+      "sha256": "235b5abb56226516c0f2b45c5f81e4fdde918e4e73cdc02bc13601821429cd1e"
+    },
+    {
+      "path": "revision_r2/scripts/build_fig1.py",
+      "bytes": 9366,
+      "sha256": "9e9eb1b31f1fa70686cc3e9e1f6b0d9c27a9700cc4b9ef483a68436f501083be"
+    },
+    {
+      "path": "revision_r2/scripts/build_fig4.py",
+      "bytes": 8058,
+      "sha256": "830359d1463e66626b8bbc2d045a0df2009a316906a0cea13bfbfa446984602d"
+    },
+    {
+      "path": "revision_r2/scripts/build_figS1.py",
+      "bytes": 2535,
+      "sha256": "2efcc17d867c2ef17fd40a893eae861a271aec3297b1690b4353c1758f48685d"
+    },
+    {
+      "path": "revision_r2/scripts/compare_audit.py",
+      "bytes": 23217,
+      "sha256": "787d956f99fb9f8df1abb1f0b0a721e781bd59d7c52beaf0b9bde84288f8836d"
+    },
+    {
+      "path": "revision_r2/scripts/figstyle.py",
+      "bytes": 5509,
+      "sha256": "e6273ed23cf60dc2913a0524f16ecc98df8f67028b3d29506c3edf1ccb117b20"
+    },
+    {
+      "path": "revision_r2/scripts/figure_gate.py",
+      "bytes": 2708,
+      "sha256": "cdf628505baf6d719d54c6afc9e5de81921bc00060235efabee30fd561613bdc"
+    },
+    {
+      "path": "revision_r2/scripts/rebuild_figure1_labels.py",
+      "bytes": 4842,
+      "sha256": "af2cd4b6700aa75d33e192926d696e6b931a82fd03eb0a04f409e627e6e93819"
+    },
+    {
+      "path": "revision_r2/scripts/reextract_sensitivity.py",
+      "bytes": 13613,
+      "sha256": "64f6594459d3b03a2118c47b0a2f5b22048424656cd80b3934e62904f65503df"
+    },
+    {
+      "path": "revision_r2/scripts/tabulate_report_templates.py",
+      "bytes": 3430,
+      "sha256": "733b9e03519e9556716661b330f81fc357e071ad68fb1b93fe3c5989f6264c00"
+    },
+    {
+      "path": "revision_r2/scripts/test_audit_contract.py",
+      "bytes": 16238,
+      "sha256": "4825a83ccfb6056ab3a155e5c16be810bfc4a7f5aeffa3b137bdffa6c895dde6"
+    },
+    {
+      "path": "revision_r2/source_data/figure1_age_distribution.csv",
+      "bytes": 2680,
+      "sha256": "f36b656a8d62996ae714f57ce269bccf60f4acd042172489a88e0296a959c8ad"
+    },
+    {
+      "path": "revision_r2/source_data/figure1_annual_volume.csv",
+      "bytes": 937,
+      "sha256": "72a026d847cb29c698a5d1eb08f4530836489837391ea00d1d9ebc6b47e16ce4"
+    },
+    {
+      "path": "revision_r2/source_data/figure1_class_counts.csv",
+      "bytes": 493,
+      "sha256": "a206242c36b006df81ad0dccef4c007c9f2f5d717931a819fe27e0b8bfa6581b"
+    },
+    {
+      "path": "revision_r2/source_data/figure1_sex_proportion.csv",
+      "bytes": 948,
+      "sha256": "d9dab05603eabc0ae660aed5dc897ceb5273bcc5f9bd6aad428850ac3ccbf3ee"
+    },
+    {
+      "path": "revision_r2/source_data/figure1_year_month.csv",
+      "bytes": 2429,
+      "sha256": "4cd30460a9e52c18d3dbf3943c3ec5a14a4dd83749c3c16fa11ba880026bb2ee"
+    },
+    {
+      "path": "revision_r2/source_data/figure4_annual_capacity.csv",
+      "bytes": 2135,
+      "sha256": "ae248f6b9744cdb43dbf104c79931bf001d92c7b549c23540e55de681a7b1d38"
+    },
+    {
+      "path": "revision_r2/source_data/figure4_quarterly_volume.csv",
+      "bytes": 541,
+      "sha256": "8eb2db5489672bcdde5deb87a463427f1e0d9ce1958a990c854d8d357dd864c9"
+    },
+    {
+      "path": "revision_r2/source_data/figure4_yearly_top_category.csv",
+      "bytes": 377,
+      "sha256": "1143a6b2588c4ec2dbb9d85465dea191a1c1c59165b76ab1df5109a5bf7b9d69"
     },
     {
       "path": "scripts/build_v2_descriptive_figures.py",
@@ -291,5 +466,7 @@
       "bytes": 2135,
       "sha256": "ae248f6b9744cdb43dbf104c79931bf001d92c7b549c23540e55de681a7b1d38"
     }
-  ]
+  ],
+  "revision_status": "R2 incremental development snapshot; human audit pending; frozen v1.0.0 and its DOI unchanged",
+  "text_normalization": "utf8-crlf-to-lf"
 }
