@@ -1,0 +1,841 @@
+{
+  "label": "human",
+  "status": "VERIFIED",
+  "n": 200,
+  "by_split": {
+    "temporal_test": 100,
+    "development": 100
+  },
+  "dual_reader": true,
+  "inter_reader_before_adjudication": {
+    "glomerulus_count": {
+      "n": 200,
+      "percent_agreement": 99.0,
+      "kappa": null
+    },
+    "sclerosis_rate": {
+      "n": 200,
+      "percent_agreement": 93.5,
+      "kappa": null
+    },
+    "mesangial_cell_count": {
+      "n": 200,
+      "percent_agreement": 99.0,
+      "kappa": null
+    },
+    "mesangial_matrix_grade": {
+      "n": 200,
+      "percent_agreement": 97.5,
+      "kappa": 0.952
+    },
+    "gbm_thickness_nm": {
+      "n": 200,
+      "percent_agreement": 51.5,
+      "kappa": null
+    },
+    "spike_presence": {
+      "n": 200,
+      "percent_agreement": 19.0,
+      "kappa": 0.09
+    },
+    "foot_process_grade": {
+      "n": 200,
+      "percent_agreement": 89.0,
+      "kappa": 0.828
+    }
+  },
+  "validation": {
+    "contract_version": 1,
+    "status": "PASS",
+    "exact_sample_ids": true,
+    "all_seven_fields_complete": true,
+    "independent_reference_encoder": true,
+    "identity_scope": "Named participant declarations; real-world identity is not independently verified by this script.",
+    "limitations": [
+      "Missing/ambiguous report text is not a verified clinical negative.",
+      "Field agreement is not diagnostic accuracy or proof of linkage correctness.",
+      "This service/sample audit is descriptive, not external validation."
+    ],
+    "machine_comparison_tolerance": {
+      "glomerulus_count": 0.0,
+      "sclerosis_rate": 0.005,
+      "mesangial_cell_count": 0.05,
+      "gbm_thickness_nm": "max(10 nm, 1% of human value)"
+    },
+    "range_coding": "Intervals use midpoint; GBM units are converted to nm.",
+    "reader_agreement": "Exact encoded value and explicit missingness state; machine comparison tolerances are not applied."
+  },
+  "adjudication": {
+    "n_disagreements": 303,
+    "n_resolved": 303,
+    "complete": true,
+    "final_answer_status_counts": {
+      "glomerulus_count": {
+        "value": 200
+      },
+      "sclerosis_rate": {
+        "value": 141,
+        "未提及": 59
+      },
+      "mesangial_cell_count": {
+        "value": 199,
+        "未提及": 1
+      },
+      "mesangial_matrix_grade": {
+        "value": 196,
+        "未提及": 4
+      },
+      "gbm_thickness_nm": {
+        "不明确": 93,
+        "value": 104,
+        "未提及": 3
+      },
+      "spike_presence": {
+        "value": 42,
+        "未提及": 156,
+        "不明确": 2
+      },
+      "foot_process_grade": {
+        "value": 199,
+        "不明确": 1
+      }
+    }
+  },
+  "pipelines": {
+    "frozen_pipeline": {
+      "fields": {
+        "glomerulus_count": {
+          "label": "Glomerulus count",
+          "kind": "numeric",
+          "all": {
+            "n": 200,
+            "parser_value_n": 138,
+            "reader_value_n": 200,
+            "agree_both_value": 138,
+            "agree_both_missing": 0,
+            "value_differs": 0,
+            "parser_missing_reader_value": 62,
+            "parser_value_reader_missing": 0,
+            "error_n": 62,
+            "error_pct": 31.0,
+            "error_ci_low_pct": 25.0,
+            "error_ci_high_pct": 37.7,
+            "value_disagreement_pct_when_both_present": 0.0
+          },
+          "development": {
+            "n": 100,
+            "parser_value_n": 41,
+            "reader_value_n": 100,
+            "agree_both_value": 41,
+            "agree_both_missing": 0,
+            "value_differs": 0,
+            "parser_missing_reader_value": 59,
+            "parser_value_reader_missing": 0,
+            "error_n": 59,
+            "error_pct": 59.0,
+            "error_ci_low_pct": 49.2,
+            "error_ci_high_pct": 68.1,
+            "value_disagreement_pct_when_both_present": 0.0
+          },
+          "temporal_test": {
+            "n": 100,
+            "parser_value_n": 97,
+            "reader_value_n": 100,
+            "agree_both_value": 97,
+            "agree_both_missing": 0,
+            "value_differs": 0,
+            "parser_missing_reader_value": 3,
+            "parser_value_reader_missing": 0,
+            "error_n": 3,
+            "error_pct": 3.0,
+            "error_ci_low_pct": 1.0,
+            "error_ci_high_pct": 8.5,
+            "value_disagreement_pct_when_both_present": 0.0
+          }
+        },
+        "sclerosis_rate": {
+          "label": "Sclerosis rate",
+          "kind": "numeric",
+          "all": {
+            "n": 200,
+            "parser_value_n": 138,
+            "reader_value_n": 141,
+            "agree_both_value": 137,
+            "agree_both_missing": 59,
+            "value_differs": 1,
+            "parser_missing_reader_value": 3,
+            "parser_value_reader_missing": 0,
+            "error_n": 4,
+            "error_pct": 2.0,
+            "error_ci_low_pct": 0.8,
+            "error_ci_high_pct": 5.0,
+            "value_disagreement_pct_when_both_present": 0.7
+          },
+          "development": {
+            "n": 100,
+            "parser_value_n": 41,
+            "reader_value_n": 41,
+            "agree_both_value": 41,
+            "agree_both_missing": 59,
+            "value_differs": 0,
+            "parser_missing_reader_value": 0,
+            "parser_value_reader_missing": 0,
+            "error_n": 0,
+            "error_pct": 0.0,
+            "error_ci_low_pct": 0.0,
+            "error_ci_high_pct": 3.7,
+            "value_disagreement_pct_when_both_present": 0.0
+          },
+          "temporal_test": {
+            "n": 100,
+            "parser_value_n": 97,
+            "reader_value_n": 100,
+            "agree_both_value": 96,
+            "agree_both_missing": 0,
+            "value_differs": 1,
+            "parser_missing_reader_value": 3,
+            "parser_value_reader_missing": 0,
+            "error_n": 4,
+            "error_pct": 4.0,
+            "error_ci_low_pct": 1.6,
+            "error_ci_high_pct": 9.8,
+            "value_disagreement_pct_when_both_present": 1.0
+          }
+        },
+        "mesangial_cell_count": {
+          "label": "Mesangial cell count",
+          "kind": "numeric",
+          "all": {
+            "n": 200,
+            "parser_value_n": 190,
+            "reader_value_n": 199,
+            "agree_both_value": 190,
+            "agree_both_missing": 1,
+            "value_differs": 0,
+            "parser_missing_reader_value": 9,
+            "parser_value_reader_missing": 0,
+            "error_n": 9,
+            "error_pct": 4.5,
+            "error_ci_low_pct": 2.4,
+            "error_ci_high_pct": 8.3,
+            "value_disagreement_pct_when_both_present": 0.0
+          },
+          "development": {
+            "n": 100,
+            "parser_value_n": 97,
+            "reader_value_n": 99,
+            "agree_both_value": 97,
+            "agree_both_missing": 1,
+            "value_differs": 0,
+            "parser_missing_reader_value": 2,
+            "parser_value_reader_missing": 0,
+            "error_n": 2,
+            "error_pct": 2.0,
+            "error_ci_low_pct": 0.6,
+            "error_ci_high_pct": 7.0,
+            "value_disagreement_pct_when_both_present": 0.0
+          },
+          "temporal_test": {
+            "n": 100,
+            "parser_value_n": 93,
+            "reader_value_n": 100,
+            "agree_both_value": 93,
+            "agree_both_missing": 0,
+            "value_differs": 0,
+            "parser_missing_reader_value": 7,
+            "parser_value_reader_missing": 0,
+            "error_n": 7,
+            "error_pct": 7.0,
+            "error_ci_low_pct": 3.4,
+            "error_ci_high_pct": 13.7,
+            "value_disagreement_pct_when_both_present": 0.0
+          }
+        },
+        "mesangial_matrix_grade": {
+          "label": "Mesangial matrix grade",
+          "kind": "ordinal",
+          "all": {
+            "n": 200,
+            "parser_value_n": 127,
+            "reader_value_n": 196,
+            "agree_both_value": 125,
+            "agree_both_missing": 4,
+            "value_differs": 2,
+            "parser_missing_reader_value": 69,
+            "parser_value_reader_missing": 0,
+            "error_n": 71,
+            "error_pct": 35.5,
+            "error_ci_low_pct": 29.2,
+            "error_ci_high_pct": 42.3,
+            "value_disagreement_pct_when_both_present": 1.6
+          },
+          "development": {
+            "n": 100,
+            "parser_value_n": 41,
+            "reader_value_n": 98,
+            "agree_both_value": 40,
+            "agree_both_missing": 2,
+            "value_differs": 1,
+            "parser_missing_reader_value": 57,
+            "parser_value_reader_missing": 0,
+            "error_n": 58,
+            "error_pct": 58.0,
+            "error_ci_low_pct": 48.2,
+            "error_ci_high_pct": 67.2,
+            "value_disagreement_pct_when_both_present": 2.4
+          },
+          "temporal_test": {
+            "n": 100,
+            "parser_value_n": 86,
+            "reader_value_n": 98,
+            "agree_both_value": 85,
+            "agree_both_missing": 2,
+            "value_differs": 1,
+            "parser_missing_reader_value": 12,
+            "parser_value_reader_missing": 0,
+            "error_n": 13,
+            "error_pct": 13.0,
+            "error_ci_low_pct": 7.8,
+            "error_ci_high_pct": 21.0,
+            "value_disagreement_pct_when_both_present": 1.2
+          }
+        },
+        "gbm_thickness_nm": {
+          "label": "GBM thickness",
+          "kind": "numeric",
+          "all": {
+            "n": 200,
+            "parser_value_n": 36,
+            "reader_value_n": 104,
+            "agree_both_value": 36,
+            "agree_both_missing": 96,
+            "value_differs": 0,
+            "parser_missing_reader_value": 68,
+            "parser_value_reader_missing": 0,
+            "error_n": 68,
+            "error_pct": 34.0,
+            "error_ci_low_pct": 27.8,
+            "error_ci_high_pct": 40.8,
+            "value_disagreement_pct_when_both_present": 0.0
+          },
+          "development": {
+            "n": 100,
+            "parser_value_n": 6,
+            "reader_value_n": 31,
+            "agree_both_value": 6,
+            "agree_both_missing": 69,
+            "value_differs": 0,
+            "parser_missing_reader_value": 25,
+            "parser_value_reader_missing": 0,
+            "error_n": 25,
+            "error_pct": 25.0,
+            "error_ci_low_pct": 17.5,
+            "error_ci_high_pct": 34.3,
+            "value_disagreement_pct_when_both_present": 0.0
+          },
+          "temporal_test": {
+            "n": 100,
+            "parser_value_n": 30,
+            "reader_value_n": 73,
+            "agree_both_value": 30,
+            "agree_both_missing": 27,
+            "value_differs": 0,
+            "parser_missing_reader_value": 43,
+            "parser_value_reader_missing": 0,
+            "error_n": 43,
+            "error_pct": 43.0,
+            "error_ci_low_pct": 33.7,
+            "error_ci_high_pct": 52.8,
+            "value_disagreement_pct_when_both_present": 0.0
+          }
+        },
+        "spike_presence": {
+          "label": "Spike presence",
+          "kind": "binary",
+          "all": {
+            "n": 200,
+            "parser_value_n": 35,
+            "reader_value_n": 42,
+            "agree_both_value": 31,
+            "agree_both_missing": 154,
+            "value_differs": 0,
+            "parser_missing_reader_value": 11,
+            "parser_value_reader_missing": 4,
+            "error_n": 15,
+            "error_pct": 7.5,
+            "error_ci_low_pct": 4.6,
+            "error_ci_high_pct": 12.0,
+            "value_disagreement_pct_when_both_present": 0.0
+          },
+          "development": {
+            "n": 100,
+            "parser_value_n": 6,
+            "reader_value_n": 9,
+            "agree_both_value": 5,
+            "agree_both_missing": 90,
+            "value_differs": 0,
+            "parser_missing_reader_value": 4,
+            "parser_value_reader_missing": 1,
+            "error_n": 5,
+            "error_pct": 5.0,
+            "error_ci_low_pct": 2.2,
+            "error_ci_high_pct": 11.2,
+            "value_disagreement_pct_when_both_present": 0.0
+          },
+          "temporal_test": {
+            "n": 100,
+            "parser_value_n": 29,
+            "reader_value_n": 33,
+            "agree_both_value": 26,
+            "agree_both_missing": 64,
+            "value_differs": 0,
+            "parser_missing_reader_value": 7,
+            "parser_value_reader_missing": 3,
+            "error_n": 10,
+            "error_pct": 10.0,
+            "error_ci_low_pct": 5.5,
+            "error_ci_high_pct": 17.4,
+            "value_disagreement_pct_when_both_present": 0.0
+          }
+        },
+        "foot_process_grade": {
+          "label": "Foot-process grade",
+          "kind": "ordinal",
+          "all": {
+            "n": 200,
+            "parser_value_n": 196,
+            "reader_value_n": 199,
+            "agree_both_value": 190,
+            "agree_both_missing": 1,
+            "value_differs": 6,
+            "parser_missing_reader_value": 3,
+            "parser_value_reader_missing": 0,
+            "error_n": 9,
+            "error_pct": 4.5,
+            "error_ci_low_pct": 2.4,
+            "error_ci_high_pct": 8.3,
+            "value_disagreement_pct_when_both_present": 3.1
+          },
+          "development": {
+            "n": 100,
+            "parser_value_n": 96,
+            "reader_value_n": 99,
+            "agree_both_value": 91,
+            "agree_both_missing": 1,
+            "value_differs": 5,
+            "parser_missing_reader_value": 3,
+            "parser_value_reader_missing": 0,
+            "error_n": 8,
+            "error_pct": 8.0,
+            "error_ci_low_pct": 4.1,
+            "error_ci_high_pct": 15.0,
+            "value_disagreement_pct_when_both_present": 5.2
+          },
+          "temporal_test": {
+            "n": 100,
+            "parser_value_n": 100,
+            "reader_value_n": 100,
+            "agree_both_value": 99,
+            "agree_both_missing": 0,
+            "value_differs": 1,
+            "parser_missing_reader_value": 0,
+            "parser_value_reader_missing": 0,
+            "error_n": 1,
+            "error_pct": 1.0,
+            "error_ci_low_pct": 0.2,
+            "error_ci_high_pct": 5.4,
+            "value_disagreement_pct_when_both_present": 1.0
+          }
+        }
+      },
+      "error_pct_range": [
+        2.0,
+        35.5
+      ],
+      "disagreement_flags": {
+        "threshold_fields": 4,
+        "n_records": 1,
+        "link_methods": {
+          "exact_stem": 1
+        },
+        "interpretation": "Descriptive multiple-field disagreement only; not evidence of linkage error."
+      },
+      "linkage_flags": {
+        "threshold_fields": 4,
+        "n_records": 1,
+        "link_methods": {
+          "exact_stem": 1
+        },
+        "interpretation": "Descriptive multiple-field disagreement only; not evidence of linkage error."
+      }
+    },
+    "reextracted_pipeline": {
+      "fields": {
+        "glomerulus_count": {
+          "label": "Glomerulus count",
+          "kind": "numeric",
+          "all": {
+            "n": 200,
+            "parser_value_n": 200,
+            "reader_value_n": 200,
+            "agree_both_value": 198,
+            "agree_both_missing": 0,
+            "value_differs": 2,
+            "parser_missing_reader_value": 0,
+            "parser_value_reader_missing": 0,
+            "error_n": 2,
+            "error_pct": 1.0,
+            "error_ci_low_pct": 0.3,
+            "error_ci_high_pct": 3.6,
+            "value_disagreement_pct_when_both_present": 1.0
+          },
+          "development": {
+            "n": 100,
+            "parser_value_n": 100,
+            "reader_value_n": 100,
+            "agree_both_value": 100,
+            "agree_both_missing": 0,
+            "value_differs": 0,
+            "parser_missing_reader_value": 0,
+            "parser_value_reader_missing": 0,
+            "error_n": 0,
+            "error_pct": 0.0,
+            "error_ci_low_pct": 0.0,
+            "error_ci_high_pct": 3.7,
+            "value_disagreement_pct_when_both_present": 0.0
+          },
+          "temporal_test": {
+            "n": 100,
+            "parser_value_n": 100,
+            "reader_value_n": 100,
+            "agree_both_value": 98,
+            "agree_both_missing": 0,
+            "value_differs": 2,
+            "parser_missing_reader_value": 0,
+            "parser_value_reader_missing": 0,
+            "error_n": 2,
+            "error_pct": 2.0,
+            "error_ci_low_pct": 0.6,
+            "error_ci_high_pct": 7.0,
+            "value_disagreement_pct_when_both_present": 2.0
+          }
+        },
+        "sclerosis_rate": {
+          "label": "Sclerosis rate",
+          "kind": "numeric",
+          "all": {
+            "n": 200,
+            "parser_value_n": 141,
+            "reader_value_n": 141,
+            "agree_both_value": 140,
+            "agree_both_missing": 59,
+            "value_differs": 1,
+            "parser_missing_reader_value": 0,
+            "parser_value_reader_missing": 0,
+            "error_n": 1,
+            "error_pct": 0.5,
+            "error_ci_low_pct": 0.1,
+            "error_ci_high_pct": 2.8,
+            "value_disagreement_pct_when_both_present": 0.7
+          },
+          "development": {
+            "n": 100,
+            "parser_value_n": 41,
+            "reader_value_n": 41,
+            "agree_both_value": 41,
+            "agree_both_missing": 59,
+            "value_differs": 0,
+            "parser_missing_reader_value": 0,
+            "parser_value_reader_missing": 0,
+            "error_n": 0,
+            "error_pct": 0.0,
+            "error_ci_low_pct": 0.0,
+            "error_ci_high_pct": 3.7,
+            "value_disagreement_pct_when_both_present": 0.0
+          },
+          "temporal_test": {
+            "n": 100,
+            "parser_value_n": 100,
+            "reader_value_n": 100,
+            "agree_both_value": 99,
+            "agree_both_missing": 0,
+            "value_differs": 1,
+            "parser_missing_reader_value": 0,
+            "parser_value_reader_missing": 0,
+            "error_n": 1,
+            "error_pct": 1.0,
+            "error_ci_low_pct": 0.2,
+            "error_ci_high_pct": 5.4,
+            "value_disagreement_pct_when_both_present": 1.0
+          }
+        },
+        "mesangial_cell_count": {
+          "label": "Mesangial cell count",
+          "kind": "numeric",
+          "all": {
+            "n": 200,
+            "parser_value_n": 199,
+            "reader_value_n": 199,
+            "agree_both_value": 199,
+            "agree_both_missing": 1,
+            "value_differs": 0,
+            "parser_missing_reader_value": 0,
+            "parser_value_reader_missing": 0,
+            "error_n": 0,
+            "error_pct": 0.0,
+            "error_ci_low_pct": 0.0,
+            "error_ci_high_pct": 1.9,
+            "value_disagreement_pct_when_both_present": 0.0
+          },
+          "development": {
+            "n": 100,
+            "parser_value_n": 99,
+            "reader_value_n": 99,
+            "agree_both_value": 99,
+            "agree_both_missing": 1,
+            "value_differs": 0,
+            "parser_missing_reader_value": 0,
+            "parser_value_reader_missing": 0,
+            "error_n": 0,
+            "error_pct": 0.0,
+            "error_ci_low_pct": 0.0,
+            "error_ci_high_pct": 3.7,
+            "value_disagreement_pct_when_both_present": 0.0
+          },
+          "temporal_test": {
+            "n": 100,
+            "parser_value_n": 100,
+            "reader_value_n": 100,
+            "agree_both_value": 100,
+            "agree_both_missing": 0,
+            "value_differs": 0,
+            "parser_missing_reader_value": 0,
+            "parser_value_reader_missing": 0,
+            "error_n": 0,
+            "error_pct": 0.0,
+            "error_ci_low_pct": 0.0,
+            "error_ci_high_pct": 3.7,
+            "value_disagreement_pct_when_both_present": 0.0
+          }
+        },
+        "mesangial_matrix_grade": {
+          "label": "Mesangial matrix grade",
+          "kind": "ordinal",
+          "all": {
+            "n": 200,
+            "parser_value_n": 185,
+            "reader_value_n": 196,
+            "agree_both_value": 181,
+            "agree_both_missing": 4,
+            "value_differs": 4,
+            "parser_missing_reader_value": 11,
+            "parser_value_reader_missing": 0,
+            "error_n": 15,
+            "error_pct": 7.5,
+            "error_ci_low_pct": 4.6,
+            "error_ci_high_pct": 12.0,
+            "value_disagreement_pct_when_both_present": 2.2
+          },
+          "development": {
+            "n": 100,
+            "parser_value_n": 98,
+            "reader_value_n": 98,
+            "agree_both_value": 95,
+            "agree_both_missing": 2,
+            "value_differs": 3,
+            "parser_missing_reader_value": 0,
+            "parser_value_reader_missing": 0,
+            "error_n": 3,
+            "error_pct": 3.0,
+            "error_ci_low_pct": 1.0,
+            "error_ci_high_pct": 8.5,
+            "value_disagreement_pct_when_both_present": 3.1
+          },
+          "temporal_test": {
+            "n": 100,
+            "parser_value_n": 87,
+            "reader_value_n": 98,
+            "agree_both_value": 86,
+            "agree_both_missing": 2,
+            "value_differs": 1,
+            "parser_missing_reader_value": 11,
+            "parser_value_reader_missing": 0,
+            "error_n": 12,
+            "error_pct": 12.0,
+            "error_ci_low_pct": 7.0,
+            "error_ci_high_pct": 19.8,
+            "value_disagreement_pct_when_both_present": 1.1
+          }
+        },
+        "gbm_thickness_nm": {
+          "label": "GBM thickness",
+          "kind": "numeric",
+          "all": {
+            "n": 200,
+            "parser_value_n": 103,
+            "reader_value_n": 104,
+            "agree_both_value": 103,
+            "agree_both_missing": 96,
+            "value_differs": 0,
+            "parser_missing_reader_value": 1,
+            "parser_value_reader_missing": 0,
+            "error_n": 1,
+            "error_pct": 0.5,
+            "error_ci_low_pct": 0.1,
+            "error_ci_high_pct": 2.8,
+            "value_disagreement_pct_when_both_present": 0.0
+          },
+          "development": {
+            "n": 100,
+            "parser_value_n": 30,
+            "reader_value_n": 31,
+            "agree_both_value": 30,
+            "agree_both_missing": 69,
+            "value_differs": 0,
+            "parser_missing_reader_value": 1,
+            "parser_value_reader_missing": 0,
+            "error_n": 1,
+            "error_pct": 1.0,
+            "error_ci_low_pct": 0.2,
+            "error_ci_high_pct": 5.4,
+            "value_disagreement_pct_when_both_present": 0.0
+          },
+          "temporal_test": {
+            "n": 100,
+            "parser_value_n": 73,
+            "reader_value_n": 73,
+            "agree_both_value": 73,
+            "agree_both_missing": 27,
+            "value_differs": 0,
+            "parser_missing_reader_value": 0,
+            "parser_value_reader_missing": 0,
+            "error_n": 0,
+            "error_pct": 0.0,
+            "error_ci_low_pct": 0.0,
+            "error_ci_high_pct": 3.7,
+            "value_disagreement_pct_when_both_present": 0.0
+          }
+        },
+        "spike_presence": {
+          "label": "Spike presence",
+          "kind": "binary",
+          "all": {
+            "n": 200,
+            "parser_value_n": 40,
+            "reader_value_n": 42,
+            "agree_both_value": 32,
+            "agree_both_missing": 153,
+            "value_differs": 3,
+            "parser_missing_reader_value": 7,
+            "parser_value_reader_missing": 5,
+            "error_n": 15,
+            "error_pct": 7.5,
+            "error_ci_low_pct": 4.6,
+            "error_ci_high_pct": 12.0,
+            "value_disagreement_pct_when_both_present": 8.6
+          },
+          "development": {
+            "n": 100,
+            "parser_value_n": 7,
+            "reader_value_n": 9,
+            "agree_both_value": 5,
+            "agree_both_missing": 89,
+            "value_differs": 0,
+            "parser_missing_reader_value": 4,
+            "parser_value_reader_missing": 2,
+            "error_n": 6,
+            "error_pct": 6.0,
+            "error_ci_low_pct": 2.8,
+            "error_ci_high_pct": 12.5,
+            "value_disagreement_pct_when_both_present": 0.0
+          },
+          "temporal_test": {
+            "n": 100,
+            "parser_value_n": 33,
+            "reader_value_n": 33,
+            "agree_both_value": 27,
+            "agree_both_missing": 64,
+            "value_differs": 3,
+            "parser_missing_reader_value": 3,
+            "parser_value_reader_missing": 3,
+            "error_n": 9,
+            "error_pct": 9.0,
+            "error_ci_low_pct": 4.8,
+            "error_ci_high_pct": 16.2,
+            "value_disagreement_pct_when_both_present": 10.0
+          }
+        },
+        "foot_process_grade": {
+          "label": "Foot-process grade",
+          "kind": "ordinal",
+          "all": {
+            "n": 200,
+            "parser_value_n": 196,
+            "reader_value_n": 199,
+            "agree_both_value": 190,
+            "agree_both_missing": 1,
+            "value_differs": 6,
+            "parser_missing_reader_value": 3,
+            "parser_value_reader_missing": 0,
+            "error_n": 9,
+            "error_pct": 4.5,
+            "error_ci_low_pct": 2.4,
+            "error_ci_high_pct": 8.3,
+            "value_disagreement_pct_when_both_present": 3.1
+          },
+          "development": {
+            "n": 100,
+            "parser_value_n": 96,
+            "reader_value_n": 99,
+            "agree_both_value": 91,
+            "agree_both_missing": 1,
+            "value_differs": 5,
+            "parser_missing_reader_value": 3,
+            "parser_value_reader_missing": 0,
+            "error_n": 8,
+            "error_pct": 8.0,
+            "error_ci_low_pct": 4.1,
+            "error_ci_high_pct": 15.0,
+            "value_disagreement_pct_when_both_present": 5.2
+          },
+          "temporal_test": {
+            "n": 100,
+            "parser_value_n": 100,
+            "reader_value_n": 100,
+            "agree_both_value": 99,
+            "agree_both_missing": 0,
+            "value_differs": 1,
+            "parser_missing_reader_value": 0,
+            "parser_value_reader_missing": 0,
+            "error_n": 1,
+            "error_pct": 1.0,
+            "error_ci_low_pct": 0.2,
+            "error_ci_high_pct": 5.4,
+            "value_disagreement_pct_when_both_present": 1.0
+          }
+        }
+      },
+      "error_pct_range": [
+        0.0,
+        7.5
+      ],
+      "disagreement_flags": {
+        "threshold_fields": 4,
+        "n_records": 0,
+        "link_methods": {},
+        "interpretation": "Descriptive multiple-field disagreement only; not evidence of linkage error."
+      },
+      "linkage_flags": {
+        "threshold_fields": 4,
+        "n_records": 0,
+        "link_methods": {},
+        "interpretation": "Descriptive multiple-field disagreement only; not evidence of linkage error."
+      }
+    }
+  },
+  "representation": "De-identified aggregate projection; no participant-level evidence is distributed.",
+  "scientific_code_provenance": {
+    "comparison_script_sha256": "eb182b44471c0da2ad445eda63f0006d330b1c468a59a1b7ad13cfdf483b9762",
+    "contract_sha256": "54956d2949fcbf5b57fec8859ee328b8c9d6287ab610893f7a96a8a1798f0463"
+  }
+}

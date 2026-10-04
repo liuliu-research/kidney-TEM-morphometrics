@@ -1,4 +1,4 @@
-# R2 additions — human audit pending
+# R2 additions — completed human-audit aggregates
 
 Same manuscript/repository: Limited temporal generalization of report-derived TEM
 morphometrics for 11-class glomerular disease phenotyping.
@@ -6,8 +6,10 @@ morphometrics for 11-class glomerular disease phenotyping.
 This directory contains the incremental R2 additions to the existing repository.
 It does not replace frozen v1.0.0 or DOI 10.5281/zenodo.21825234 and does not claim
 a complete v1.1.0 release. The independent 200-report, seven-field dual-reader audit
-and third-reader adjudication are pending. No real audit error rates or individual
-answers are included. Synthetic tests are software checks, not human observations.
+and third-reader adjudication are complete. De-identified human-audit aggregates
+are included in aggregate_results/audit_results.json; see AUDIT_AGGREGATES.md.
+Individual answers and signed evidence are not included. Synthetic tests are
+software checks, not human observations.
 
 Included: current audit contract/scoring and synthetic tests; actual sampling,
 template-counting and post-hoc re-extraction scripts; current Figure 1 and S1 with
@@ -55,9 +57,11 @@ clinical records are not universally anonymous. Underlying records remain subjec
 to the approved controlled-access route.
 
 The internal audit_results.json retains named-reader provenance and paths and MUST
-NOT be uploaded verbatim. After real dual reading and adjudication, publish only
-a reviewed aggregate projection without identities, signatures, paths or individual
-answers, binding both source and projection hashes. Until then there is no real
-audit_results.json or completed R2 release here. Website infrastructure is excluded.
+NOT be uploaded verbatim. The public file is an allowlisted aggregate projection;
+all retained counts, percentages, confidence limits and agreement statistics equal
+the verified private result without re-rounding. Participant identities, signatures,
+workbook commitments, local paths and record-level sample identifiers are excluded.
+Private evidence and its binding hashes remain controlled. Scientific code hashes
+and the projection method are public. Website infrastructure is excluded.
 This incremental package inherits the existing repository MIT license; the license
 does not cover underlying clinical records.

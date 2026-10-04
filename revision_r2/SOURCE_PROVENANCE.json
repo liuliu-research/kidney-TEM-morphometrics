@@ -1,5 +1,5 @@
 {
-  "status": "CURRENT_R2_CANDIDATE_HUMAN_AUDIT_PENDING",
+  "status": "CURRENT_R2_ADDITIONS_WITH_COMPLETED_HUMAN_AUDIT_AGGREGATES",
   "base_public_commit": "52964cf38ed5fc1d2a3e2265402033354e46ccee",
   "frozen_parser_sha256": "d350bfed33650abb16a9bb2f1197c7f040b32c21b14525b5996df3efd77af530",
   "base_public_doi": "10.5281/zenodo.21825234",
@@ -217,5 +217,15 @@
       ],
       "retained_values_equal": true
     }
-  ]
+  ],
+  "human_audit_publication": {
+    "destination": "aggregate_results/audit_results.json",
+    "destination_sha256": "57cf2feae2126fe8d6dac78098a28abe84afc4480f5d49d6fc89746a0647bbae",
+    "transformation": "Allowlisted aggregate projection; no numeric changes; private source commitments withheld.",
+    "method": "AUDIT_AGGREGATES.md",
+    "scientific_code_provenance": {
+      "comparison_script_sha256": "eb182b44471c0da2ad445eda63f0006d330b1c468a59a1b7ad13cfdf483b9762",
+      "contract_sha256": "54956d2949fcbf5b57fec8859ee328b8c9d6287ab610893f7a96a8a1798f0463"
+    }
+  }
 }

@@ -8,15 +8,16 @@ Analysis code and de-identified aggregate source data for:
 
 ## Current revision status
 
-The [revision_r2](revision_r2/README.md) directory contains incremental revision
-code and existing aggregate sensitivity results. The independent 200-report
-dual-reader field audit is still pending; no human audit results or report text
-are published. This is a development snapshot, not a complete v1.1.0 release.
+The [revision_r2](revision_r2/README.md) directory contains the revision code,
+sensitivity results, and completed 200-report dual-reader and adjudicated
+field-audit aggregates. Only de-identified aggregates are public; the clinical
+reports, individual answers, reader identities and signed evidence remain private.
+This same-repository update is not a new DOI archive or a versioned v1.1.0 release.
 Frozen [v1.0.0](https://github.com/liuliu-research/kidney-TEM-morphometrics/releases/tag/v1.0.0)
-and [its Zenodo DOI](https://doi.org/10.5281/zenodo.21825234) remain unchanged.
-The original reproducibility results described below refer to that frozen
-analysis. Revision-specific code, data, environment and privacy boundaries are
-documented separately in the incremental directory.
+and [its Zenodo DOI](https://doi.org/10.5281/zenodo.21825234) remain unchanged and
+do not include the new human-audit aggregates. The original reproducibility results
+below refer to that frozen analysis; revision-specific methods and privacy
+boundaries are documented separately in the incremental directory.
 
 Locked registry: 10,933 canonical transmission electron microscopy (TEM) examinations
 from 10,787 patients, 1 May 2014 – 30 April 2026 (actual dated observations 2014-05-08
