@@ -1,5 +1,5 @@
 {
-  "status": "CURRENT_R2_ADDITIONS_WITH_COMPLETED_HUMAN_AUDIT_AGGREGATES",
+  "status": "CURRENT_R2_ADDITIONS_WITH_COMPLETED_HUMAN_AUDIT_AGGREGATES_AND_POST_HOC_REREVIEW",
   "base_public_commit": "52964cf38ed5fc1d2a3e2265402033354e46ccee",
   "frozen_parser_sha256": "d350bfed33650abb16a9bb2f1197c7f040b32c21b14525b5996df3efd77af530",
   "base_public_doi": "10.5281/zenodo.21825234",
@@ -17,13 +17,6 @@
       "destination": "scripts/test_audit_contract.py",
       "destination_sha256": "4825a83ccfb6056ab3a155e5c16be810bfc4a7f5aeffa3b137bdffa6c895dde6",
       "transformation": "Byte-identical copy"
-    },
-    {
-      "source_name": "compare_audit.py",
-      "source_sha256": "eb182b44471c0da2ad445eda63f0006d330b1c468a59a1b7ad13cfdf483b9762",
-      "destination": "scripts/compare_audit.py",
-      "destination_sha256": "787d956f99fb9f8df1abb1f0b0a721e781bd59d7c52beaf0b9bde84288f8836d",
-      "transformation": "Explicit path/output adaptations only"
     },
     {
       "source_name": "build_audit_sample.py",
@@ -216,16 +209,35 @@
         "frozen_pipeline_remote_vs_deposited/metadata_differences"
       ],
       "retained_values_equal": true
+    },
+    {
+      "source_name": "compare_audit.py",
+      "source_sha256": "56fe6ca56a460282c74fe0f9fc5500e55e4e5f3628b5d1c80d6c26fc2c81e332",
+      "destination": "scripts/compare_audit.py",
+      "destination_sha256": "380bc06180b17918ae651c926ea585a0d59eacb6438e9cf1341b710fc4e11a84",
+      "transformation": "Explicit path/output adaptations only; adds --rereview application of the signed post hoc re-review table"
+    },
+    {
+      "source_name": "build_rereview_queue.py",
+      "source_sha256": "9b97fb6abdba53d4085cc3dcaad70ba177a43b4f5f0b8156a7d0cdf6ad38f14b",
+      "destination": "scripts/build_rereview_queue.py",
+      "destination_sha256": "ad36d457e23d224f08f1b3471cbf22fad5d4c304804fb040bfdb62b194fa98a3",
+      "transformation": "Explicit path adaptations only (private inputs located through TEM_AUDIT_SOURCE_ROOT)"
     }
   ],
   "human_audit_publication": {
     "destination": "aggregate_results/audit_results.json",
-    "destination_sha256": "57cf2feae2126fe8d6dac78098a28abe84afc4480f5d49d6fc89746a0647bbae",
+    "destination_sha256": "f948d90ad1bed1c532a590fac3e5175c8e7bebfbcbf1350a1154c711caa8f9e5",
     "transformation": "Allowlisted aggregate projection; no numeric changes; private source commitments withheld.",
     "method": "AUDIT_AGGREGATES.md",
     "scientific_code_provenance": {
-      "comparison_script_sha256": "eb182b44471c0da2ad445eda63f0006d330b1c468a59a1b7ad13cfdf483b9762",
+      "comparison_script_sha256": "56fe6ca56a460282c74fe0f9fc5500e55e4e5f3628b5d1c80d6c26fc2c81e332",
       "contract_sha256": "54956d2949fcbf5b57fec8859ee328b8c9d6287ab610893f7a96a8a1798f0463"
     }
+  },
+  "rereview_publication": {
+    "block": "rereview",
+    "transformation": "Allowlisted projection of the signed post hoc re-review: counts, affected fields, per-cell origin and before/after codings, status counts after re-review, and affected-field aggregates under the original codings; sample identifiers, reasons and commitments withheld.",
+    "method": "AUDIT_AGGREGATES.md"
   }
 }

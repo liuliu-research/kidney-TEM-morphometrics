@@ -65,3 +65,12 @@ Private evidence and its binding hashes remain controlled. Scientific code hashe
 and the projection method are public. Website infrastructure is excluded.
 This incremental package inherits the existing repository MIT license; the license
 does not cover underlying clinical records.
+
+## Post hoc text-consistency re-review
+
+A post hoc automated text-consistency check flagged reference codings that conflicted with the
+report wording; the adjudicator re-reviewed those cells blinded to the machine values and signed
+the re-review. `scripts/build_rereview_queue.py` builds the flagged-cell queue and
+`scripts/compare_audit.py --rereview` applies the signed table. The public aggregate records the
+re-review counts and the affected fields' aggregates before and after re-review; see
+AUDIT_AGGREGATES.md. Sample identifiers, reasons and signed evidence remain private.

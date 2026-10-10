@@ -355,24 +355,39 @@
           "all": {
             "n": 200,
             "parser_value_n": 35,
-            "reader_value_n": 42,
-            "agree_both_value": 31,
-            "agree_both_missing": 154,
+            "reader_value_n": 38,
+            "agree_both_value": 34,
+            "agree_both_missing": 161,
             "value_differs": 0,
-            "parser_missing_reader_value": 11,
-            "parser_value_reader_missing": 4,
-            "error_n": 15,
-            "error_pct": 7.5,
-            "error_ci_low_pct": 4.6,
-            "error_ci_high_pct": 12.0,
+            "parser_missing_reader_value": 4,
+            "parser_value_reader_missing": 1,
+            "error_n": 5,
+            "error_pct": 2.5,
+            "error_ci_low_pct": 1.1,
+            "error_ci_high_pct": 5.7,
             "value_disagreement_pct_when_both_present": 0.0
           },
           "development": {
             "n": 100,
             "parser_value_n": 6,
-            "reader_value_n": 9,
-            "agree_both_value": 5,
-            "agree_both_missing": 90,
+            "reader_value_n": 6,
+            "agree_both_value": 6,
+            "agree_both_missing": 94,
+            "value_differs": 0,
+            "parser_missing_reader_value": 0,
+            "parser_value_reader_missing": 0,
+            "error_n": 0,
+            "error_pct": 0.0,
+            "error_ci_low_pct": 0.0,
+            "error_ci_high_pct": 3.7,
+            "value_disagreement_pct_when_both_present": 0.0
+          },
+          "temporal_test": {
+            "n": 100,
+            "parser_value_n": 29,
+            "reader_value_n": 32,
+            "agree_both_value": 28,
+            "agree_both_missing": 67,
             "value_differs": 0,
             "parser_missing_reader_value": 4,
             "parser_value_reader_missing": 1,
@@ -380,21 +395,6 @@
             "error_pct": 5.0,
             "error_ci_low_pct": 2.2,
             "error_ci_high_pct": 11.2,
-            "value_disagreement_pct_when_both_present": 0.0
-          },
-          "temporal_test": {
-            "n": 100,
-            "parser_value_n": 29,
-            "reader_value_n": 33,
-            "agree_both_value": 26,
-            "agree_both_missing": 64,
-            "value_differs": 0,
-            "parser_missing_reader_value": 7,
-            "parser_value_reader_missing": 3,
-            "error_n": 10,
-            "error_pct": 10.0,
-            "error_ci_low_pct": 5.5,
-            "error_ci_high_pct": 17.4,
             "value_disagreement_pct_when_both_present": 0.0
           }
         },
@@ -454,18 +454,14 @@
       ],
       "disagreement_flags": {
         "threshold_fields": 4,
-        "n_records": 1,
-        "link_methods": {
-          "exact_stem": 1
-        },
+        "n_records": 0,
+        "link_methods": {},
         "interpretation": "Descriptive multiple-field disagreement only; not evidence of linkage error."
       },
       "linkage_flags": {
         "threshold_fields": 4,
-        "n_records": 1,
-        "link_methods": {
-          "exact_stem": 1
-        },
+        "n_records": 0,
+        "link_methods": {},
         "interpretation": "Descriptive multiple-field disagreement only; not evidence of linkage error."
       }
     },
@@ -722,47 +718,47 @@
           "all": {
             "n": 200,
             "parser_value_n": 40,
-            "reader_value_n": 42,
-            "agree_both_value": 32,
-            "agree_both_missing": 153,
+            "reader_value_n": 38,
+            "agree_both_value": 35,
+            "agree_both_missing": 160,
             "value_differs": 3,
-            "parser_missing_reader_value": 7,
-            "parser_value_reader_missing": 5,
-            "error_n": 15,
-            "error_pct": 7.5,
-            "error_ci_low_pct": 4.6,
-            "error_ci_high_pct": 12.0,
-            "value_disagreement_pct_when_both_present": 8.6
+            "parser_missing_reader_value": 0,
+            "parser_value_reader_missing": 2,
+            "error_n": 5,
+            "error_pct": 2.5,
+            "error_ci_low_pct": 1.1,
+            "error_ci_high_pct": 5.7,
+            "value_disagreement_pct_when_both_present": 7.9
           },
           "development": {
             "n": 100,
             "parser_value_n": 7,
-            "reader_value_n": 9,
-            "agree_both_value": 5,
-            "agree_both_missing": 89,
+            "reader_value_n": 6,
+            "agree_both_value": 6,
+            "agree_both_missing": 93,
             "value_differs": 0,
-            "parser_missing_reader_value": 4,
-            "parser_value_reader_missing": 2,
-            "error_n": 6,
-            "error_pct": 6.0,
-            "error_ci_low_pct": 2.8,
-            "error_ci_high_pct": 12.5,
+            "parser_missing_reader_value": 0,
+            "parser_value_reader_missing": 1,
+            "error_n": 1,
+            "error_pct": 1.0,
+            "error_ci_low_pct": 0.2,
+            "error_ci_high_pct": 5.4,
             "value_disagreement_pct_when_both_present": 0.0
           },
           "temporal_test": {
             "n": 100,
             "parser_value_n": 33,
-            "reader_value_n": 33,
-            "agree_both_value": 27,
-            "agree_both_missing": 64,
+            "reader_value_n": 32,
+            "agree_both_value": 29,
+            "agree_both_missing": 67,
             "value_differs": 3,
-            "parser_missing_reader_value": 3,
-            "parser_value_reader_missing": 3,
-            "error_n": 9,
-            "error_pct": 9.0,
-            "error_ci_low_pct": 4.8,
-            "error_ci_high_pct": 16.2,
-            "value_disagreement_pct_when_both_present": 10.0
+            "parser_missing_reader_value": 0,
+            "parser_value_reader_missing": 1,
+            "error_n": 4,
+            "error_pct": 4.0,
+            "error_ci_low_pct": 1.6,
+            "error_ci_high_pct": 9.8,
+            "value_disagreement_pct_when_both_present": 9.4
           }
         },
         "foot_process_grade": {
@@ -835,7 +831,248 @@
   },
   "representation": "De-identified aggregate projection; no participant-level evidence is distributed.",
   "scientific_code_provenance": {
-    "comparison_script_sha256": "eb182b44471c0da2ad445eda63f0006d330b1c468a59a1b7ad13cfdf483b9762",
+    "comparison_script_sha256": "56fe6ca56a460282c74fe0f9fc5500e55e4e5f3628b5d1c80d6c26fc2c81e332",
     "contract_sha256": "54956d2949fcbf5b57fec8859ee328b8c9d6287ab610893f7a96a8a1798f0463"
+  },
+  "rereview": {
+    "kind": "post_hoc_text_consistency_rereview",
+    "n_cells": 10,
+    "n_changed": 10,
+    "fields_affected": [
+      "spike_presence"
+    ],
+    "cells": [
+      {
+        "field": "spike_presence",
+        "origin": "consensus",
+        "before": "未见",
+        "after": "未提及",
+        "changed": true
+      },
+      {
+        "field": "spike_presence",
+        "origin": "consensus",
+        "before": "未见",
+        "after": "未提及",
+        "changed": true
+      },
+      {
+        "field": "spike_presence",
+        "origin": "consensus",
+        "before": "未见",
+        "after": "未提及",
+        "changed": true
+      },
+      {
+        "field": "spike_presence",
+        "origin": "consensus",
+        "before": "未见",
+        "after": "未提及",
+        "changed": true
+      },
+      {
+        "field": "spike_presence",
+        "origin": "consensus",
+        "before": "未见",
+        "after": "未提及",
+        "changed": true
+      },
+      {
+        "field": "spike_presence",
+        "origin": "consensus",
+        "before": "未见",
+        "after": "未提及",
+        "changed": true
+      },
+      {
+        "field": "spike_presence",
+        "origin": "consensus",
+        "before": "未见",
+        "after": "未提及",
+        "changed": true
+      },
+      {
+        "field": "spike_presence",
+        "origin": "adjudication",
+        "before": "未提及",
+        "after": "形成",
+        "changed": true
+      },
+      {
+        "field": "spike_presence",
+        "origin": "adjudication",
+        "before": "未提及",
+        "after": "形成",
+        "changed": true
+      },
+      {
+        "field": "spike_presence",
+        "origin": "adjudication",
+        "before": "未提及",
+        "after": "形成",
+        "changed": true
+      }
+    ],
+    "final_answer_status_counts_after": {
+      "glomerulus_count": {
+        "value": 200
+      },
+      "sclerosis_rate": {
+        "value": 141,
+        "未提及": 59
+      },
+      "mesangial_cell_count": {
+        "value": 199,
+        "未提及": 1
+      },
+      "mesangial_matrix_grade": {
+        "value": 196,
+        "未提及": 4
+      },
+      "gbm_thickness_nm": {
+        "不明确": 93,
+        "value": 104,
+        "未提及": 3
+      },
+      "spike_presence": {
+        "未提及": 160,
+        "value": 38,
+        "不明确": 2
+      },
+      "foot_process_grade": {
+        "value": 199,
+        "不明确": 1
+      }
+    },
+    "pipelines_before_rereview": {
+      "frozen_pipeline": {
+        "error_pct_range": [
+          2.0,
+          35.5
+        ],
+        "disagreement_flags": {
+          "threshold_fields": 4,
+          "n_records": 1,
+          "link_methods": {
+            "exact_stem": 1
+          },
+          "interpretation": "Descriptive multiple-field disagreement only; not evidence of linkage error."
+        },
+        "fields": {
+          "spike_presence": {
+            "label": "Spike presence",
+            "kind": "binary",
+            "all": {
+              "n": 200,
+              "parser_value_n": 35,
+              "reader_value_n": 42,
+              "agree_both_value": 31,
+              "agree_both_missing": 154,
+              "value_differs": 0,
+              "parser_missing_reader_value": 11,
+              "parser_value_reader_missing": 4,
+              "error_n": 15,
+              "error_pct": 7.5,
+              "error_ci_low_pct": 4.6,
+              "error_ci_high_pct": 12.0,
+              "value_disagreement_pct_when_both_present": 0.0
+            },
+            "development": {
+              "n": 100,
+              "parser_value_n": 6,
+              "reader_value_n": 9,
+              "agree_both_value": 5,
+              "agree_both_missing": 90,
+              "value_differs": 0,
+              "parser_missing_reader_value": 4,
+              "parser_value_reader_missing": 1,
+              "error_n": 5,
+              "error_pct": 5.0,
+              "error_ci_low_pct": 2.2,
+              "error_ci_high_pct": 11.2,
+              "value_disagreement_pct_when_both_present": 0.0
+            },
+            "temporal_test": {
+              "n": 100,
+              "parser_value_n": 29,
+              "reader_value_n": 33,
+              "agree_both_value": 26,
+              "agree_both_missing": 64,
+              "value_differs": 0,
+              "parser_missing_reader_value": 7,
+              "parser_value_reader_missing": 3,
+              "error_n": 10,
+              "error_pct": 10.0,
+              "error_ci_low_pct": 5.5,
+              "error_ci_high_pct": 17.4,
+              "value_disagreement_pct_when_both_present": 0.0
+            }
+          }
+        }
+      },
+      "reextracted_pipeline": {
+        "error_pct_range": [
+          0.0,
+          7.5
+        ],
+        "disagreement_flags": {
+          "threshold_fields": 4,
+          "n_records": 0,
+          "link_methods": {},
+          "interpretation": "Descriptive multiple-field disagreement only; not evidence of linkage error."
+        },
+        "fields": {
+          "spike_presence": {
+            "label": "Spike presence",
+            "kind": "binary",
+            "all": {
+              "n": 200,
+              "parser_value_n": 40,
+              "reader_value_n": 42,
+              "agree_both_value": 32,
+              "agree_both_missing": 153,
+              "value_differs": 3,
+              "parser_missing_reader_value": 7,
+              "parser_value_reader_missing": 5,
+              "error_n": 15,
+              "error_pct": 7.5,
+              "error_ci_low_pct": 4.6,
+              "error_ci_high_pct": 12.0,
+              "value_disagreement_pct_when_both_present": 8.6
+            },
+            "development": {
+              "n": 100,
+              "parser_value_n": 7,
+              "reader_value_n": 9,
+              "agree_both_value": 5,
+              "agree_both_missing": 89,
+              "value_differs": 0,
+              "parser_missing_reader_value": 4,
+              "parser_value_reader_missing": 2,
+              "error_n": 6,
+              "error_pct": 6.0,
+              "error_ci_low_pct": 2.8,
+              "error_ci_high_pct": 12.5,
+              "value_disagreement_pct_when_both_present": 0.0
+            },
+            "temporal_test": {
+              "n": 100,
+              "parser_value_n": 33,
+              "reader_value_n": 33,
+              "agree_both_value": 27,
+              "agree_both_missing": 64,
+              "value_differs": 3,
+              "parser_missing_reader_value": 3,
+              "parser_value_reader_missing": 3,
+              "error_n": 9,
+              "error_pct": 9.0,
+              "error_ci_low_pct": 4.8,
+              "error_ci_high_pct": 16.2,
+              "value_disagreement_pct_when_both_present": 10.0
+            }
+          }
+        }
+      }
+    }
   }
 }

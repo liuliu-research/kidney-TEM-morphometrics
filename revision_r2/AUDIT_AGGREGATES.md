@@ -30,3 +30,20 @@ The original DOI 10.5281/zenodo.21825234 archives v1.0.0 only and does not inclu
 these new human-audit aggregates. This repository increment does not mint a new DOI
 or modify frozen v1.0.0. The existing MIT license covers the code and aggregates,
 not the underlying clinical reports or signed evidence.
+
+## Post hoc text-consistency re-review
+
+After the primary comparison, an automated text-consistency check
+(`scripts/build_rereview_queue.py`) compared every reference coding with the report
+wording and flagged cells whose coded value lacked any mention of the field in the
+report, or whose spike-presence coding conflicted with an explicit statement of
+spike formation or absence. The adjudicator re-reviewed each flagged cell against
+the report text, blinded to the machine-extracted values, recorded a reason and
+signed the re-review; `scripts/compare_audit.py --rereview` applies the signed
+re-review table to those cells only. The `rereview` block of
+`aggregate_results/audit_results.json` retains the flagged-cell count, the number
+changed, the affected fields, each cell's origin (adjudicated or reader-concordant)
+with its before/after coding, the missingness-status counts after re-review, and the
+affected fields' aggregates under the original codings. Sample identifiers, reasons
+quoting report text, queue commitments and signed evidence are not distributed; the
+primary reader answers and the adjudication record are unchanged.

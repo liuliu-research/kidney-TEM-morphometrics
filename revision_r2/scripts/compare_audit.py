@@ -251,6 +251,7 @@ def resolve_readers(
             pd.DataFrame(todo).to_excel(todo_path, sheet_name="裁定表", index=False)
         raise AuditValidationError(f"{len(differences)}处分歧待具名仲裁")
     resolved = {}
+    raw_final: dict[str, dict[str, str]] = {}
     status_counts = {field: Counter() for field, *_ in FIELDS}
     for sid in r1:
         raw = {
@@ -261,6 +262,7 @@ def resolve_readers(
             )
             for field, *_ in FIELDS
         }
+        raw_final[sid] = dict(raw)
         resolved[sid] = validate_sample_answers(raw)
         for field, *_ in FIELDS:
             status_counts[field][
@@ -300,8 +302,86 @@ def resolve_readers(
             },
             "source": str(adjudication.resolve()) if adjudication else None,
             "sha256": sha256(adjudication) if adjudication else None,
+            "raw_final": raw_final,
         },
     )
+
+
+def apply_rereview(
+    path: Path,
+    raw_final: dict,
+    adjudicated: dict,
+    r1: dict,
+    r2: dict,
+    metadata: dict,
+    key_hash: str,
+    source_type: str,
+) -> tuple[dict, dict]:
+    """事后文本一致性复裁：仲裁者只对自动检查标记的格子按原文重裁；原始读者答案与主裁定不改。"""
+    validate_source_path(path, source_type)
+    frame = pd.read_excel(path, sheet_name="复裁表", dtype=str, keep_default_na=False)
+    needed = {"样本号", "字段", "来源", "读者1", "读者2", "原参考值", "复裁值", "复裁依据", "标记原因"}
+    if not needed.issubset(frame.columns):
+        raise AuditValidationError("复裁表缺少必需列")
+    source = pd.read_excel(path, sheet_name="审计来源", dtype=str, keep_default_na=False)
+    info = {clean(k): clean(v) for k, v in zip(source["字段"], source["值"])}
+    if (
+        info.get("role") != "adjudicator"
+        or info.get("kind") != "rereview"
+        or info.get("audit_key_sha256") != key_hash
+        or info.get("source_type") != source_type
+        or info.get("reader_name") != clean(metadata["adjudicator"]["name"])
+    ):
+        raise AuditValidationError("复裁表来源声明与当前仲裁者或审计版本不一致")
+    cells, seen = [], set()
+    new_raw = {sid: dict(values) for sid, values in raw_final.items()}
+    for _, row in frame.iterrows():
+        sid, field = clean(row["样本号"]), clean(row["字段"])
+        if (sid, field) in seen or sid not in raw_final or field not in {key for key, *_ in FIELDS}:
+            raise AuditValidationError("复裁表含重复或无效的样本-字段对")
+        seen.add((sid, field))
+        if (
+            clean(row["读者1"]) != r1[sid][field]
+            or clean(row["读者2"]) != r2[sid][field]
+            or clean(row["原参考值"]) != raw_final[sid][field]
+        ):
+            raise AuditValidationError("复裁表原始答案与当前版本不一致")
+        value, reason = clean(row["复裁值"]), clean(row["复裁依据"])
+        if not value or not reason:
+            raise AuditValidationError("复裁值及依据不得留空")
+        new_raw[sid][field] = value
+        cells.append(
+            {
+                "sample_id": sid,
+                "field": field,
+                "origin": clean(row["来源"]),
+                "reader1": r1[sid][field],
+                "reader2": r2[sid][field],
+                "before": raw_final[sid][field],
+                "after": value,
+                "changed": value != raw_final[sid][field],
+                "flag_reason": clean(row["标记原因"]),
+                "reason": reason,
+            }
+        )
+    resolved = dict(adjudicated)
+    status_after = {field: Counter() for field, *_ in FIELDS}
+    for sid, raw in new_raw.items():
+        resolved[sid] = validate_sample_answers(raw)
+        for field, *_ in FIELDS:
+            status_after[field][answer_status(field, raw[field], raw["glomerulus_count"])] += 1
+    return resolved, {
+        "kind": "post_hoc_text_consistency_rereview",
+        "n_cells": len(cells),
+        "n_changed": sum(cell["changed"] for cell in cells),
+        "fields_affected": sorted({cell["field"] for cell in cells}),
+        "cells": cells,
+        "adjudicator": metadata["adjudicator"]["name"],
+        "source": str(path.resolve()),
+        "sha256": sha256(path),
+        "queue_sha256": info.get("queue_sha256"),
+        "final_answer_status_counts_after": {k: dict(v) for k, v in status_after.items()},
+    }
 
 
 def aggregate_results(rows: dict, adjudicated: dict) -> dict:
@@ -398,6 +478,9 @@ def run(args: argparse.Namespace, *, write: bool = True) -> dict:
     source_paths = [args.reader1, args.reader2, args.readers, args.key]
     if args.adjudication is not None:
         source_paths.append(args.adjudication)
+    rereview_path = getattr(args, "rereview", None)
+    if rereview_path is not None:
+        source_paths.append(rereview_path)
     for path in source_paths:
         if not path.is_file():
             raise AuditValidationError(f"缺少必需证据：{path.name}")
@@ -410,7 +493,7 @@ def run(args: argparse.Namespace, *, write: bool = True) -> dict:
         raise AuditValidationError("合成测试禁止写入正式audit_results.json")
     rows = load_key(args.key)
     key_hash = sha256(args.key)
-    sample_manifest = HERE.parent / "aggregate_results" / "audit_sample_manifest.json"
+    sample_manifest = HERE / "audit_sample_manifest.json"
     if source_type == "human":
         sample = json.loads(sample_manifest.read_text(encoding="utf-8"))
         if (
@@ -438,6 +521,23 @@ def run(args: argparse.Namespace, *, write: bool = True) -> dict:
         args.out.parent / "audit_adjudication_todo.xlsx",
         write,
     )
+    raw_final = adjudication.pop("raw_final")
+    rereview = None
+    if rereview_path is not None:
+        if args.adjudication is None:
+            raise AuditValidationError("复裁只能在主裁定完成后进行")
+        before = aggregate_results(rows, adjudicated)
+        adjudicated, rereview = apply_rereview(
+            rereview_path, raw_final, adjudicated, raw[0], raw[1], metadata, key_hash, source_type
+        )
+        rereview["pipelines_before_rereview"] = {
+            name: {
+                "error_pct_range": pipeline["error_pct_range"],
+                "disagreement_flags": pipeline["disagreement_flags"],
+                "fields": {f: pipeline["fields"][f] for f in rereview["fields_affected"]},
+            }
+            for name, pipeline in before.items()
+        }
     results = {
         "label": source_type,
         "status": "VERIFIED" if source_type == "human" else "SYNTHETIC_TEST_ONLY",
@@ -447,6 +547,7 @@ def run(args: argparse.Namespace, *, write: bool = True) -> dict:
         "dual_reader": True,
         "inter_reader_before_adjudication": agreement,
         "adjudication": adjudication,
+        "rereview": rereview,
         "validation": {
             "contract_version": 1,
             "status": "PASS",
@@ -490,6 +591,7 @@ def run(args: argparse.Namespace, *, write: bool = True) -> dict:
                     ("reader2", args.reader2),
                     ("readers", args.readers),
                 )
+                + ((("rereview", rereview_path),) if rereview_path is not None else ())
             },
         },
         "pipelines": aggregate_results(rows, adjudicated),
@@ -517,6 +619,7 @@ def validate_verified_audit_result(path: Path) -> dict:
                 for key in ("key", "reader1", "reader2", "readers")
             },
             adjudication=Path(adjudication) if adjudication else None,
+            rereview=Path(paths["rereview"]) if paths.get("rereview") else None,
             out=path,
             label="human",
         )
@@ -533,6 +636,7 @@ def main() -> None:
     parser.add_argument("--reader1", type=Path, required=True)
     parser.add_argument("--reader2", type=Path, required=True)
     parser.add_argument("--adjudication", type=Path)
+    parser.add_argument("--rereview", type=Path, help="事后文本一致性复裁表（门户 --export-rereview 导出）")
     parser.add_argument("--readers", type=Path, default=HERE / "audit_readers.json")
     parser.add_argument(
         "--key", type=Path, default=HERE / "audit_key_CONFIDENTIAL.json"

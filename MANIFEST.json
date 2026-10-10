@@ -4,7 +4,7 @@
   "analysis_window": "2014-05-01 through 2026-04-30",
   "privacy": "No patient-level records, direct identifiers, pseudonymous keys, institution names in data files, or raw report text. Referral sources are anonymised as Source A-D.",
   "note": "Category label 其他 in the upstream aggregate outputs was normalised to Other for this public release; no numeric value was altered. .gitattributes disables end-of-line conversion so the SHA-256 values below reproduce on any platform after checkout.",
-  "file_count": 94,
+  "file_count": 95,
   "files": [
     {
       "path": ".gitattributes",
@@ -168,33 +168,33 @@
     },
     {
       "path": "revision_r2/AUDIT_AGGREGATES.md",
-      "bytes": 2041,
-      "sha256": "24096a9eb187911a27ff233b849d7920efc62777fc18e4831411b87cdb509e8f"
+      "bytes": 3182,
+      "sha256": "0b06205d05a5f142c544460a1668d1be9e1d6edcfd1159275ee9a8ff0a3fb083"
     },
     {
       "path": "revision_r2/MANIFEST.json",
-      "bytes": 5910,
-      "sha256": "4368cd8162b8a1f6fa036f3b32f61e1e82a9806363ce4011e880b554d9be00a8"
+      "bytes": 6076,
+      "sha256": "445af053d5228694d11f8723889b855e1f3258da4928a1acc8ed1626b573ded7"
     },
     {
       "path": "revision_r2/MANIFEST.sha256",
-      "bytes": 3417,
-      "sha256": "bc6bb81c6cb3700d211e6ad9d52d2df1197c513b30265e1180b46b3d6502c66b"
+      "bytes": 3515,
+      "sha256": "635ff17a672b36688d255a43617c4832eba82e7303f0ce95bbb4c8fc8b13375b"
     },
     {
       "path": "revision_r2/README.md",
-      "bytes": 4052,
-      "sha256": "7df3691abbbc8594246912a7d048dfcfd4b80f450b1005755ca9b51373c840e8"
+      "bytes": 4635,
+      "sha256": "a7b10e8829ad9388b4583caf5f162584bb8d98280f79e4ffc5991c9080ab9211"
     },
     {
       "path": "revision_r2/SOURCE_PROVENANCE.json",
-      "bytes": 11500,
-      "sha256": "0aae1f5da51a2a55c27e86aa09a7258b1367000444ddad5e619edbffd4159a0a"
+      "bytes": 12392,
+      "sha256": "cf32743ae51bc2096f952b53b354714e8071bfce169ff65862a42e0ad87dba40"
     },
     {
       "path": "revision_r2/aggregate_results/audit_results.json",
-      "bytes": 27539,
-      "sha256": "57cf2feae2126fe8d6dac78098a28abe84afc4480f5d49d6fc89746a0647bbae"
+      "bytes": 34304,
+      "sha256": "f948d90ad1bed1c532a590fac3e5175c8e7bebfbcbf1350a1154c711caa8f9e5"
     },
     {
       "path": "revision_r2/aggregate_results/audit_sample_manifest.json",
@@ -272,9 +272,14 @@
       "sha256": "2efcc17d867c2ef17fd40a893eae861a271aec3297b1690b4353c1758f48685d"
     },
     {
+      "path": "revision_r2/scripts/build_rereview_queue.py",
+      "bytes": 6867,
+      "sha256": "ad36d457e23d224f08f1b3471cbf22fad5d4c304804fb040bfdb62b194fa98a3"
+    },
+    {
       "path": "revision_r2/scripts/compare_audit.py",
-      "bytes": 23217,
-      "sha256": "787d956f99fb9f8df1abb1f0b0a721e781bd59d7c52beaf0b9bde84288f8836d"
+      "bytes": 28092,
+      "sha256": "380bc06180b17918ae651c926ea585a0d59eacb6438e9cf1341b710fc4e11a84"
     },
     {
       "path": "revision_r2/scripts/figstyle.py",
@@ -477,6 +482,6 @@
       "sha256": "ae248f6b9744cdb43dbf104c79931bf001d92c7b549c23540e55de681a7b1d38"
     }
   ],
-  "revision_status": "R2 additions include completed human-audit aggregates; frozen v1.0.0 and its DOI are unchanged",
+  "revision_status": "R2 additions include completed human-audit aggregates and a signed post hoc text-consistency re-review; frozen v1.0.0 and its DOI are unchanged",
   "text_normalization": "utf8-crlf-to-lf"
 }
