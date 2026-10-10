@@ -69,10 +69,10 @@
     },
     {
       "source_name": "build_figS1.py",
-      "source_sha256": "4ed0a81a0e12f16d35a8a20d49b35008a83e09e906ac5902045187109d096474",
+      "source_sha256": "bc382b2ee1f2b800768404e8c63d326619738624e77c5a9e9cb03c541c47a588",
       "destination": "scripts/build_figS1.py",
-      "destination_sha256": "2efcc17d867c2ef17fd40a893eae861a271aec3297b1690b4353c1758f48685d",
-      "transformation": "Explicit path/output adaptations only"
+      "destination_sha256": "832e25d48440ac7a4deb8b1bf7b4756fc22f65ce5b0fe9734fbabd1224ef8aee",
+      "transformation": "Explicit path/output adaptations only; 2026-10 publication-grade redraw of panel D (single-colour bars, no in-figure value labels; values in Table S6)"
     },
     {
       "source_name": "rebuild_figure1_labels.py",
@@ -97,16 +97,16 @@
     },
     {
       "source_name": "FigureS1.png",
-      "source_sha256": "b435091251fac34400f1053b0da2730485308a065242f5a07d8c17fc477a50c3",
+      "source_sha256": "d0929f28cab7e01e3ba8073603b0e7a1793e80983255acf6f1b6a4cff7abdad7",
       "destination": "figures/FigureS1.png",
-      "destination_sha256": "b435091251fac34400f1053b0da2730485308a065242f5a07d8c17fc477a50c3",
+      "destination_sha256": "d0929f28cab7e01e3ba8073603b0e7a1793e80983255acf6f1b6a4cff7abdad7",
       "transformation": "Byte-identical copy"
     },
     {
       "source_name": "FigureS1.pdf",
-      "source_sha256": "5f68f24cd5317ac2d71894279b391ee1388142e40ac27055864dcb5961dfc1c3",
+      "source_sha256": "64fe2c6a1bbfad473e1cb8c71c1d2024b1e74c0bb88b0685589bb25bc9360b5a",
       "destination": "figures/FigureS1.pdf",
-      "destination_sha256": "5f68f24cd5317ac2d71894279b391ee1388142e40ac27055864dcb5961dfc1c3",
+      "destination_sha256": "64fe2c6a1bbfad473e1cb8c71c1d2024b1e74c0bb88b0685589bb25bc9360b5a",
       "transformation": "Byte-identical copy"
     },
     {
@@ -239,5 +239,19 @@
     "block": "rereview",
     "transformation": "Allowlisted projection of the signed post hoc re-review: counts, affected fields, per-cell origin and before/after codings, status counts after re-review, and affected-field aggregates under the original codings; sample identifiers, reasons and commitments withheld.",
     "method": "AUDIT_AGGREGATES.md"
+  },
+  "figure_s1_redraw": {
+    "date": "2026-10-10",
+    "change": "Panel D redrawn for publication: single-colour bars with hatched partial years, two reference lines with a two-entry legend, no rotated value labels crossing the reference lines; data and other panels unchanged.",
+    "gate": {
+      "canvas_in": [
+        6.3,
+        5.45
+      ],
+      "fonts": [
+        "Arial"
+      ],
+      "min_font_pt": 8.0
+    }
   }
 }
